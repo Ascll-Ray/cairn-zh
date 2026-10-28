@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Character Creation
-parent: Player's Guide
-grand_parent: Second Edition
+title: 角色创建
+parent: 玩家手册
+grand_parent: 第二版
 ---
 
 # 角色创建
@@ -11,23 +12,23 @@ grand_parent: Second Edition
 
 - 首先，从下方[背景](#backgrounds)表中掷骰或选择，并记下页码。接下来几步你会用到该页。
 - 从可用列表中选一个名字，然后记录角色所有初始物品。记录物品的方法见[物品栏](#inventory)和[物品栏位](#inventory-slots)。
-- 在背景所包含的每个表上掷骰。根据每个结果记录角色的物品、技能或能力。有些背景可能还会要求你参考[市场](/second-edition/players-guide/marketplace)中的表格。
+- 在背景所包含的每个表上掷骰。根据每个结果记录角色的物品、技能或能力。有些背景可能还会要求你参考[市场](/players-guide/marketplace)中的表格。
 
 ## 背景 {: #backgrounds }
 
 |         |                                                                                 |        |                                                                             |
 | ------- | ------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------------- |
 | **d20** | **背景** |        |                                                                             |
-| **1** | [金匠](/second-edition/backgrounds/aurifex) | **11** | [半巫](/second-edition/backgrounds/half-witch) |
-| **2** | [剃头医师](/second-edition/backgrounds/barber-surgeon) | **12** | [屠巫者](/second-edition/backgrounds/hexenbane) |
-| **3** | [驯兽师](/second-edition/backgrounds/beast-handler) | **13** | [吟游艺人](/second-edition/backgrounds/jongleur/) |
-| **4** | [守骸人](/second-edition/backgrounds/bonekeeper/) | **14** | [补锅匠](/second-edition/backgrounds/kettlewright) |
-| **5** | [扒手](/second-edition/backgrounds/cutpurse) | **15** | [边关守卫](/second-edition/backgrounds/marchguard/) |
-| **6** | [田野监守](/second-edition/backgrounds/fieldwarden/) | **16** | [江湖骗子](/second-edition/backgrounds/mountebank) |
-| **7** | [风矢匠](/second-edition/backgrounds/fletchwind) | **17** | [游骑](/second-edition/backgrounds/outrider) |
-| **8** | [弃儿](/second-edition/backgrounds/foundling) | **18** | [潜行客](/second-edition/backgrounds/prowler) |
-| **9** | [菌菇采集者](/second-edition/backgrounds/fungal-forager) | **19** | [溪行者](/second-edition/backgrounds/rill-runner) |
-| **10** | [草木通](/second-edition/backgrounds/greenwise/) | **20** | [缮写师](/second-edition/backgrounds/scrivener) |
+| **1** | [金匠](https://cairnrpg.com/second-edition/backgrounds/aurifex) | **11** | [半巫](https://cairnrpg.com/second-edition/backgrounds/half-witch) |
+| **2** | [剃头医师](https://cairnrpg.com/second-edition/backgrounds/barber-surgeon) | **12** | [屠巫者](https://cairnrpg.com/second-edition/backgrounds/hexenbane) |
+| **3** | [驯兽师](https://cairnrpg.com/second-edition/backgrounds/beast-handler) | **13** | [吟游艺人](https://cairnrpg.com/second-edition/backgrounds/jongleur/) |
+| **4** | [守骸人](https://cairnrpg.com/second-edition/backgrounds/bonekeeper/) | **14** | [补锅匠](https://cairnrpg.com/second-edition/backgrounds/kettlewright) |
+| **5** | [扒手](https://cairnrpg.com/second-edition/backgrounds/cutpurse) | **15** | [边关守卫](https://cairnrpg.com/second-edition/backgrounds/marchguard/) |
+| **6** | [田野监守](https://cairnrpg.com/second-edition/backgrounds/fieldwarden/) | **16** | [江湖骗子](https://cairnrpg.com/second-edition/backgrounds/mountebank) |
+| **7** | [风矢匠](https://cairnrpg.com/second-edition/backgrounds/fletchwind) | **17** | [游骑](https://cairnrpg.com/second-edition/backgrounds/outrider) |
+| **8** | [弃儿](https://cairnrpg.com/second-edition/backgrounds/foundling) | **18** | [潜行客](https://cairnrpg.com/second-edition/backgrounds/prowler) |
+| **9** | [菌菇采集者](https://cairnrpg.com/second-edition/backgrounds/fungal-forager) | **19** | [溪行者](https://cairnrpg.com/second-edition/backgrounds/rill-runner) |
+| **10** | [草木通](https://cairnrpg.com/second-edition/backgrounds/greenwise/) | **20** | [缮写师](https://cairnrpg.com/second-edition/backgrounds/scrivener) |
 
 ## 属性、耐久度与特质 
 
@@ -43,8 +44,8 @@ grand_parent: Second Edition
 
 ## 耐久度
 
-- 投掷1d6，决定 PC 的初始**耐久度**（HP），它代表角色在战斗中规避伤害的能力，而非其健康或体魄，也不会长时间损失。参见[治疗与恢复](/second-edition/players-guide/core-rules#healing--recovery)。 
-- 若一次攻击恰好将 PC 的耐久度降至 0，玩家须投[**伤痕**](/second-edition/players-guide/core-rules#scars)表。
+- 投掷1d6，决定 PC 的初始**耐久度**（HP），它代表角色在战斗中规避伤害的能力，而非其健康或体魄，也不会长时间损失。参见[治疗与恢复](/players-guide/core-rules#healing--recovery)。 
+- 若一次攻击恰好将 PC 的耐久度降至 0，玩家须投[**伤痕**](/players-guide/core-rules#scars)表。
 
 ## 物品栏 {: #inventory }
 

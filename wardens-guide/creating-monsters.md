@@ -1,8 +1,9 @@
 ---
-title: Creating Monsters
+
+title: 创建怪物
 layout: default
-parent: Warden's Guide 
-grand_parent: Second Edition
+parent: 监守手册
+grand_parent: 第二版
 ---
 
 # 创建怪物

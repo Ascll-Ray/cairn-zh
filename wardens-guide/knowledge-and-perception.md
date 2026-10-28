@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Knowledge And Perception
-parent: Warden's Guide 
-grand_parent: Second Edition
+title: 知识与感知
+parent: 监守手册
+grand_parent: 第二版
 ---
 
 # 知识与感知

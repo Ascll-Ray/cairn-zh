@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Pointcrawls
-parent: Warden's Guide 
-grand_parent: Second Edition
+title: 节点探险
+parent: 监守手册
+grand_parent: 第二版
 ---
 
 # 节点探险
@@ -48,4 +49,4 @@ grand_parent: Second Edition
   - 若穿越*荒野*，加两个轮值。
   - 若为*艰险*的森林地形，加一个轮值。
 
-[![点击查看！](/img/2e/pointcrawl-example-map.png "点击放大"){:height="60%" width="60%"}](/img/2e/pointcrawl-example-map.png)
+[![点击查看！](https://cairnrpg.com/img/2e/pointcrawl-example-map.png "点击放大"){:height="60%" width="60%"}](https://cairnrpg.com/img/2e/pointcrawl-example-map.png)

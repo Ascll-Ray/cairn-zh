@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Bonds and Omens
-parent: Warden's Guide 
-grand_parent: Second Edition
+title: 羁绊与预兆
+parent: 监守手册
+grand_parent: 第二版
 ---
 
 # 羁绊与预兆

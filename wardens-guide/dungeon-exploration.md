@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Dungeon Exploration
-parent: Warden's Guide 
-grand_parent: Second Edition
+title: 地城探索
+parent: 监守手册
+grand_parent: 第二版
 ---
 
 # 地城探索

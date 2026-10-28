@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Overview & Principles
-parent: Player's Guide
-grand_parent: Second Edition
+title: 概述与原则
+parent: 玩家手册
+grand_parent: 第二版
 ---
 
 # 概述与原则

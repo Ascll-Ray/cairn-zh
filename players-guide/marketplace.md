@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Marketplace
-parent: Player's Guide
-grand_parent: Second Edition
+title: 集市
+parent: 玩家手册
+grand_parent: 第二版
 ---
 
 # 集市

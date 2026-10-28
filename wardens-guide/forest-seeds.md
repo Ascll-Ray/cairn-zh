@@ -1,8 +1,9 @@
 ---
-title: Forest Seeds
+
+title: 森林种子
 layout: default
-parent: Warden's Guide 
-grand_parent: Second Edition
+parent: 监守手册
+grand_parent: 第二版
 ---
 
 # 森林种子
@@ -318,7 +319,7 @@ grand_parent: Second Edition
 
 ### 地图
 
-[![点击我！](/img/2e/forest-seed-example.webp "点击放大"){:height="60%" width="60%"}](/img/2e/forest-seed-example.webp)
+[![点击我！](https://cairnrpg.com/img/2e/forest-seed-example.webp "点击放大"){:height="60%" width="60%"}](https://cairnrpg.com/img/2e/forest-seed-example.webp)
 
 ### 森林
 

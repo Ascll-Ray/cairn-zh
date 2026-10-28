@@ -1,7 +1,8 @@
 ---
+
 layout: default
-title: Player's Guide
-parent: Second Edition
+title: 玩家手册
+parent: 第二版
 has_children: true
 nav_order: 1
 ---

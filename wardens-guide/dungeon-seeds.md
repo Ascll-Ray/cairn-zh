@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Dungeon Seeds
-parent: Warden's Guide 
-grand_parent: Second Edition
+title: 地城种子
+parent: 监守手册
+grand_parent: 第二版
 ---
 
 # 地城种子
@@ -413,7 +414,7 @@ grand_parent: Second Edition
 
 ### 地图
 
-[![点我！](/img/2e/dungeon-seed-example.webp "点击放大"){:height="60%" width="60%"}](/img/2e/dungeon-seed-example.webp)
+[![点我！](https://cairnrpg.com/img/2e/dungeon-seed-example.webp "点击放大"){:height="60%" width="60%"}](https://cairnrpg.com/img/2e/dungeon-seed-example.webp)
 
 ### 破碎神庙
 

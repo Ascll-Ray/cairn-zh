@@ -1,8 +1,9 @@
 ---
+
 layout: default
-title: Vald
-parent: Player's Guide
-grand_parent: Second Edition
+title: 瓦尔德
+parent: 玩家手册
+grand_parent: 第二版
 ---
 
 # 瓦尔德

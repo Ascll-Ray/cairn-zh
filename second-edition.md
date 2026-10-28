@@ -1,6 +1,7 @@
 ---
+
 layout: default
-title: Second Edition
+title: 第二版
 has_children: true
 nav_order: 1
 ---
