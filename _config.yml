@@ -1,0 +1,10 @@
+title: Cairn 2e 简体中文
+description: Cairn 2e 规则参考文档私有验证沙盒
+theme: just-the-docs
+
+color_scheme: dark
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "Cairn 官方原版": "https://cairnrpg.com"

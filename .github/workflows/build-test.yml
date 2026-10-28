@@ -1,0 +1,33 @@
+name: Build & Verify Jekyll Site
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll Site
+        run: |
+          bundle exec jekyll build --trace --destination ./_site
+
+      - name: Upload Compiled Static Site Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cairn-zh-compiled-site
+          path: ./_site
+          retention-days: 7
