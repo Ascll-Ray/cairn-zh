@@ -58,8 +58,8 @@ grand_parent: 第二版
 ## 雇员
 
 - 冒险队伍可招募雇员，凭借其独特的技能、学识与训练协助探险。  
-- 要创建一名雇员，请从市集中的[雇员](/players-guide/marketplace#hirelings-per-day)表内选定合适的岗位。为每项属性投3d6，为其耐久度投1d6。给予其与身份相称的**装备**，再投角色特质表，进一步充实其形象。
-- 或者，从[角色创建](/players-guide/character-creation)指南中选定合适的[**背景**](/players-guide/character-creation#backgrounds)与**姓名**。为该背景对应的表格投点（或从中挑选）。接着投口粮、金币、属性、耐久度与年龄。 
+- 要创建一名雇员，请从市集中的[雇员](../marketplace#hirelings-per-day)表内选定合适的岗位。为每项属性投3d6，为其耐久度投1d6。给予其与身份相称的**装备**，再投角色特质表，进一步充实其形象。
+- 或者，从[角色创建](../character-creation)指南中选定合适的[**背景**](../character-creation#backgrounds)与**姓名**。为该背景对应的表格投点（或从中挑选）。接着投口粮、金币、属性、耐久度与年龄。 
 
 ## 命运骰  
 

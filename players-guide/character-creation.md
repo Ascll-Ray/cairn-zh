@@ -12,7 +12,7 @@ grand_parent: 第二版
 
 - 首先，从下方[背景](#backgrounds)表中掷骰或选择，并记下页码。接下来几步你会用到该页。
 - 从可用列表中选一个名字，然后记录角色所有初始物品。记录物品的方法见[物品栏](#inventory)和[物品栏位](#inventory-slots)。
-- 在背景所包含的每个表上掷骰。根据每个结果记录角色的物品、技能或能力。有些背景可能还会要求你参考[市场](/players-guide/marketplace)中的表格。
+- 在背景所包含的每个表上掷骰。根据每个结果记录角色的物品、技能或能力。有些背景可能还会要求你参考[市场](../marketplace)中的表格。
 
 ## 背景 {: #backgrounds }
 
@@ -44,8 +44,8 @@ grand_parent: 第二版
 
 ## 耐久度
 
-- 投掷1d6，决定 PC 的初始**耐久度**（HP），它代表角色在战斗中规避伤害的能力，而非其健康或体魄，也不会长时间损失。参见[治疗与恢复](/players-guide/core-rules#healing--recovery)。 
-- 若一次攻击恰好将 PC 的耐久度降至 0，玩家须投[**伤痕**](/players-guide/core-rules#scars)表。
+- 投掷1d6，决定 PC 的初始**耐久度**（HP），它代表角色在战斗中规避伤害的能力，而非其健康或体魄，也不会长时间损失。参见[治疗与恢复](../core-rules#healing--recovery)。 
+- 若一次攻击恰好将 PC 的耐久度降至 0，玩家须投[**伤痕**](../core-rules#scars)表。
 
 ## 物品栏 {: #inventory }
 

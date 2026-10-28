@@ -8,5 +8,5 @@ nav_order: 0
 
 这是《石冢》(Cairn) 第二版的离线验证沙盒构建版本。
 
-- **快速入口**：[浏览第二版核心规则 (Second Edition)](/second-edition)
+- **快速入口**：[浏览第二版核心规则 (Second Edition)](second-edition/)
 - **版本状态**：31 个章节完整对齐，已通过 AST 闭包门禁与预印 ICML 映射校验。
