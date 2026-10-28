@@ -4,7 +4,7 @@ title: 首页
 nav_order: 0
 ---
 
-# Cairn 2e 简体中文系统参考文档
+# Cairn 2e 简体中文规则站
 
 这是《石冢》(Cairn) 第二版的系统参考文档（SRD）简体中文版本。
 
