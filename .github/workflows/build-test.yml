@@ -1,4 +1,4 @@
-name: Build & Verify Jekyll Site
+name: Build & Deploy Jekyll Site
 
 on:
   push:
@@ -7,6 +7,12 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -25,9 +31,18 @@ jobs:
         run: |
           bundle exec jekyll build --trace --destination ./_site
 
-      - name: Upload Compiled Static Site Artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: cairn-zh-compiled-site
           path: ./_site
-          retention-days: 7
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
