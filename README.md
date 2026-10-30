@@ -2,7 +2,7 @@
 
 欢迎查阅《石冢》(Cairn) 第二版（2e）官方简体中文系统参考文档（SRD）独立站点仓库。
 
-- 🌐 **在线阅读站点**：[https://ascll-ray.github.io/cairn-zh/](https://ascll-ray.github.io/cairn-zh/)（官方域名解析筹备中：`https://zh.cairnrpg.com`）
+- 🌐 **官方在线阅读站点**：[https://zh.cairnrpg.com](https://zh.cairnrpg.com)
 - 📖 **规则范围**：31 个核心章节（《玩家手册》6 章 + 《监守手册》23 章全量对齐）
 - 🔍 **功能特性**：纯中文双层手风琴折叠导航、Lunr.js 离线全文搜索、响应式排版与深色模式支持
 
