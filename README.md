@@ -21,7 +21,7 @@
 ## 致敬与版权说明
 
 - **游戏原作**：由 **Yochai Gal** 设计并编写，原版发布于 [cairnrpg.com](https://cairnrpg.com)。
-- **先驱致谢**：特别向《石冢》第一版（1e）中文译者 **ZzNoah** ([`ZzNoah/cairn-cn`](https://github.com/ZzNoah/cairn-cn)) 致敬。本译本在力量/敏捷/意志（STR/DEX/WIL）、金银铜币、耐久度（HP）、疲乏（Fatigue）、剥夺（Deprived）等核心 TRPG 机制名词上，严格遵循并继承了其确立的中文经典跑团术语体系。
+- **先驱致谢**：特别向《石冢》第一版（1e）中文译者 ZzNoah ([ZzNoah/cairn-cn](https://github.com/ZzNoah/cairn-cn)) 致敬。本译本在核心 TRPG 机制名词上，严格遵循并继承了其确立的中文经典跑团术语体系。
 - **第二版维护**：由 **Ascll-Ray** ([@Ascll-Ray](https://github.com/Ascll-Ray)) 完成第二版全量校对、Jekyll 架构装配与持续维护。
 
 ---
@@ -34,31 +34,9 @@
 
 ---
 
-## 本地预览与调试
-
-本项目基于 Jekyll 4.3+ 与 `just-the-docs` 主题构建：
-
-```bash
-# 1. 克隆本仓库
-git clone https://github.com/Ascll-Ray/cairn-zh.git
-cd cairn-zh
-
-# 2. 安装依赖并启动本地 Jekyll 服务
-bundle install
-bundle exec jekyll serve
-```
-
-或使用 Python 快速伺服已编译的 `_site` 产物：
-```bash
-py -m http.server 8080 -d _site
-```
-
----
-
 ## 勘误与社区反馈
 
 本规则站处于持续维护状态。如果你在阅读中发现任何错别字、行文不畅、断链或术语争议，非常欢迎通过以下渠道交流与反馈：
 
 1. **GitHub Issues**：在本项目提交 [New Issue](https://github.com/Ascll-Ray/cairn-zh/issues)；
-2. **Pull Requests**：直接提交修正补丁；
-3. **官方社区**：前往 [Cairn 官方 Discord](https://discord.gg/cairn) 的 `#translations` 讨论频道交流。
+2. **Pull Requests**：直接提交修正补丁。
