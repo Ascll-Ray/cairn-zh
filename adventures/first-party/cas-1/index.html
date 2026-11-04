@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAS-1：双湖纷扰 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-shopping-bag" viewBox="0 0 24 24">
+    <title>Store</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
+      <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <path d="M16 10a4 4 0 0 1-8 0"></path>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item"><a href="/players-guide/procedures/" class="nav-list-link">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/players-guide/character-creation/" class="nav-list-link">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link">创建背景</a></li><li class="nav-list-item"><a href="/wardens-guide/bibliography/" class="nav-list-link">参考文献</a></li><li class="nav-list-item"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item"><a href="/wardens-guide/spellbooks/" class="nav-list-link">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="冒险模组 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/adventures/" class="nav-list-link">冒险模组</a><ul class="nav-list"><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="官方第一方模组 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/adventures/first-party/" class="nav-list-link">官方第一方模组</a><ul class="nav-list"><li class="nav-list-item active"><a href="/adventures/first-party/cas-1/" class="nav-list-link active">CAS-1：双湖纷扰</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item"><a href="https://cairnrpg.com" class="site-button" target="_blank" rel="noopener noreferrer">Cairn 官方原版</a></li><li class="nav-list-item"><a href="https://store.cairnrpg.com" class="site-button" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" class="icon" aria-hidden="true" style="width:14px;height:14px;margin-right:4px;vertical-align:-2px;"><use xlink:href="#svg-shopping-bag"></use></svg>官方实体书</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/adventures/">冒险模组</a></li><li class="breadcrumb-nav-list-item"><a href="/adventures/first-party/">官方第一方模组</a></li><li class="breadcrumb-nav-list-item"><span>CAS-1：双湖纷扰</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="cas-1双湖纷扰"> <a href="#cas-1双湖纷扰" class="anchor-heading" aria-labelledby="cas-1双湖纷扰"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> CAS-1：双湖纷扰 </h1>
+<p>《双湖纷扰》是《石冢》第二版冒险游戏独立冒险系列的第一部。本冒险围绕两桩核心谜案展开，供玩家团队侦破。其中包含形形色色的非玩家角色与敌对势力，以及多处可供探索的地点。本冒险既适合新玩家，也适合老玩家，尤其适合那些仍在荒野与险境中寻找自身定位的角色。尽管本地区及其居民属于更宏大的<strong>瓦尔德</strong>设定，但也可轻松融入你选择的任何低奇幻设定。</p>
+<p><strong>《石冢》冒险系列 1</strong> 《石冢》第二版冒险模组，作者 Yochai Gal</p>
+<p><strong>制作人员：</strong> 撰写：Yochai Gal；编辑：Derek B.；编辑协助：Yossi Krausz；排版与局部地图：Adam Hensley。封面艺术与区域地图：Ari-Matti Toivonen。</p>
+<p>由 Cairn Press 出品。</p>
+<p>本作品文本采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA 4.0</a> 许可协议授权。</p>
+<p><img src="/adventures/first-party/img/cas-1/Trouble_in_Twin_Lakes_Cover.webp" alt="双湖纷扰封面"></p>
+<h2 id="引言"> <a href="#引言" class="anchor-heading" aria-labelledby="引言"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 引言 </h2>
+<p>CAS-1：双湖纷扰是《石冢》第二版冒险游戏独立冒险系列的第一部。本冒险围绕两桩核心谜案展开，供玩家团队侦破。其中包含形形色色的非玩家角色与敌对势力，以及多处可供探索的地点。本冒险既适合新玩家，也适合老玩家，尤其适合那些仍在荒野与险境中寻找自身定位的角色。尽管本地区及其居民属于更宏大的<strong>瓦尔德</strong>设定，但也可轻松融入你选择的任何低奇幻设定。</p>
+<h2 id="关于规则与流程"> <a href="#关于规则与流程" class="anchor-heading" aria-labelledby="关于规则与流程"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 关于规则与流程 </h2>
+<p>本模组的内容高度依赖《石冢 2e 玩家指南》中呈现的规则与流程，尤其是核心背景（第 19 页）与地城探索流程（第 71 页）。然而，由于本冒险中各地点之间距离较远，荒野流程（第 75 页）恐怕用处不大。监守应转而利用本文中提供的各类随机遭遇表。</p>
+<h2 id="冒险设定"> <a href="#冒险设定" class="anchor-heading" aria-labelledby="冒险设定"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 冒险设定 </h2>
+<p>两周前，地峡镇受人爱戴的屠夫<strong>阿尔德拉</strong>突然消失得无影无踪。数日后，一名当地少年声称看见一个男人在<strong>死磨坊</strong>附近被大地吞没。另有其他人也相继失踪。如今镇民们不禁惶惶不安：下一个会是谁？</p>
+<h2 id="引子"> <a href="#引子" class="anchor-heading" aria-labelledby="引子"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 引子 </h2>
+<ul>
+<li><a href="#tideborn">潮生者</a>已同意支付队伍 750gp，以查明阿尔德拉的下落。若能寻回此人的遗体并交还潮生者侍僧妥善安葬，另付 250gp 赏金。出发搜寻前，他们须先到地峡镇的屠夫铺与弗拉维娅会面。</li>
+<li>城邦方面悬赏每人 200gp，凡能协助寻获詹迪者皆可领取。詹迪是一名什一税吏，本应数日前带着最新税款归来。唯有税款完好无损、账目清楚，队伍方能获得赏金。队伍须先在饱腹客栈与长官特雷利斯会面，再展开搜寻。</li>
+</ul>
+<h2 id="真相究竟如何"> <a href="#真相究竟如何" class="anchor-heading" aria-labelledby="真相究竟如何"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 真相究竟如何？ </h2>
+<p>乍看之下彼此关联的种种事件，实则只是<em>纯粹的巧合</em>。阿尔德拉的命运与死磨坊那名男子完全无关。尽管《瓦克归来》与《被吞之人》共享部分角色与地点，但先前发生的事件彼此毫无干系。</p>
+<h2 id="瓦克归来"> <a href="#瓦克归来" class="anchor-heading" aria-labelledby="瓦克归来"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 瓦克归来 </h2>
+<h3 id="六个月前"> <a href="#六个月前" class="anchor-heading" aria-labelledby="六个月前"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 六个月前 </h3>
+<p>法夏大半辈子都是个怯懦自私的农夫，在<strong>邓斯顿</strong>勉强度日。他曾一度是长官特雷利斯的左右手，常帮他窃取本应上缴诸城的什一税，并趁夜深人静将部分赃物藏于<strong>邓斯顿</strong>的<strong>废弃宅邸</strong>。</p>
+<p>某日，法夏行经<strong>骸骨洼地</strong>附近，听见一名女子的声音自水下呼唤他。那声音自称瓦克，恳求他解救自己。法夏应允，作为回报获赐<strong>瓦克之眼</strong>。</p>
+<h3 id="如今"> <a href="#如今" class="anchor-heading" aria-labelledby="如今"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 如今 </h3>
+<p>两周前，法夏与长官的深夜勾当引起了当地屠夫<strong>阿尔德拉</strong>的注意。他尾随二人回到邓斯顿，想当场捉住他们。但法夏早有防备，伏击了屠夫，将他拖入<strong><a href="#temple-of-the-fungal-lizards">真菌蜥蜴神庙</a></strong>。在那里，他的心脏被扯出体外，由瓦克吞食。尽管长官特雷利斯知道阿尔德拉的遭遇是法夏所为，恐惧与自私却令他甘为同谋。</p>
+<p>阿尔德拉失踪已数周。与此同时，瓦克每日索求更多献祭，以加速自己的重生。每隔一晚，法夏便绑架一名受害者，带往<strong>真菌蜥蜴神庙</strong>，让瓦克在次日清晨吞食其仍在跳动的心脏。</p>
+<h2 id="被吞噬者"> <a href="#被吞噬者" class="anchor-heading" aria-labelledby="被吞噬者"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 被吞噬者 </h2>
+<h3 id="一周前"> <a href="#一周前" class="anchor-heading" aria-labelledby="一周前"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 一周前 </h3>
+<p><strong>詹迪</strong>是一名缮写师，常代表诸城前往<strong>地峡镇</strong>征收什一税。数月来，他一直在撰写一部关于本地区的简史，走访当地居民，探访各处文化遗址。作为这项研究的一部分，他在冒险开始前一周造访了<strong><a href="#deadmill">死磨坊</a></strong>。不幸的是，詹迪赶上的是一处遍布天坑与流沙的地方。</p>
+<p>詹迪不知危险，陷入流沙而死。然而，由于他离<strong>回响火花</strong>很近，他被复活了，却对死亡毫无记忆。随后他再次踏入流沙，继续着无尽的死亡循环。</p>
+<p>次日夜里，当地少年<strong>德拉姆</strong>目睹大地在死磨坊将一名男子整个吞没。距满月仅剩两天，关于有邪祟作乱的传言正迅速蔓延。</p>
+<h3 id="如今-1"> <a href="#如今-1" class="anchor-heading" aria-labelledby="如今-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 如今 </h3>
+<p>数日后，石之森的蛙巫<strong>安娜弗拉纳克斯</strong>来到死磨坊，取回磨石之下名为<a href="#echo-spark">回响火花</a>的时间循环装置。</p>
+<p>安娜弗拉纳克斯意识到死亡循环中蕴藏的潜力，便将一盏<strong>幽火灯</strong>藏于<a href="#2-the-waterwheel">附近</a>，借詹迪无尽的痛苦增强被困生物的力量。下一个满月之夜，她将重返死磨坊，把幽火灯抛入流沙。由此迸发的能量将撕开一道通往<a href="#the-roots">根须之地</a>的传送门。</p>
+<h2 id="受害者日程"> <a href="#受害者日程" class="anchor-heading" aria-labelledby="受害者日程"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 受害者日程 </h2>
+<p>每天投掷 1d8 以确定选中哪位受害者。</p>
+<p><strong>第 1 天：</strong>无人。 <strong>第 2 天：</strong>在受害者表上投掷。 <strong>第 3 天：</strong>无人。 <strong>第 4 天：</strong>在受害者表上投掷。 <strong>第 5 天：</strong>瓦克于日落时分苏醒。</p>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left">d8</th>
+<th style="text-align: left">受害者</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left">1</td>
+<td style="text-align: left">科塞塔（织工）</td>
+</tr>
+<tr>
+<td style="text-align: left">2</td>
+<td style="text-align: left">吉娃</td>
+</tr>
+<tr>
+<td style="text-align: left">3</td>
+<td style="text-align: left">弗朗茨（杂货商）</td>
+</tr>
+<tr>
+<td style="text-align: left">4</td>
+<td style="text-align: left">德拉姆</td>
+</tr>
+<tr>
+<td style="text-align: left">5</td>
+<td style="text-align: left">贝朱（鳏夫）</td>
+</tr>
+<tr>
+<td style="text-align: left">6</td>
+<td style="text-align: left">长官特雷利斯</td>
+</tr>
+<tr>
+<td style="text-align: left">7</td>
+<td style="text-align: left">尼古拉斯（旅人）</td>
+</tr>
+<tr>
+<td style="text-align: left">8</td>
+<td style="text-align: left">弗拉维娅</td>
+</tr>
+</tbody></table></div>
+<h2 id="重要-npc"> <a href="#重要-npc" class="anchor-heading" aria-labelledby="重要-npc"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 重要 NPC </h2>
+<h3 id="长官特雷利斯"> <a href="#长官特雷利斯" class="anchor-heading" aria-labelledby="长官特雷利斯"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 长官特雷利斯 </h3>
+<p>魅力十足，颇受欢迎，粗犷英俊。说话带着做作的拖腔，总记不住别人的名字。塞满旅店的店主，最近当选处理镇务。</p>
+<ul>
+<li>尽可能避开 PC，但若他们对阿尔德拉表现出兴趣，便会与他们作对。</li>
+<li>他知道詹迪从未前来取走十一税，但任何关于此人遗物的追问都会被引向德拉姆——他在詹迪下榻的旅店做工。</li>
+<li>里夫办公室里的官方<strong>什一税记录</strong>是伪造的。真正的账目保存在<strong>客栈</strong>的<strong>地下室</strong>里。将这本书与詹迪自己的<a href="#1-interior">什一税记录</a>对照，也能揭穿他的罪行。</li>
+<li>若性命受到威胁，他会承认盗取什一税，但绝不承认谋杀阿尔德拉。</li>
+</ul>
+<h3 id="法夏"> <a href="#法夏" class="anchor-heading" aria-labelledby="法夏"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 法夏 </h3>
+<p>来自邓斯顿的农夫，昔日孱弱粗鄙，如今戴上<a href="#the-eye-of-vuk">瓦克之眼</a>后，沉醉于新得的力量与洞察。</p>
+<p>力量 14，敏捷 13，意志 5，拳头（d8+d8），钩刀（d6）</p>
+<ul>
+<li>必要时他会逃往<strong>白塔沼泽</strong>，指望追兵触发他布下的陷阱。</li>
+<li>一有机会，他便会将任何被击败的对手拖往<a href="#temple-of-the-fungal-lizards">真菌蜥蜴神庙</a>献祭。</li>
+</ul>
+<h3 id="阿尔德拉"> <a href="#阿尔德拉" class="anchor-heading" aria-labelledby="阿尔德拉"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 阿尔德拉 </h3>
+<p>一名魁梧而受人爱戴的屠夫，虔诚的潮生者，弗拉维娅的丈夫。二人共同经营屠夫铺。</p>
+<ul>
+<li>遇害当晚，阿尔德拉正在桌前工作，忽见长官提着大包从<a href="#cellar">地窖活板门</a>出来。他悄悄溜出，生怕惊醒妻子，尾随长官而去。当夜稍晚，法夏将瘫软的阿尔德拉拖至骸骨洼地杀害，喂给了<a href="#vuk">瓦克</a>。</li>
+</ul>
+<h3 id="弗拉维娅"> <a href="#弗拉维娅" class="anchor-heading" aria-labelledby="弗拉维娅"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 弗拉维娅 </h3>
+<p>阿尔德拉的妻子，肉铺的共同经营者。神情明显悲恸，却强作镇定。</p>
+<ul>
+<li>她会提到丈夫睡前总会摘下吊坠（上面刻着三道斜向的波纹），而她到处都找不到它。</li>
+<li>两周前最后一次见到丈夫。她上床时，他正像往常一样在桌前数钱，常常熬到深夜。她把他未写完的账本收在<strong><a href="#butcher-shop">书桌抽屉</a></strong>里。抽屉钥匙挂在她颈间一条不起眼的小银链上。</li>
+<li>若问起法夏，她会说自己听过传言，那人常在深夜去<strong>东湖隘口</strong>散步。她极厌恶此人，称其粗鲁傲慢。</li>
+<li>若有人问起吉娃，她会提到，尽管阿尔德拉是个脾气暴躁、迷信的老妪，却觉得她颇有魅力。</li>
+</ul>
+<h3 id="詹迪"> <a href="#詹迪" class="anchor-heading" aria-labelledby="詹迪"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 詹迪 </h3>
+<p>一位中年、不修边幅的缮写师，兼任诸城什一税吏。他定期造访地峡镇，向长官特雷利斯征收什一税。他乘马驾车自由往来，因为绝不会有强盗胆敢袭击身披诸城号衣之人。</p>
+<ul>
+<li>他在填馅客栈常年包有一间房，但按计划本应在造访死磨坊的同一天离开。然而，他的马和马车仍留在村中马厩。</li>
+<li>他与吉娃交好，曾为撰写一部本地区往事的著作而采访过她。</li>
+<li>若获救，他会说，自己最后的记忆是初次从西侧入口进入这栋建筑。他透过东窗望见磨坊精良的桨轮，便从南门出去查看。他未察觉流沙，失足陷入，就此死去，随后又在磨坊内重生。</li>
+<li>他的侧袋里存有一份什一税记录。</li>
+</ul>
+<h3 id="吉娃"> <a href="#吉娃" class="anchor-heading" aria-labelledby="吉娃"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 吉娃 </h3>
+<p>地峡镇最年长的人。即便在最好的日子里也多半脾气暴躁，她不喜欢大多数人，尤其憎恶法夏。她是德拉姆的姑祖母。</p>
+<ul>
+<li>她喜欢詹迪，他偶尔会就“旧日时光”采访她。几天前他错过了两人约定的最近一次拜访；她上次与他交谈时，他说自己打算去探访本地区几座古老的伐木磨坊。他本应到那天下午才动身，但她猜想定是有急事把他召回了诸城。</li>
+</ul>
+<h3 id="德拉姆"> <a href="#德拉姆" class="anchor-heading" aria-labelledby="德拉姆"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 德拉姆 </h3>
+<p>一个爱挖苦人的瘦高少年。吉娃是他的姑祖母。他在填馅客栈做下午和晚间的活计。</p>
+<ul>
+<li>他觉得，自己离开地峡镇的唯一出路就是尽可能多攒金币。他认为长官特雷利斯是个骗子。</li>
+<li>若有人问起詹迪，他会指出那人的马和马车仍留在马厩。</li>
+<li>他在死磨坊目睹了怪事，愿意开口，但要价（15gp）。</li>
+<li>他会告诉玩家角色们，几晚前他参加了一场游戏，当地青少年争相比试，看谁能背对磨坊西侧入口、站在老磨坊路上坚持最久。他是最后一个留下的，直到听见身后传来一声“砰”响才放弃。他转过身，看见一个男人从磨坊南侧入口走出，随即被前方的地面吞没。那男人看着有些眼熟，但绝对不是本地人。</li>
+</ul>
+<h3 id="安娜弗拉纳克斯"> <a href="#安娜弗拉纳克斯" class="anchor-heading" aria-labelledby="安娜弗拉纳克斯"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 安娜弗拉纳克斯 </h3>
+<p>一位年长的半巫，栖居于石之森深处。她凭幻术与智谋求生，对琐碎的道德不屑一顾。她有意穿越<a href="#the-roots">根须之地</a>，主要为寻求新的疗伤之物与失传的魔法。她以真菌为主食，偶尔也吃粗鲁的旅人。</p>
+<p>9 耐久度，11 力量，14 敏捷，17 意志</p>
+<ul>
+<li>她能依听众及其意图改变形貌。有时是长发赤褐的年轻女子，有时则矮胖得近乎两栖模样。</li>
+<li>冒险开始两天后的傍晚，她返回死磨坊。尽管她强大无比，却也年事已高，会尽可能避免战斗。</li>
+<li>她对森林及其历史了如指掌，能为队伍提供几乎任何病症的解药。她向来言出必行。</li>
+<li>携带以下四本<a href="/second-edition/wardens-guide/spellbooks/">法术书</a>：<em>活化物件、奥术之眼、幻音术、化兽术、迷乱术、加速术、安抚术、推拉斥引、读心术、灌木丛、真实视界、幻影术。</em></li>
+<li>若她被杀，石之森的每一只鸟都会攻击凶手，直至其死亡或逃离森林。</li>
+</ul>
+<h2 id="双湖"> <a href="#双湖" class="anchor-heading" aria-labelledby="双湖"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 双湖 </h2>
+<p>这片与世隔绝的地域位于诸城以北，骑马穿过<strong>驼峰岭</strong>仅需数日。<strong>地峡镇</strong>是该地区唯一的主要聚居地，坐落在两片淡水湖之间的狭长地带上。镇南多为农田，唯有已废弃的渔村邓斯顿例外。</p>
+<p>北方是<strong>石之森</strong>，一片广袤的林区，散布着古老的磨坊与伐木小径。<strong>西湖</strong>仍是周边城镇鱼类与饮水的主要来源，尽管此地既无步道，也无天然耕作。蜿蜒的湖畔小径是昔日繁盛的<strong>东湖</strong>仅存的遗迹，如今那里已无鱼可捕，也无洁净饮水。</p>
+<p>尽管该地区以相对安全著称，夜间出行仍很危险，因为强盗与夜猫都惯于追击势单力薄的队伍。冒险始于丰收季，恰在最后一茬庄稼收割之后。</p>
+<p><img src="/adventures/first-party/img/cas-1/CAS1_Map_v2.webp" alt="CAS1 地图 v2"></p>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left">d6</th>
+<th style="text-align: left">路上听闻的传闻<br><strong>每当队伍离开地峡镇时投掷 1d6。重复结果重掷。</strong></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left"><em>一个来自邓斯顿的家庭拉着一辆堆满鱼的手推车。</em>“西湖嘛，钓鱼还行。可跟我那会儿的东湖比起来，差远了。我跟你说，当年木材好的时候，鱼也好。去问问那个老顽固吉娃，她记得。”</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left"><em>一对年轻的双胞胎朝西湖走去，高高举着钓竿。</em>只有一人开口。“从前人们常去丘陵上舔青蛙，你知道吧。编出各种疯话，说什么闹鬼之类的。当然，那不是真的。除了白塔沼泽。那地方让我们毛骨悚然。”</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left"><em>两名工人并排走着，牵着一匹拉车的役马，车上堆满工具和木材。</em>“是啊，我和我兄弟伯克被雇来修邓斯顿那座老克劳科宅子，就是十年前塌掉的那座，对吧？有点奇怪，毕竟没人告诉我们是谁出的钱。但里夫说这位先生是个真正的慈善家，想‘回馈’一下。”</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left"><em>一名老者坐在镇口，削着一把木刀。</em>“屠夫那档子事，我看就是那帮潮生者疯子干的。你可知他们连自己人都淹死，只把幸存者纳入门下，却视死者为不配？”</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left"><em>一位衣着考究的年轻女子向西走去。</em>“我翻过驼峰岭，就为了见林子里那个蛙女。听说她能治各种毛病……我等着下一个满月去找她。”</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left"><em>一名猎人拖着一张塞满猎物尸体的大网。他衬衫上有血。</em>“你最近去过丘陵吗？一阵风从东边吹来，带着一股恶臭，像翻涌的死气。”</td>
+</tr>
+</tbody></table></div>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left">d6</th>
+<th style="text-align: left">遭遇<br><strong>每当队伍在两点之间旅行时投掷 1d6。夜间投掷两次。</strong></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">吸血虫成群而至，被体温吸引。几乎无法击退，却会主动扑入明火。除非避开，否则所有人增加一次疲乏。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">一名锅匠骑车同行，满载闪亮的锡器。他主要卖厨具，但若被追问，愿以 100gp 出售包中的<a href="#fletchers-ire">弗莱彻之怒</a>。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">一阵突如其来的狂风裹挟着漂浮的植被，将队伍浇透。每名角色失去一项资源（火把熄灭、口粮掉落、鞋子丢失等）。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">一名手无寸铁的女子拉着一车鱼箱，请求帮忙把车轮从泥里弄出来。尽管她费了不少力气，衣服却显得相对干净。若队伍停下帮忙，3 名<strong>强盗</strong>* 会从枝叶间跃出伏击。未作准备的 PC 自动豁免失败。车轮脱困后，这辆车（+4 格）状况良好。箱子里空空如也。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">长满苔藓的沃土化为厚泥，每走一步都发出响亮的噗嗤声。附近的动物因队伍靠近而四散，徒步旅行者增加一次疲乏。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">一男一女围坐在熊熊火焰旁做饭。他们自称捕蛙人，乐意出售当天的收获：香料蛙腿 2gp，或一瓶蟾蜍分泌物（2 次使用）25gp。后者兼具致幻与某种吐真剂之效。</td>
+</tr>
+</tbody></table></div>
+<ul>
+<li><strong>弗莱彻之怒。</strong> 向距酒吧三十英尺内的目标发射时，单发远程攻击受损。笨重，三发充能。充能：将酒吧浸入熔铅炉，再冷却。</li>
+<li><strong>强盗头目：</strong> 6 耐久度，2 护甲，13 力量，14 敏捷，13 意志，长剑（d10，笨重）。</li>
+<li><strong>强盗</strong>（x2）：4 耐久度，1 护甲，12 力量，12 敏捷，9 意志，剑（d6）。一人持短弓（d6）。</li>
+<li>进行士气检定时，使用首领的意志进行豁免。若首领被杀，匪徒便会撤退。</li>
+</ul>
+<h2 id="地峡镇"> <a href="#地峡镇" class="anchor-heading" aria-labelledby="地峡镇"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 地峡镇 </h2>
+<p>一座昔日的伐木小镇，如今主要靠从<strong>西湖</strong>捕鱼的收益勉强维持。镇上居民不足三十户。镇上的集市每日上午 8 点至下午 2 点开放，货品与补给颇为可观，包括任何价格低于 10gp 的物品。（见 2e《玩家指南》中的<a href="/second-edition/players-guide/marketplace/">集市</a>。）当地特色菜肴包括炸鳕鱼、烤蛙腿和热浆果炖派。渔具（15gp）、沼地鞋（每双 10gp）和防雨衣物（15gp）是热门商品。</p>
+<p><img src="/adventures/first-party/img/cas-1/Isthmus%20Town.webp" alt="地峡镇"></p>
+<h3 id="派系"> <a href="#派系" class="anchor-heading" aria-labelledby="派系"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 派系 </h3>
+<h4 id="潮生者"> <a href="#潮生者" class="anchor-heading" aria-labelledby="潮生者"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 潮生者 </h4>
+<p>一个崇拜里武鲁斯的层级制宗教派系，里武鲁斯是江河湖泊的微末之神。即便是教外之人也熟知该派系的入会仪式——一场偶尔会致参与者溺亡的仪式性溺水。幸存者被称为潮生者，并取一个与水相关的新名号（鲤鱼、芦苇、牛轭湾等等）。只有神职人员需要参与该仪式；然而近年来，他们在乡民中的信众有所增加，尤其是在临近水域的村庄。</p>
+<h4 id="九人议会"> <a href="#九人议会" class="anchor-heading" aria-labelledby="九人议会"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 九人议会 </h4>
+<p>九人议会由商人、学者与权贵组成，凭借雄厚的财富与庞大的间谍网络达成目的。他们的首要事务是奇物的发现、鉴定与管制。近年来，他们将重心转向了根脉，因为他们相信根脉是大多数奇物的源头，并会为任何关于门扉的情报支付丰厚报酬。</p>
+<h3 id="饱腹客栈"> <a href="#饱腹客栈" class="anchor-heading" aria-labelledby="饱腹客栈"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 饱腹客栈 </h3>
+<p>地峡镇唯一的酒馆，也是旅人唯一能安全歇脚之处。通铺住宿一晚 10gp，含一份洋葱汤与淡啤酒。附属马厩提供基本寄养，每晚 5gp。客栈归长官特雷利斯所有，但大部分实际事务由德拉姆和一位本地厨子操持。</p>
+<h4 id="外部"> <a href="#外部" class="anchor-heading" aria-labelledby="外部"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 外部 </h4>
+<p>建筑呈 H 形，主入口位于东北角。建筑东侧有一扇小<strong>活板门</strong>。西侧有一座小<strong>马厩</strong>。</p>
+<ul>
+<li><strong>活板门</strong>：正对肉铺二楼窗户的视野之内。活板门被铁链锁在地面上，除非砸断铁链，否则只能从内侧打开。附近的泥土上有脚印。</li>
+<li><strong>马厩</strong>：四个敞开的栏位，除一个关着一匹马和一辆马车外，其余皆空。</li>
+<li>德拉姆管理马厩，但每天只查看一次旅店。</li>
+<li>马匹和马车属于詹迪。两者都带有诸城徽记。</li>
+</ul>
+<h4 id="内部"> <a href="#内部" class="anchor-heading" aria-labelledby="内部"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 内部 </h4>
+<p>酒馆区域很小，仅有三张桌子，垂直于吧台摆放。客房全在二楼，由南侧一段楼梯通达。角落里塞着一间小办公室。它的门几乎总是锁着（只有长官特雷利斯有钥匙），但很容易撬开。酒馆实际上要到下午 3 点才营业，届时德拉姆和厨子会出现，打扫卫生并准备食物。</p>
+<p><strong>塞满旅店</strong>后方一间阴湿、不适的房间。除了一张<strong>单桌</strong>和一扇上锁的<strong>地窖门</strong>外空无一物。桌上放着一本小<strong>书</strong>。</p>
+<ul>
+<li><strong>书桌</strong>：只有一个抽屉。里面是一本黑色小册子。这是一份伪造的什一税记录，将其与地下室里的真实记录或<a href="#1-interior">詹迪的挎包</a>中的副本对比，即可证明长官一直在窃取应缴诸城的什一税。</li>
+<li><strong>地窖门</strong>：上锁。长官特雷利斯和德拉姆都有钥匙。</li>
+</ul>
+<p>一个狭小阴湿的空间，堆满各种<strong>板条箱</strong>。空气中弥漫着浓重的湿土气息。一张放着各种工具的<strong>工作台</strong>斜靠在一面墙上。东南角的天花板上装有一扇<strong>活板门</strong>和梯子。</p>
+<ul>
+<li><strong>板条箱</strong>：衣物、家居用品、食物。它们被标记为某座大城的什一税。</li>
+<li>这些是给詹迪的，她一周前没能取走。</li>
+<li><strong>工作台</strong>：家居工具散落在工作台上。</li>
+<li>工作台下方藏有一个暗抽屉。里面是镇上真正的<strong>什一税账簿</strong>。将这本书与楼上办公室的假账簿或詹迪<strong>挎包</strong>中的副本对比，即可证明长官一直在窃取应缴诸城的什一税。</li>
+<li><strong>活板门</strong>：向上通往旅店与屠夫之间的巷子。一条粗铁链穿过它，再用一把大铜锁锁住。只有长官特雷利斯有钥匙。</li>
+</ul>
+<h3 id="肉铺"> <a href="#肉铺" class="anchor-heading" aria-labelledby="肉铺"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 肉铺 </h3>
+<p>一栋质朴的两层建筑，紧邻填馅旅店。北面入口处画着一只无头鸡。一层没有窗户，二层则在建筑四侧各开两扇窗。一条小巷将肉铺与填馅旅店的东翼隔开。</p>
+<h4 id="一层"> <a href="#一层" class="anchor-heading" aria-labelledby="一层"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 一层 </h4>
+<p>地板上满是木屑与羽毛，踩上去沙沙作响。一块血迹斑斑的巨大<strong>砧板</strong>将空间一分为二。西南角有一道楼梯通往二层。<strong>弗拉维娅</strong>整日待在这里。</p>
+<p><strong>砧板</strong>：一个暗格（由下方的插销开启）存放着当日的收入（1d20 × 当日时辰）。每晚钱款会被取出，锁进楼上的书桌里。</p>
+<h4 id="二层"> <a href="#二层" class="anchor-heading" aria-labelledby="二层"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 二层 </h4>
+<p>八扇窗户（每个方位各两扇）挂着精致的窗帘。房间东北角占据着一张四柱床，一张精美的木桌安置在里武鲁斯的华丽画像下方。从西南角的楼梯进入。</p>
+<ul>
+<li><strong>窗外景色</strong>：</li>
+<li><strong>北面</strong>：吉娃的家，以及<strong>石之森</strong>的景致。</li>
+<li><strong>西面</strong>：填馅旅店，包括地下室的出口。</li>
+<li><strong>东面</strong>：东湖的景致，以及远处的白塔沼泽。</li>
+<li><strong>南面</strong>：镇广场，以及农耕小径的景致。</li>
+<li><strong>床</strong>：一张普通的床。床下有一把金柄小匕首（d6），价值 20gp。</li>
+<li><strong>书桌</strong>：一些文书与书写用具。含一个抽屉（上锁）。</li>
+<li>坐在书桌前，可以清楚地看到填馅旅店与肉铺之间的小巷，包括那里的地下室出口。</li>
+<li>弗拉维娅把抽屉钥匙挂在颈间的链子上。抽屉里有一本销售账簿和 870gp。账簿只写了一半，正如阿尔德拉失踪那晚弗拉维娅在书桌上发现它时的样子。</li>
+<li><strong>画作</strong>：一个类人生物（<strong>里武鲁斯</strong>）自水中升起。它身穿白色长袍，袍前刻有三道波浪线。弗拉维娅会说这是几个月前花大价钱买来的。价值 400gp。</li>
+</ul>
+<h3 id="吉娃的家"> <a href="#吉娃的家" class="anchor-heading" aria-labelledby="吉娃的家"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 吉娃的家 </h3>
+<p>镇北的一座单间棚屋。所用木料比镇上其他建筑更为陈旧、风化。<strong>门</strong>漆成亮紫色，门顶塞着干枯的植物。</p>
+<ul>
+<li><strong>门</strong>：最近刚漆过。吉娃相信它能驱邪避恶。</li>
+<li><strong>植物</strong>：干枯的乌头和其他草药，用以驱避狼人。</li>
+</ul>
+<h4 id="屋内"> <a href="#屋内" class="anchor-heading" aria-labelledby="屋内"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 屋内 </h4>
+<p>一座烧着火的木炉占据了西墙，北侧窗下塞着一张小床。厨房里，桌上摆着两只杯子和一瓶<strong>葡萄酒</strong>。</p>
+<ul>
+<li><strong>葡萄酒</strong>：非常陈年的佳酿（价值 50gp）。</li>
+<li>吉娃会说她摆出葡萄酒是“为了待客”。她也明确表示，冒险小队并非她所等之人。</li>
+<li>她会承认，她所等的人（詹迪）错过了上次的会面；他本应在近一周前离镇途中顺道来访。</li>
+</ul>
+<h2 id="农道"> <a href="#农道" class="anchor-heading" aria-labelledby="农道"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 农道 </h2>
+<p>一条干燥、踩踏得十分结实的小径，自地峡镇向南延伸，穿过<strong>驼峰岭</strong>，通往更远处的<strong>诸城</strong>。小径两旁散布着小农场和独立田庄。一条小岔路通向<strong>邓斯顿</strong>和<strong>东湖隘口</strong>。</p>
+<h2 id="邓斯顿"> <a href="#邓斯顿" class="anchor-heading" aria-labelledby="邓斯顿"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 邓斯顿 </h2>
+<p>一圈稀稀落落、彼此相隔甚远的破败房屋。这里原是渔村，后来东湖的水变酸了。如今只有穷困的渔夫和倒霉的农夫在此安家。通往<strong>东湖隘口</strong>。</p>
+<p><img src="/adventures/first-party/img/cas-1/Dunston.webp" alt="顿斯顿"></p>
+<h3 id="法夏的农场"> <a href="#法夏的农场" class="anchor-heading" aria-labelledby="法夏的农场"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 法夏的农场 </h3>
+<p>圆环西端矗立着一座破败衰朽的<strong>农舍</strong>。它一侧紧邻残破的畜栏，另一侧是<strong>荒芜的田地</strong>。</p>
+<ul>
+<li><strong>畜栏</strong>：三只<strong>绵羊</strong>在附近半塌的畜栏中啃食，饮水槽几乎见底。</li>
+<li><strong>田地</strong>：枯萎的庄稼与干涸的泥土。看来已数月无人打理。</li>
+</ul>
+<h4 id="农舍"> <a href="#农舍" class="anchor-heading" aria-labelledby="农舍"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 农舍 </h4>
+<p>一间单室陋屋，内有一只冰柜、一张发霉的床和一个小木炉。地面泥泞，铺满芦苇与杂草。</p>
+<ul>
+<li><strong>冰柜</strong>：空空如也，显然久未使用。</li>
+<li><strong>床</strong>：汗渍斑斑的床单上沾满长长的兽毛。</li>
+<li><strong>炉灶</strong>：灰烬下埋着一个小盒子。内有 130gp 和一枚价值 25gp 的潮生者吊坠。这枚吊坠曾属于阿尔德拉。</li>
+<li><strong>芦苇</strong>：法夏将阿尔德拉的尸体留在<strong>骸骨洼地</strong>后，从丘陵地带把它们带了回来。</li>
+</ul>
+<h4 id="废弃宅邸"> <a href="#废弃宅邸" class="anchor-heading" aria-labelledby="废弃宅邸"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 废弃宅邸 </h4>
+<p>圆环东南端的一座破败宅邸。半数屋顶已经塌陷，南墙本应所在之处搭着一块宽大的编织篷布。</p>
+<ul>
+<li><strong>内部</strong>：空无一物，没有任何家具。<strong>地板</strong>看上去崭新如初。</li>
+<li><strong>地板</strong>：法夏（在里夫协助下）雇工翻修了这座宅邸。地板几近完工，但西南角有一处未完工的区域仍可进入，仅容一人半身爬入。</li>
+<li>地板下藏着两个大麻袋。白天搬走它们既费时又会引来不少注意。这是法夏分得的什一税（每袋价值 200gp）。</li>
+</ul>
+<h2 id="老磨坊路"> <a href="#老磨坊路" class="anchor-heading" aria-labelledby="老磨坊路"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 老磨坊路 </h2>
+<p>一条连接<strong>地峡镇</strong>与<strong>石之森</strong>的短土路，很快就消失在林中。透过树木可以望见<strong>死磨坊</strong>，恰在林地边缘。若<strong>安娜弗拉纳克斯</strong><a href="#now">已经归来</a>，树林与磨坊都将消失，取而代之的是一个巨大的天坑。见“<strong><a href="#if-the-gate-has-opened">若异界之门已开启……</a></strong>”。</p>
+<h2 id="石之森"> <a href="#石之森" class="anchor-heading" aria-labelledby="石之森"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 石之森 </h2>
+<p>一片向北无尽延伸的森林，其广袤的疆域止于<strong>大理石海</strong>。数个世纪以来，森林的木材供养着诸城的需求，直到宝石与矿石的诱惑将它们贪得无厌的胃口引向南方。一条小溪从林地边界流出，位于东湖东北方，最终止于<strong>骸骨洼地</strong>。天黑后进入石之森、制造巨大响动，或偏离小径，都会触发一次荒野事件表投掷（见《玩家指南》第 78 页）。本区域将在本系列未来的冒险中详加探索。</p>
+<p>石之森中常见的树栖掠食者是夜猫，一种成群狩猎的夜行有袋类动物。它们发动攻击前唯一的警告，是头顶树枝传来的<strong>嗒—嗒—嗒</strong>声，那是它们在协调进攻，目标锁定行军序列中的最后一人。目标必须进行敏捷豁免，否则伤害直接作用于力量。尽管名为夜猫，它们在白天同样会攻击目标。</p>
+<h3 id="夜猫"> <a href="#夜猫" class="anchor-heading" aria-labelledby="夜猫"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 夜猫 </h3>
+<p>6 耐久度，9 力量，14 敏捷，5 意志，爪击（d6+d6）</p>
+<ul>
+<li>聪慧的夜行有袋类，栖居于森林与沼泽。成群狩猎。</li>
+<li><strong>致命伤害</strong>：夜猫在目标仍然活着时便开始啃咬（d4 点力量伤害）。</li>
+</ul>
+<p><img src="/adventures/first-party/img/cas-1/Stone%20Forest.webp" alt="石之森"></p>
+<h2 id="死磨坊"> <a href="#死磨坊" class="anchor-heading" aria-labelledby="死磨坊"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 死磨坊 </h2>
+<p>森林边缘有一座古老的磨坊，被疯长的树柱所遮蔽。由于树丛近乎恒久的黑暗，当地少年相信它闹鬼。（其实没有。）它半陷于<strong>地面</strong>之中，北侧伸出巨大的<strong>桨叶</strong>，悬在一条干涸的河床之上。从老磨坊路来的人会抵达建筑的南门，而每隔 30 秒便有一名<strong>男子</strong>打开南门。</p>
+<ul>
+<li><strong>地面</strong>：建筑正缓缓陷入地下，部分地面具有流沙的特性。</li>
+<li>南门并不安全。进行敏捷豁免以脱身。豁免失败会使受害者陷得更深（最多尝试 3 次）。</li>
+<li><strong>桨叶</strong>：从南侧几乎无法看清，唯有一片桨叶的尖端涂着明亮、未曾褪色的白漆。见（2）。</li>
+<li><strong>男子</strong>：时间循环的一部分。</li>
+<li>每隔 30 秒，磨坊的门便会打开，一名男子（詹迪）从中走出。他迅速回头张望，仿佛听见了什么。最后，他耸耸肩，再次转身，坠入流沙中身亡。他所听见的声音，其实是装置在上一次循环结束后重新充能的声音。</li>
+<li>循环可以被打破：要么救下<strong>詹迪</strong>，要么将奇物从石中取出并带离一小段距离。</li>
+</ul>
+<h3 id="1-内部"> <a href="#1-内部" class="anchor-heading" aria-labelledby="1-内部"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 内部 </h3>
+<p>一块巨大的<strong>磨石</strong>占据了房间的大部分空间，与某些金属<strong>机械</strong>相连。南墙边靠着一只小皮革<strong>挎包</strong>。这座建筑正在缓缓<strong>下沉</strong>。</p>
+<ul>
+<li><strong>磨石</strong>：仔细搜寻会在石下发现一件泛着微光的金属物件。</li>
+<li><a href="#echo-spark">回响火花</a>被困在循环之中，既因磨石的重量，也因詹迪的反复死亡。它的能量被不断恢复，又不断耗尽。</li>
+<li><strong>机械装置</strong>：转动磨石的木制杠杆已经腐朽，因此无法用此装置转动磨盘。</li>
+<li><strong>挎包</strong>：属于詹迪。内有一把匕首（d6）、一本<strong>笔记本</strong>、一份<strong>什一税记录</strong>、口粮（剩 2 次使用）、一支火把（剩 3 次使用）以及 23gp。</li>
+<li><strong>笔记本</strong>：记载着该地区的简史，以及若干对<strong>吉娃</strong>的采访片段。其中有一节题为“木材贸易史”。</li>
+<li><strong>什一税记录</strong>：这份副本与填馅旅店地下室中的另一份之间存在出入。</li>
+<li><strong>下沉</strong>：建筑南侧已有一半陷入地下。若同时有超过三人（包括詹迪）身处磨坊内，它便会完全沉入地底（进行敏捷豁免以逃脱或完成任何值得一提的事）。</li>
+</ul>
+<h3 id="2-水车"> <a href="#2-水车" class="anchor-heading" aria-labelledby="2-水车"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 水车 </h3>
+<p>一对结实的<strong>水车桨叶</strong>静止不动。河床完全干涸，满是<strong>枯叶</strong>和其他碎屑。</p>
+<ul>
+<li><strong>船桨</strong>：毫无腐朽迹象，漆色洁白如初绘之时。调查会发现两支桨上都刻有<strong>古怪铭文</strong>。</li>
+<li>手动推动船桨可带动内部的<strong>磨石</strong>转动，恰好足以从下方取出<strong>奇物</strong>。此过程至少需要两名壮劳力。</li>
+<li><strong>铭文</strong>：一段古语，唯有吉娃、詹迪或通晓古代文本之人方能解读。其上写道：“启动之法，逆时针旋转。”</li>
+<li><strong>落叶</strong>：在残骸与干燥腐殖质中半掩着一只保存完好的便携<strong>铁笼</strong>。</li>
+<li>这铁笼实为幽火灯，安娜弗拉纳克斯在其中困住了一缕幽火。它在此已逾一周，汲取着詹迪的诸多死亡。幽火已长得如此之大，铁笼几乎容不下它。与铁接触对幽火而言极为痛苦，因此它几乎时刻处于煎熬之中。它只求自由，以及复仇。若在安娜弗拉纳克斯归来前获释，它会径直飞向女巫的居所，在复仇的尾迹中留下一路火焰。</li>
+</ul>
+<h2 id="东湖隘口"> <a href="#东湖隘口" class="anchor-heading" aria-labelledby="东湖隘口"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 东湖隘口 </h2>
+<p>一条湖畔小径，灌木与湿草蔓生。沿<strong>东湖</strong>蜿蜒，穿过<strong>丘陵</strong>，再向西通往<strong>老磨坊路</strong>。</p>
+<h2 id="丘陵"> <a href="#丘陵" class="anchor-heading" aria-labelledby="丘陵"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 丘陵 </h2>
+<p>一片泥泞恶臭、雾气笼罩的沼泽，也是恐怖故事的常见来源（皆属虚构）。此地仅栖息着蛙、鱼与鸟。泥沼与恶臭之中沉积着大量尸体，既有动物，也有偏离小径者。徒步旅行的队伍<strong>增加一次疲乏</strong>。</p>
+<h2 id="白塔沼泽"> <a href="#白塔沼泽" class="anchor-heading" aria-labelledby="白塔沼泽"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 白塔沼泽 </h2>
+<p>丘陵以东的一片小树林。因其中被附近沼泽雾气笼罩的废弃白塔而得名。经由<strong>东湖隘口</strong>在通往<strong>老磨坊路</strong>的岔口进入。</p>
+<p><img src="/adventures/first-party/img/cas-1/White Tower Fens.webp" alt="白塔沼泽"></p>
+<h3 id="1-哨木"> <a href="#1-哨木" class="anchor-heading" aria-labelledby="1-哨木"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 1. 哨木 </h3>
+<p>一根几乎看不见的细线横跨小径，系于两树之间。若被碰断，它会发出只有动物能听见的高频声响。</p>
+<h3 id="2-陷坑术"> <a href="#2-陷坑术" class="anchor-heading" aria-labelledby="2-陷坑术"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 2. 陷坑术 </h3>
+<p>落叶与碎屑之下藏着一处小陷坑，坑底密布着削尖的木桩（d6 力量伤害）。</p>
+<h3 id="3-滚木陷阱"> <a href="#3-滚木陷阱" class="anchor-heading" aria-labelledby="3-滚木陷阱"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 3. 滚木陷阱 </h3>
+<p>一根小圆木横架在小溪之上，看似便于通行。一旦中央受力，圆木便会旋转，将受害者大声甩入下方溪中，溪水里满是<strong>刺苔</strong>。</p>
+<ul>
+<li><strong>刺苔</strong>：含有麻痹毒素。接触皮肤会使受害者陷入匮乏，其攻击受损，持续 1d4-1 小时。</li>
+</ul>
+<h3 id="白塔"> <a href="#白塔" class="anchor-heading" aria-labelledby="白塔"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 白塔 </h3>
+<p>一座高 40 英尺的残破塔楼，色白如雪。塔身一侧靠着一架粗木梯。塔的<strong>上部</strong>已完全缺失。</p>
+<h4 id="攀上木梯"> <a href="#攀上木梯" class="anchor-heading" aria-labelledby="攀上木梯"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 攀上木梯 </h4>
+<p>塔的<strong>底部</strong>笼罩在黑暗中，光滑的白墙在光线下<strong>闪闪发亮</strong>。内部没有任何植物生长。</p>
+<ul>
+<li><strong>底部</strong>：一种粘稠的琥珀色液体形成四英尺深的池子，填满了塔基。</li>
+<li>里面有什么东西<strong>闪闪发光</strong>。</li>
+<li><strong>液体</strong>：一种只伤及血肉的酸液（接触造成 4 点力量伤害）。放入其中的其他材料均不受损，若完全浸没则可完好保存。该物质极易燃，片刻间便燃烧殆尽，其中的物品毫发无伤。</li>
+<li><strong>闪光</strong>：一具远古时代的披甲骷髅，仍穿着保存完好的链甲。其腰带上挂着一袋古金币（82gp）和一条破损的丝绳（42 英尺）。</li>
+<li><strong>闪烁</strong>：塔底酸液留下的残渍。触之油腻，刺痛如荨麻。</li>
+</ul>
+<h3 id="骸骨洼地"> <a href="#骸骨洼地" class="anchor-heading" aria-labelledby="骸骨洼地"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 骸骨洼地 </h3>
+<p>小溪在距白塔沼泽南面仅几分钟步程处汇入一片小沼泽。<strong>腐臭</strong>气息弥漫此地。沼泽西端有一大<strong>土丘</strong>，由野草与腐屑堆成。此地不见于任何地图，唯有法夏与吉娃知晓。</p>
+<ul>
+<li><strong>气味</strong>：落入沼泽黏稠溶液中的动物很快便会溺毙，甚至饿死。此处尸体众多，腐烂程度各异。</li>
+<li>阿尔德拉的尸体也在其中，漂浮于芦苇之间。沼泽独特的化学环境将其完好保存。他的胸膛被撕开，心脏已被取走。</li>
+<li><strong>土丘</strong>：看起来是刚堆成的。拨开碎屑，露出一组通往沼泽下方地底的阶梯。这是<strong>真菌蜥蜴神庙</strong>的入口。楼梯间散发着泥土气息，略带花香。</li>
+<li>这座神庙实为一艘建筑般大小的甲虫形飞船。入口即其“头部”。</li>
+<li>阶梯井内壁齐眼高处装有两盏壁灯，各嵌有一枚菱形物件。物件可取下，价值不菲（150gp，笨重）。它们是灯具，由 <strong><a href="#t7-light-room">T7. 灯室</a></strong> 控制，目前处于关闭状态。</li>
+</ul>
+<h2 id="真菌蜥蜴神庙"> <a href="#真菌蜥蜴神庙" class="anchor-heading" aria-labelledby="真菌蜥蜴神庙"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 真菌蜥蜴神庙 </h2>
+<p><img src="/adventures/first-party/img/cas-1/Temple of the Fungal Lizards.webp" alt="真菌蜥蜴神庙"></p>
+<h3 id="通用信息"> <a href="#通用信息" class="anchor-heading" aria-labelledby="通用信息"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 通用信息 </h3>
+<ul>
+<li><strong>无光</strong>。每个房间的角落都伸出带有菱形物件的壁灯（见 <strong><a href="#t7-light-room">T7. 光室</a></strong>）。它们目前是熄灭的。</li>
+<li>墙壁与地板漆成蓝黑色，由一种异域合金制成。寻常武器无法将其凿裂或击碎，但火焰与爆炸粉末能起一定作用。</li>
+<li>两只<strong>苏拉鲁斯</strong>在神庙中游荡。它们会出现在《石冢》第二版<strong>地下城事件</strong>表的<strong>遭遇</strong>与<strong>环境</strong>结果中。</li>
+</ul>
+<h3 id="t1-前厅"> <a href="#t1-前厅" class="anchor-heading" aria-labelledby="t1-前厅"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T1. 前厅 </h3>
+<p><strong>东</strong>墙与<strong>西</strong>墙均凿有小龛，各设一座齐腰高的基座。除东南角仍空置外，其余各处均熔铸有小型<strong>雕像</strong>。</p>
+<ul>
+<li><strong>雕像</strong>：每座均可拧下，但会发出极大噪音。每座价值 50gp。</li>
+<li>西北雕像：一簇球状卵，由一只覆鳞的手托着。</li>
+<li>西南雕像：一簇真菌孢子，生长在一根盐状柱子上。</li>
+<li>东北雕像：一枚巨大的、布满脉络的孢子。其中隐约可见某种爬行动物的轮廓。</li>
+<li>东南雕像：一枚铜色圆环，是这里曾经存在之物的唯一残留。</li>
+</ul>
+<h3 id="t2-骨灰龛室"> <a href="#t2-骨灰龛室" class="anchor-heading" aria-labelledby="t2-骨灰龛室"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T2. 骨灰龛室 </h3>
+<p>一条狭窄的走廊将房间一分为二，两侧各嵌有壁龛。北侧堆放着成摞的<strong>纸</strong>制品，南侧则排列着一排排缺口的<strong>陶器</strong>。西南墙上，两道巨大的水平<strong>接缝</strong>平行排列，相距数尺。</p>
+<ul>
+<li><strong>纸</strong>：无用的枯萎卷轴与蛋壳碎片堆叠在一起。</li>
+<li>在残骸之下埋着一根鳞皮制成的小管。里面塞着一只<strong>噬水简</strong>。</li>
+<li><strong>陶器</strong>：古老的瓮成堆摆放。全部搜寻至少需要两回合。（角色可以分工进行。）</li>
+<li>第一排的一只罐中装着一具脆弱鸟形生物的干尸。它只对专门买家有价值（150gp）。</li>
+<li>后方有一只不起眼的瓮，牢牢固定在壁龛上。拧动其顶部可打开<strong>通往 <a href="#t4-maintenance-tunnel">T4</a> 的舱门</strong>，但会发出极大的噪音。（在地城事件表上投掷。）</li>
+<li><strong>接缝</strong>：一道通往 <strong><a href="#t4-maintenance-tunnel">T4</a></strong> 的舱门。接缝太窄，撬棍或刀刃都无法插入，且视野内没有明显的把手、按钮或拉杆。</li>
+</ul>
+<h4 id="噬水简"> <a href="#噬水简" class="anchor-heading" aria-labelledby="噬水简"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 噬水简 </h4>
+<ul>
+<li>一个圆柱形物体，最多可吸收一整车的水（约 1000 加仑）。1 充能。</li>
+<li><strong>充能</strong>：置于任何形式的干燥环境中一个月零一天。</li>
+</ul>
+<h3 id="t3-繁育室"> <a href="#t3-繁育室" class="anchor-heading" aria-labelledby="t3-繁育室"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T3. 繁育室 </h3>
+<p>巨大的<strong>真菌</strong>从散落在地板上的三个囊中萌发。除一个外其余都已破裂，留下巨大的<strong>孔洞</strong>。第四个<strong>结节</strong>完好无损。</p>
+<ul>
+<li><strong>真菌</strong>：苏拉鲁的胚胎室。有学识者会注意到，它们似乎已在数周前破裂。</li>
+<li><strong>结节</strong>：体积是其他结节的两倍。它搏动着，散发出微弱的热量。</li>
+<li>内含一只发育完全的<strong>苏拉鲁</strong>，随时准备孵化。若附近发出巨响，或在副本事件表上进行遭遇投掷，囊状物便会爆开。若被唤醒，它会攻击视野内的任何生物，因为幼体常会吃掉未孵化的同胞。</li>
+</ul>
+<h3 id="t4-维护隧道"> <a href="#t4-维护隧道" class="anchor-heading" aria-labelledby="t4-维护隧道"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T4. 维护隧道 </h3>
+<p>连接 <strong><a href="#t2-columbarium">T2</a></strong> 与 <strong><a href="#t6-waste-disposal">T6</a></strong>、<strong><a href="#t7-light-room">T7</a></strong> 的灰色荒芜走廊。每条走廊的尽头都伸出 U 形铁杆。扭动铁杆，即可打开通往各处的舱门。在中央走廊，一块长<strong>布</strong>被碎石覆盖。</p>
+<ul>
+<li><strong>布料</strong>：残骸中有一具保存完好的高大鸟形类人生物骸骨，头戴一顶红色小冠。它的喉咙被撕开，身上裹着<strong><a href="#moon-cloth">月布</a></strong>。它携带着一把小巧的<strong><a href="#curved-dagger-d6">弯匕首（d6）</a></strong>，上面镶有一颗红宝石。</li>
+</ul>
+<h3 id="t5-符文大厅"> <a href="#t5-符文大厅" class="anchor-heading" aria-labelledby="t5-符文大厅"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T5. 符文大厅 </h3>
+<p>东墙布满繁复的<strong>雕刻</strong>。</p>
+<ul>
+<li><strong>雕刻</strong>（自上而下依次为）：</li>
+<li>人形身影站在塔上，指向一个从天而降的物体。那物体看起来像一只巨大的甲虫。</li>
+<li>戴着巨大头饰的高大 winged 身影从“甲虫”前部的一个洞中涌出。紧随其后的是一对蜷伏的蜥蜴状生物。</li>
+<li>蜥蜴状生物撕碎了旁观的人形身影，并淹没了高塔。</li>
+<li>winged 身影立于一群跪伏的人形身影之上，它们的蜥蜴“宠物”侍立一旁。</li>
+</ul>
+<h3 id="t6-废物处理区"> <a href="#t6-废物处理区" class="anchor-heading" aria-labelledby="t6-废物处理区"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T6. 废物处理区 </h3>
+<p>这间方形房间的中央是一口齐腰高的方形<strong>井</strong>。南墙伸出三个<strong>喷嘴</strong>，四处不见任何控制装置。每个喷嘴下方都装有<strong>排水口</strong>与格栅。西墙上，两道大型水平<strong>接缝</strong>平行排列，相距数尺。</p>
+<ul>
+<li><strong>水井</strong>：深达数百英尺。光源照出井底水面上漂浮的古老废弃物。</li>
+<li><strong>喷嘴</strong>：自动淋浴装置，一旦其排水口承重便喷出滚烫热水。角落灯台发出的一声鸣响是唯一的预警。</li>
+<li><strong>排水口</strong>：拉起<strong>西南</strong>角的格栅会触发<strong>西</strong>墙上的暗门，开启一道通往 <strong><a href="#t4-maintenance-tunnel">T4</a></strong> 的<strong>密门</strong>。</li>
+<li><strong>接缝</strong>：一道通往 <strong><a href="#t4-maintenance-tunnel">T4</a></strong> 的暗门。与 <strong><a href="#t2-columbarium">T2</a></strong> 和 <strong><a href="#t7-light-room">T7</a></strong> 中的同类接缝一样，缝隙过窄，撬棍或刀刃无法插入，且不见任何明显的把手、按钮或拉杆。</li>
+</ul>
+<h3 id="t7-光明室"> <a href="#t7-光明室" class="anchor-heading" aria-labelledby="t7-光明室"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T7. 光明室 </h3>
+<p>这间房间<strong>气味</strong>如臭氧。东侧出口处，墙上齐肩高处装有一块小<strong>面板</strong>。<strong>北</strong>墙内嵌着一块菱形<strong>控制板</strong>。西墙上，两道大型水平<strong>接缝</strong>平行排列，相距数尺。从此房间的布局可清楚望见 <strong><a href="#t8-preparation-room">T8</a></strong> 以及 <strong><a href="#t9-chamber-of-worship">T9</a></strong> 中滋生的菌类。</p>
+<ul>
+<li><strong>气味</strong>：<strong><a href="#t7-light-room">T7</a></strong> 与 <strong><a href="#t8-preparation-room">T8</a></strong> 之间有一道隐形力场。接触时只会造成轻微电击，但任何常规手段都无法穿透。</li>
+<li><strong>面板</strong>：控制 <strong><a href="#t7-light-room">T7</a></strong> 与 <strong><a href="#t8-preparation-room">T8</a></strong> 之间的力场。除断开控制板外，别无他法将其关闭。</li>
+<li><strong>控制板</strong>：板上的旋钮控制各房间的灯台。</li>
+<li>若调至极亮，<strong>每个房间</strong>的菱形灯泡将在<strong>一个地城周期</strong>后爆裂（对附近者造成 d4 力量伤害）。每个灯台发出三声急促鸣响是唯一的预警。此后所有附近的<strong>苏拉鲁斯</strong>会立刻直奔 T7。</li>
+<li>可以拆下，但所有壁灯台以及<strong>力场</strong>将永久失效。这块控制板对金匠或类似行当的人极有价值（500gp）。</li>
+<li>控制板下方的小开关可激活<strong>西</strong>墙上一道<strong>通往 <a href="#t4-maintenance-tunnel">T4</a> 的密门</strong>。</li>
+<li><strong>接缝</strong>：一道通往 <strong><a href="#t4-maintenance-tunnel">T4</a></strong> 的暗门。与 <strong>T2</strong> 和 <strong>T4</strong> 中的同类接缝一样，缝隙过窄，撬棍或刀刃无法插入，且不见任何明显的把手、按钮或拉杆。</li>
+</ul>
+<h3 id="t8-准备室"> <a href="#t8-准备室" class="anchor-heading" aria-labelledby="t8-准备室"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T8. 准备室 </h3>
+<p>此房间<strong>气味</strong>微带臭氧味。室内空无一物，唯有地板上一道格栅与天花板上一只巨大的<strong>喷嘴</strong>。此房间的布局可清晰望见<strong><a href="#t7-light-room">T7</a></strong>与<strong><a href="#t9-chamber-of-worship">T9</a></strong>中的真菌生长物。</p>
+<ul>
+<li><strong>气味</strong>：在<strong><a href="#t7-light-room">T7</a></strong>与<strong><a href="#t8-preparation-room">T8</a></strong>之间的走廊里有一道隐形力场。接触时只会造成轻微电击，但任何常规手段都无法穿透。只能在<strong>T7</strong>中将其关闭。</li>
+<li><strong>喷嘴</strong>：当格栅上承受任何重量时自动启动。喷出大量过热水（造成 3 点力量伤害）。角落壁灯发出的一声鸣响是唯一的预警。</li>
+</ul>
+<h3 id="t9-礼拜室"> <a href="#t9-礼拜室" class="anchor-heading" aria-labelledby="t9-礼拜室"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T9. 礼拜室 </h3>
+<p>房间弥漫着屠宰场的气味，地板上散布着<strong>血迹与内脏</strong>的条纹。<strong>西南</strong>角生长着一座巨大的<strong>真菌腔</strong>。此处有两只<strong>苏拉鲁斯</strong>。</p>
+<ul>
+<li><strong>残骸</strong>：法夏此前所有受害者（阿尔德拉除外）的遗骸都在此处。每具尸体都缺少心脏，胸口深深的创口表明了这一点。视日期而定（见第 3 页），可能还有一名潜在的受害者仍然活着，被捆绑着，昏迷不醒。</li>
+<li><strong>苏拉鲁斯</strong>：正在睡眠、进食，并将大块血肉堆放在<strong>真菌生长物</strong>附近。若其中一只被杀，其余会试图划开囊袋以唤醒<strong>统帅</strong>。</li>
+<li><strong>增生</strong>：一只<strong>苏拉鲁统领</strong>。通往<strong><a href="#t8-preparation-room">T8</a></strong>的<strong>西侧</strong>出口被增生完全堵死。</li>
+</ul>
+<h4 id="苏拉鲁"> <a href="#苏拉鲁" class="anchor-heading" aria-labelledby="苏拉鲁"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 苏拉鲁 </h4>
+<p>6 耐久度，1 护甲，14 力量，12 敏捷，5 意志，爪击（d6+d6）或啃咬（d8）</p>
+<ul>
+<li>双足爬行类生物，由它们传播并培育的大型真菌生长物中诞生。即便在完全黑暗中也有完美视力，且对<strong>统帅</strong>极为忠诚。</li>
+<li>若统领死亡，它们总会逃跑，以准备新的繁殖囊体。</li>
+</ul>
+<h4 id="苏拉鲁统领"> <a href="#苏拉鲁统领" class="anchor-heading" aria-labelledby="苏拉鲁统领"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 苏拉鲁统领 </h4>
+<p>10 耐久度，1 护甲，16 力量，12 敏捷，11 意志，爪击（d8+d8）或毒液啃咬（d6，群攻）</p>
+<ul>
+<li>统治着一群从属的<strong>苏拉鲁</strong>，它们会为保护囊体而战至死。</li>
+<li><strong>致命伤害</strong>：身体某部位被毒酸溶解，目标失去 1 点护甲。</li>
+</ul>
+<h3 id="t10a-审讯室门"> <a href="#t10a-审讯室门" class="anchor-heading" aria-labelledby="t10a-审讯室门"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T10a. 审讯室门 </h3>
+<p>一条短廊将 <strong><a href="#t9-chamber-of-worship">T9</a></strong> 与一扇巨大的金属门相连。门右侧有一道钩状裂口，距地面六尺处嵌有一扇小<strong>窗</strong>。门旁有一个金属<strong>把手</strong>（位于左侧，正对门）。</p>
+<ul>
+<li><strong>门</strong>：通常只有将 <strong><a href="#t4-maintenance-tunnel">T4</a></strong> 中的<strong>弯匕首</strong>插入裂口才能打开。</li>
+<li><strong>窗</strong>：可窥见室内全部陈设。玻璃厚重但可击碎。</li>
+<li><strong>把手</strong>：拉开一个抽屉，形似投信口。上面沾满滑腻的血。</li>
+</ul>
+<h3 id="t10b-审讯室内部"> <a href="#t10b-审讯室内部" class="anchor-heading" aria-labelledby="t10b-审讯室内部"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> T10b. 审讯室（内部） </h3>
+<p>门旁（右侧，面向大厅）有一道小槽，其下沾有血迹与<strong>内脏</strong>。房间中央的天花板上垂下两条锁链，正对着地板上凸出的一块深色<strong>石块</strong>。若<strong>瓦克</strong>尚未<a href="#vuk">恢复完整形态</a>，房中会有一团缓缓盘旋的<strong>灰烬之云</strong>。</p>
+<ul>
+<li><strong>内脏</strong>：瓦克受害者的心脏。属于法夏的受害者。参见<a href="#vuk">瓦克</a>以确定此处有多少颗。（至少应有一颗。）经 <strong><a href="#t10a-interrogation-room-door">T10a</a></strong> 的抽屉投入。若室外的抽屉打开，此抽屉便会关闭。</li>
+<li><strong>石块</strong>：一侧可见细小裂缝。砸上几分钟便可轻易破开。内有一颗巨大的蓝色<strong>记忆棱晶</strong>（<em>笨重</em>，价值 1000gp）。</li>
+<li><strong>云</strong>：<strong>瓦克</strong>，如今是一具<strong>灰烬幽影</strong>。她腐烂的血肉接触<strong>记忆棱晶</strong>，因而被唤起为不死者。在吞噬<strong>三颗人心</strong>之前，她无法离开此室。</li>
+</ul>
+<h3 id="瓦克"> <a href="#瓦克" class="anchor-heading" aria-labelledby="瓦克"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 瓦克 </h3>
+<p><img src="/adventures/first-party/img/cas-1/Vuk.webp" alt="瓦克"></p>
+<p>一位前女王，千年前其文明走向终结时被同族所杀。她受诅咒缠身于殒命之室，如今意图再度统治这片土地。恢复完整形态时，她是一位七尺高的巫妖女王，面容似鸟，头戴华丽的黄色冠饰。</p>
+<ul>
+<li>在吞噬<strong>三颗心脏</strong>且 <strong><a href="#t10a-interrogation-room-door">T10a</a></strong> 的门被打开之前，她无法恢复完整形态。冒险开始时，她已吞噬了阿尔德拉的心脏，仅剩两颗。在此之前，她被困于 <strong><a href="#t10b-interrogation-room-interior">T10b</a></strong>。若队伍在她变形后 24 小时内抵达，她已挣脱囚牢，可在 <strong><a href="#t9-chamber-of-worship">T9</a></strong> 找到她。</li>
+<li>她对寻常攻击免疫，唯有将其遗骸沉入水中，或摧毁那将她束缚于此界的记忆牢狱，方能将其彻底消灭。若她<strong>重生</strong>，则仅后者足以奏效。</li>
+<li><strong>窒息擒抱</strong>：作为灰烬魅影，她将目标完全包裹，如操纵傀儡般控制其躯体一个动作，随后将麻痹的身躯抛落在地（d4 力量伤害）。若灰烬无法被排出，目标将窒息而死（进行力量豁免）。</li>
+</ul>
+<h4 id="记忆棱镜"> <a href="#记忆棱镜" class="anchor-heading" aria-labelledby="记忆棱镜"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 记忆棱镜 </h4>
+<p>以分钟为单位吸收一个人生命最后时刻的记忆。暴露时间越长，恢复的记忆越多。若有他人在其附近死亡，其记忆将取代先前储存的记忆。直接接触棱镜会将储存的记忆直接重放至接触者的意识中，仿佛亲身经历一般。</p>
+<h4 id="当前记忆"> <a href="#当前记忆" class="anchor-heading" aria-labelledby="当前记忆"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 当前记忆 </h4>
+<p>起初只有黑暗；随后有人取下观察者脸上的头罩，显然他们身处<strong>T10</strong>，双臂被天花板上垂下的同两条锁链吊起。两个戴着长有巨大红色冠饰的怪诞面具的人形生物，正用严厉而难懂的语言审问他们。</p>
+<p>最后，一名审问者指向角落里一只蜥蜴状人形生物，后者随即以利爪袭击观察者的腹部。一道亮光闪过，他们的腹部被剖开。</p>
+<p>突然，房门打开，另一个人走进房间。又是一阵含混不清的话语，随后两名审问者和蜥蜴人一同冲出房间，重重关上门。观看者低头看向腹部的伤口，随后一切陷入黑暗。</p>
+<p><img src="/adventures/first-party/img/cas-1/Stoneblock.webp" alt="石块"></p>
+<h2 id="冒险结局"> <a href="#冒险结局" class="anchor-heading" aria-labelledby="冒险结局"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 冒险结局 </h2>
+<h3 id="若瓦克重生"> <a href="#若瓦克重生" class="anchor-heading" aria-labelledby="若瓦克重生"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 若瓦克重生…… </h3>
+<p>若瓦克重生，她将迅速着手统治该地区。数月之内，<strong>地峡镇</strong>将人去楼空，留下的人要么已死，要么已加入她的阵营。以法夏为副手，她将缓慢征服双湖地区，自封为<strong>重生女王</strong>。她的子嗣逐渐统治乡野，直至诸城宣布这片土地永久不宜居住。随着边境守卫在边界集结，女王安守新领地的希望日渐渺茫……</p>
+<h3 id="若异界之门已开启"> <a href="#若异界之门已开启" class="anchor-heading" aria-labelledby="若异界之门已开启"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 若异界之门已开启…… </h3>
+<p>除非被阻止，<strong>安娜弗拉纳克斯</strong>将在冒险开始两天后开启一道通往<strong>根域</strong>的异界之门。死磨坊及周围林地将被一个巨大的天坑取代，只能借助攀爬工具进入。数周之内，这些土地上千年来未曾出现的生物将从深处涌出，永久改变其地貌。由于邻近一处聚落，死亡人数将十分惨重。随着其影响的消息传开，诸城将调集最强大的力量，在森林周围建立防线。地峡镇将幸存下来，但仅存其名——它将成为新边疆上的军事前哨与最后避难所。</p>
+<h3 id="若瓦克重生且异界之门已开启"> <a href="#若瓦克重生且异界之门已开启" class="anchor-heading" aria-labelledby="若瓦克重生且异界之门已开启"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 若瓦克重生且异界之门已开启…… </h3>
+<p>异界之门开启数周后，瓦克率军进入根域，搜寻她那个时代失落的器物。世界各地的异界之门开始缓缓关闭，并有传言称，一支比有史以来任何军队都更庞大的军队正在集结兵力，准备开战……</p>
+<h3 id="若瓦克被阻止而异界之门未被开启"> <a href="#若瓦克被阻止而异界之门未被开启" class="anchor-heading" aria-labelledby="若瓦克被阻止而异界之门未被开启"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 若瓦克被阻止，而异界之门未被开启…… </h3>
+<p>此后数周，地峡镇重归平静。随着遍布诸城的传言称此地遍布古老神庙与奇异器物，这座小村迎来了堪比昔日荣光的经济复苏。尽管当地人（或许吉娃除外）对此结果感到满意，冒险者、学者与探险家很快便开始觊觎石之森，揣测这片森林中究竟藏着何种秘密……</p>
+<h2 id="奇物与物品"> <a href="#奇物与物品" class="anchor-heading" aria-labelledby="奇物与物品"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 奇物与物品 </h2>
+<h3 id="瓦克之眼"> <a href="#瓦克之眼" class="anchor-heading" aria-labelledby="瓦克之眼"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 瓦克之眼 </h3>
+<p>一枚沉重的铁质徽章，系于一条精致的银链之上。任何佩戴此护符者，苏拉鲁皆不会攻击。</p>
+<ul>
+<li>每次戴上护符时，均需进行意志豁免。失败则佩戴者每次都会变得更加冷酷、更加残忍、更加像爬行类。</li>
+<li>佩戴时，力量与敏捷各提升 1d4 点。此外，佩戴者的嗅觉与视觉均得到强化。</li>
+<li>每月一次，佩戴者可通过蜕皮完全恢复力量。</li>
+<li>若护符被摘下超过数日，其效果便会消退。</li>
+</ul>
+<h3 id="制箭师之怒"> <a href="#制箭师之怒" class="anchor-heading" aria-labelledby="制箭师之怒"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 制箭师之怒 </h3>
+<p>一根沉重的钨条，其上刻有符号。携带此物时，对钨条三十英尺内的目标发动单次远程攻击时，该攻击受损。笨重，三充能。</p>
+<ul>
+<li><strong>充能</strong>：将钨条浸入熔铅炉中，再行冷却。</li>
+</ul>
+<h3 id="回声火花"> <a href="#回声火花" class="anchor-heading" aria-labelledby="回声火花"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 回声火花 </h3>
+<p>一件奇物，仅当有人在其附近死亡时激活，将死者拉回约死亡前 30 秒。死者不保留任何关于死亡的记忆，除此之外别无变化。一充能。</p>
+<ul>
+<li><strong>充能</strong>：以大象的重量碾压。</li>
+</ul>
+<h3 id="月布"> <a href="#月布" class="anchor-heading" aria-labelledby="月布"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 月布 </h3>
+<p>极为保暖且高度耐候。在月光下持有时，可编织成任意形状，每小时增长一英尺。微末。</p>
+<h3 id="弯匕首d6"> <a href="#弯匕首d6" class="anchor-heading" aria-labelledby="弯匕首d6"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 弯匕首（d6） </h3>
+<p>监工用以控制他们不听话的“宠物”。对<strong>苏拉鲁统领</strong>使用时，其伤害为强化。可作为开启 <strong>T10a</strong> 处大门的钥匙。</p>
+<h2 id="瓦尔德传说"> <a href="#瓦尔德传说" class="anchor-heading" aria-labelledby="瓦尔德传说"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 瓦尔德传说 </h2>
+<h3 id="根域"> <a href="#根域" class="anchor-heading" aria-labelledby="根域"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 根域 </h3>
+<p>幽深地穴如迷宫般蜿蜒，深入地下不可测度，将诸城的下水道与遥远废墟相连。通往“根须”的入口（称为<strong>门</strong>）散布于各地，通常有守卫看护或被巧妙隐藏。民间传说称，有旅人消失于深处，数十年后方才现身，却声称只过了几个时辰。另有人报告说，仅数日便行过遥远路途。</p>
+<h3 id="潮生者-1"> <a href="#潮生者-1" class="anchor-heading" aria-labelledby="潮生者-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 潮生者 </h3>
+<p>一个崇拜里武鲁斯——江河湖泊之神——的宗教宗派。即便非信徒也熟知其入会仪式：一场溺礼，偶尔会致参与者丧命。幸存者被称为“潮生者”，并取一个与水相关的新名号（如鲤鱼、芦苇、牛轭等）。唯有神职人员须参与此仪式，近年来他们在乡民中的信众渐增，尤以水域附近的村落为甚。</p>
+<h3 id="封底"> <a href="#封底" class="anchor-heading" aria-labelledby="封底"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 封底 </h3>
+<p>《双湖纷扰》是《石冢》第二版冒险游戏系列独立冒险中的第一部。冒险围绕两个核心谜团供队伍解开。它包括各种 NPC 和反派，以及多个可供探索的地点。本冒险适合新老玩家，尤其适合那些仍在试图在荒野且潜在危险的世界中找到自己位置的角色。尽管该地区及其居民属于更广阔的<strong>瓦尔德</strong>设定，但它们可以轻松融入你选择的任何低奇幻设定。</p>
+<p>《双湖纷扰》是 Yochai Gal 所著《石冢》冒险系列的第一部，为《石冢》第二版而写。</p>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 官方网店：<a href="https://store.cairnrpg.com" target="_blank" rel="noopener noreferrer">store.cairnrpg.com</a> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>

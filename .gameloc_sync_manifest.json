@@ -3,7 +3,7 @@
   "managed_by": "Web Sync Pipeline",
   "project": "cairn_2e",
   "source_build": "v1.0.0+4e440bc.20261102_211554_146501",
-  "sync_timestamp": "2026-11-04T14:22:06.280865+00:00",
+  "sync_timestamp": "2026-11-04T15:03:47.691372+00:00",
   "managed_files": {
     "players-guide/character-creation.md": {
       "sha256": "1513e82644f5971312b922011151a77453c1e790de95767282c8b195d8067252",
@@ -132,142 +132,154 @@
   },
   "managed_assets": {
     "assets/js/search-data.json": {
-      "sha256": "231d492ffc06bdcdaac914516268012767a433c28edbecfae5eae48a27ba3f22",
-      "bytes": 411425
+      "sha256": "e5d776eae8f52dd8e21b7a70145562b89fa39efecc05bdd649ec4dfd92f9d885",
+      "bytes": 478288
     }
   },
   "managed_html": {
+    "adventures/index.html": {
+      "sha256": "02f00ef6cc590e159f200409a2e858b88c2f5a6d4d595b264b3d111c55eaafae",
+      "bytes": 12228
+    },
     "index.html": {
-      "sha256": "a0a23cbc2df8ad486a96eba23a2639bf4456451596d5d52e5b7bdd026bbe33a6",
-      "bytes": 13854
+      "sha256": "3c171bdbcdcc6f6cd641ccadff6144c539c25bb0470ca2c0b16d20d6da9ed3c6",
+      "bytes": 14658
     },
     "players-guide/index.html": {
-      "sha256": "d788a350611ad1457c7fc098afeedbbedd9bfb484bd6d1463b7bf54debc35949",
-      "bytes": 11485
+      "sha256": "e7adf3f1f97138f2bd78390f2d646b2a5ce431ec704693c9a30913657b7dcee3",
+      "bytes": 12269
     },
     "second-edition/index.html": {
-      "sha256": "005897101b807976681aafc3e53aa473f3b411ae90bec99f22b3b914cd606563",
-      "bytes": 11426
+      "sha256": "3b62c87d04aabe46ebdecf559546e1fe3e0c1e16da5da992d59a656e89d536df",
+      "bytes": 12210
     },
     "wardens-guide/index.html": {
-      "sha256": "3deb95a94fff03782e54cae74febed4d38b3fffd0119fc139bd34ca4364a487d",
-      "bytes": 14056
+      "sha256": "ec4497720a37267a245250acc5c4066c0588de3071226afbc49a6371b435c40e",
+      "bytes": 14840
+    },
+    "adventures/first-party/index.html": {
+      "sha256": "dfc1653d4b188521dd2c6aef94bd6933d7666d66c9e9a937434c096dedf396bf",
+      "bytes": 12962
+    },
+    "adventures/first-party/cas-1/index.html": {
+      "sha256": "d46be554faf5d8ffc464d147045738293cc298e10a1d0814165665692b5ec758",
+      "bytes": 87172
     },
     "players-guide/character-creation/index.html": {
-      "sha256": "4383f51cbd12ec8db1a41c6afbd29bf8efe760b5ebba69942d4b39775830a44b",
-      "bytes": 43356
+      "sha256": "820b7693ddf923548656361fb5e399bc1fd7f5eb6f0eadbc87eaae55f9e946eb",
+      "bytes": 44140
     },
     "players-guide/core-rules/index.html": {
-      "sha256": "38fbd7a4763c958dd8c4ce4e6609270076efe840f0fd9258340efd846e7a4d2a",
-      "bytes": 30376
+      "sha256": "41464e0ffdc3db9081180ae3cf6549d6ca3ecf2f7d07fb9642b65c86627e6295",
+      "bytes": 31160
     },
     "players-guide/marketplace/index.html": {
-      "sha256": "c13525447f23734672f482be3468d04858a848b79fd4f33a2ba0f98775e96d47",
-      "bytes": 22639
+      "sha256": "31c6ea5c00170a4c778761118b613e764cd9f2f886b188b57b6a74ec5a106941",
+      "bytes": 23423
     },
     "players-guide/overview-and-principles/index.html": {
-      "sha256": "79c7ad96667670071a4dbda45d15e7c7600c5017ec4eec1830c94bc233aa44a0",
-      "bytes": 21487
+      "sha256": "d9ecb7d44158a78290af67c7671ff5001e9b64e10115e72d055f8cffa358dcd1",
+      "bytes": 22271
     },
     "players-guide/procedures/index.html": {
-      "sha256": "549d42c9650ac6975e690c8826d68f3a580d1fa9276cd03718aded9ea5448b03",
-      "bytes": 47865
+      "sha256": "fdd780b98cf7af4461d95eb68ae9f8fc1e93b60b6af1f07fa4064c136914587f",
+      "bytes": 48649
     },
     "players-guide/vald/index.html": {
-      "sha256": "fb39eb1eb9f4577f48fa485ce084c1237da1d5c350e458b33587f31a2f09808c",
-      "bytes": 15491
+      "sha256": "f35b3a4620f158d8a0d2ea78bdff733b4f5660ffc3a465edbca3fce2b25cf2d7",
+      "bytes": 16275
     },
     "wardens-guide/about-the-example-party/index.html": {
-      "sha256": "9571137f33eecb56834b023df58bc87d143c4c930371bd2e212595cf764feff3",
-      "bytes": 11927
+      "sha256": "3860b576ef7a4e5abbd3c34235264656216c608521044acb81f4f9500e2f3c6d",
+      "bytes": 12711
     },
     "wardens-guide/bestiary/index.html": {
-      "sha256": "95b839eef3a75d3f343a0fa60dc5171b345abb1dd05084a82c7683dc0347a3d7",
-      "bytes": 61424
+      "sha256": "5f57585ac0eaf18d570a2568d017eda68e9e48f58859ea8f998bec96400de2c2",
+      "bytes": 62208
     },
     "wardens-guide/bibliography/index.html": {
-      "sha256": "98e3bec89be768f27b6e12b73e3db848edcc91d86e135c1aab548ef08cc9c4bf",
-      "bytes": 21729
+      "sha256": "2fad320c1057e3d023f7f690783be82163cb33abd1fdca5a6041b5a49ac7085f",
+      "bytes": 22513
     },
     "wardens-guide/bonds-and-omens/index.html": {
-      "sha256": "5eecfef17ee5b8f874a4b0da08b8fbaa43ed20d2e04d9f872cf2651f56027e9e",
-      "bytes": 13794
+      "sha256": "1122fdd5ffd7a3620ec220ae15466b9090c696b409afca385aa22c3d260ddd75",
+      "bytes": 14578
     },
     "wardens-guide/combat/index.html": {
-      "sha256": "1b1029d3f3eb38350e0656b8f688442732a6615ad496c70538f499b2fb6f8b64",
-      "bytes": 20418
+      "sha256": "fb30f47368ee9f288e6ad4f84f10cc5b7f7ba10f22bc4bb9d4ea5d5c62009aed",
+      "bytes": 21202
     },
     "wardens-guide/creating-backgrounds/index.html": {
-      "sha256": "7da285a3a8770e5676d38081dffa296c58b2db2e82d1113966731c39bc16fb65",
-      "bytes": 14814
+      "sha256": "4d267c8f2cb474748545f288ef2f3c06fd82c679907995613eaf30c12d51634d",
+      "bytes": 15598
     },
     "wardens-guide/creating-monsters/index.html": {
-      "sha256": "3706258b57a5f7ce478b8674fbc543c070467a94dcc87f897d99aba7f1506a48",
-      "bytes": 41624
+      "sha256": "11a69461ff2fdb106b64d7cd579e1d0e43bfc86488c78edb7d5d6cd53887b902",
+      "bytes": 42408
     },
     "wardens-guide/detachments/index.html": {
-      "sha256": "0340fad7cacea4a5925937351eb2f85fc18abd8e33ec2b8e9c76642576266fbb",
-      "bytes": 16812
+      "sha256": "78c552c789ba81e92b4c9865593a4ad36167db102e2b83b8682e31dbfcf32b9d",
+      "bytes": 17596
     },
     "wardens-guide/dungeon-exploration/index.html": {
-      "sha256": "db976811ecffb28fa23d27faefa0bf05404161566ce616564bbd8fd74271fe0f",
-      "bytes": 20774
+      "sha256": "0a805d6530e740a4bce4c3607a570ad992277db577ac2321bbe5ae85639cabcb",
+      "bytes": 21558
     },
     "wardens-guide/dungeon-seeds/index.html": {
-      "sha256": "33023158c374163113bda128e18e4af8dac8fcf91c4b704da0dbfe00ec86ad6b",
-      "bytes": 75414
+      "sha256": "bbf30078f2e2de5908f3c035e16ea4728a84bd83c00c31cda27958150379c777",
+      "bytes": 76138
     },
     "wardens-guide/forest-seeds/index.html": {
-      "sha256": "49c8f7b65c4abc13f7c829da9517e0ecfb4f084b10a0dbda14484c008022fcf4",
-      "bytes": 76432
+      "sha256": "bcdefeed862cf87570b003860087759c4696bfa7badd45a83b17d9fabe9ba643",
+      "bytes": 77154
     },
     "wardens-guide/growth/index.html": {
-      "sha256": "487fd3444d69d9c6017e60dbe6672d8aa89af182d8e2a501a2efd3b4f487cd8f",
-      "bytes": 29541
+      "sha256": "fcb6ecd62ddd1e24a6bba066d1f8a8567304c847905f4c6735b9f938ff80f784",
+      "bytes": 30325
     },
     "wardens-guide/knowledge-and-perception/index.html": {
-      "sha256": "86da2b04b120cc630a100ad660403756aa00a8864f3a52c2987f89dfaef18b39",
-      "bytes": 16623
+      "sha256": "8252315b7c94e816b3fe1340b255570aa6e369db6e9f6dd71f4a2170c585eb9f",
+      "bytes": 17407
     },
     "wardens-guide/naming-procedures/index.html": {
-      "sha256": "5516298ed597cbbfc13ba85ca6afae69296b9b7a4879e11634340aef1ba1aa9e",
-      "bytes": 66080
+      "sha256": "03e6b76450c8cfa3180213309055313d5c9e3460f65db5144439e046a7e443df",
+      "bytes": 66864
     },
     "wardens-guide/npc-tables/index.html": {
-      "sha256": "ea3bf3bf27ca6303a044a7d0e1fa407607fb6556980784db78684265ef67f213",
-      "bytes": 31497
+      "sha256": "8cf324dfe757e7851c3e4652b07db6d24a97b28d44c285299afa323f3b1bdcf6",
+      "bytes": 32281
     },
     "wardens-guide/pointcrawls/index.html": {
-      "sha256": "b36ef0aff0e38c656b1538f4706f604102ee8c36bc9ce610b235e1d1b6c975d5",
-      "bytes": 14675
+      "sha256": "fa4ed950ef92d4cccfbca8e2c59ba4ebc87ce265c6e2fe518f88da7e456e4704",
+      "bytes": 15392
     },
     "wardens-guide/reliquary/index.html": {
-      "sha256": "b9904062af9945560f6ea76478b1c04e4f8caf52e49c12ba421e42f3f8503f1d",
-      "bytes": 32312
+      "sha256": "6ecfff684fe315aaf4e8727efc2ce904630b74e2870aed60ada2d81b3facecc1",
+      "bytes": 33096
     },
     "wardens-guide/saves/index.html": {
-      "sha256": "3df0c5b29e2e5c310fa4bc72c78088bfb96dc98f8fd48ff35b004ccd0660ba6e",
-      "bytes": 26797
+      "sha256": "345de8b52f5f89efe6f00a6a8dfdeaee9d67a66b44e560d2c128a0284613bd00",
+      "bytes": 27581
     },
     "wardens-guide/setting-seeds/index.html": {
-      "sha256": "d06c7a908abc1a33ef16f4ea3f3c881bced35df919dbc6f7e0cd258ebe3e3f1e",
-      "bytes": 94640
+      "sha256": "3c21fdf628151b93a59ec966e13e6bf6c6c7041db05b55faa7a4d605f6bb72c7",
+      "bytes": 95361
     },
     "wardens-guide/spellbooks/index.html": {
-      "sha256": "5ccf97af379fdad1957ff5f277e5b0821305ea17b8afd4841099a911671c954e",
-      "bytes": 40600
+      "sha256": "e49bd077a6bef11e4148fa4f012dd662ef7b5ff69888602bee7e4ef6264321d8",
+      "bytes": 41384
     },
     "wardens-guide/vald/index.html": {
-      "sha256": "9821b69b775a26646167360e40da5874b8212a6e6ee9866b7d8001e2f6595a1b",
-      "bytes": 42734
+      "sha256": "fbddf0e23aff8a588e2cbb7d15ce60004bb716a7b898a7ab1c02ea6096977758",
+      "bytes": 43518
     },
     "wardens-guide/variable-difficulty/index.html": {
-      "sha256": "5a2e570d74f24c21be6b1724b252cb146b87f3c6cbddbebcb74fa3acacc8f022",
-      "bytes": 30033
+      "sha256": "fbaa13675efe28b231e548a3bd66edae396cda16841ba779f4efff3d22e1b49f",
+      "bytes": 30817
     },
     "wardens-guide/wilderness-exploration/index.html": {
-      "sha256": "e075341fbcfc233613a4ae86c2b4829d63a53578a7a64d156796359fc9008798",
-      "bytes": 14608
+      "sha256": "c4de65bcd5b3db9220539175db3f84060118d10fcf827ce4a9e9755cc7ce7dce",
+      "bytes": 15392
     }
   }
 }
