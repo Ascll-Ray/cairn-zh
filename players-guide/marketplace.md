@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 集市
 parent: 玩家手册
@@ -70,7 +69,6 @@ grand_parent: 第二版
 | 追踪者 | 5   |
 | 捕兽者 | 5   |
 | 老练护卫 | 20  |
-
 
 ## 装备
 

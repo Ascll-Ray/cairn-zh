@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>参考文献 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item"><a href="/players-guide/procedures/" class="nav-list-link">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/players-guide/character-creation/" class="nav-list-link">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link">创建背景</a></li><li class="nav-list-item active"><a href="/wardens-guide/bibliography/" class="nav-list-link active">参考文献</a></li><li class="nav-list-item"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item"><a href="/wardens-guide/spellbooks/" class="nav-list-link">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item">
+            <a href="https://cairnrpg.com" class="site-button">Cairn 官方原版</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/second-edition/">第二版</a></li><li class="breadcrumb-nav-list-item"><a href="/wardens-guide/">监守手册</a></li><li class="breadcrumb-nav-list-item"><span>参考文献</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="参考文献"> <a href="#参考文献" class="anchor-heading" aria-labelledby="参考文献"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 参考文献 </h1>
+<h2 id="游戏与扩展"> <a href="#游戏与扩展" class="anchor-heading" aria-labelledby="游戏与扩展"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 游戏与扩展 </h2>
+<ul>
+<li><a href="https://lumpley.itch.io/apocalypse-world/">《末日世界》，Vincent 与 Meguey Baker 著</a></li>
+<li><a href="https://www.flatlandgames.com/btw/">《墙外之境》，Peter S. Williams 著</a></li>
+<li><a href="https://dungeon-world.com/">《地城世界》，Sage LaTorra 与 Adam Koebel 著</a></li>
+<li><a href="https://bastionlandpress.com/">《电击堡垒之地》，Chris McDowall 著</a></li>
+<li><a href="https://killjestergames.itch.io/errant">《游侠》，Ava Islam 著</a></li>
+<li><a href="https://emmv.itch.io/flee">《逃》，Emmy Verte 著</a></li>
+<li><a href="https://vladar4.github.io/itdr/">《深入地下城：重生》，Vladimir Arabadzhi 著</a></li>
+<li><a href="https://questingbeast.itch.io/knave">《无赖》与《迷宫鼠》，Ben Milton 著</a></li>
+<li><a href="https://mausritter.com/">《鼠国骑士》，Isaac Williams 著</a></li>
+<li><a href="https://necroticgnome.com/">《老派精要》，Gavin Norman 著</a></li>
+<li><a href="https://www.drivethrurpg.com/en/product/407161/the-perilous-wilds-revised-edition">《险恶荒野》，Jason Lutes 著</a></li>
+<li><a href="https://www.drivethrurpg.com/en/product/421868/The-Monster-Overhaul/">《怪物大修》，Skerples 著</a></li>
+<li><a href="https://www.tunnelgoons.com/">《隧道恶棍》，Nate Treme 著</a></li>
+<li><a href="https://antipodezines.com/collections/vaults-of-vaarn">《瓦恩的宝库》，作者 Leo Hunt</a></li>
+<li><a href="https://johnharper.itch.io/world-of-dungeons/">《地牢世界》，作者 John Harper</a></li>
+</ul>
+<h2 id="博客"> <a href="#博客" class="anchor-heading" aria-labelledby="博客"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 博客 </h2>
+<h3 id="理念与设计"> <a href="#理念与设计" class="anchor-heading" aria-labelledby="理念与设计"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 理念与设计 </h3>
+<ul>
+<li><a href="https://alldeadgenerations.blogspot.com/2023/08/maxims-of-osr.html">OSR 箴言</a></li>
+<li><a href="https://boneboxchant.wordpress.com/2019/12/21/nsr/">新派革命</a></li>
+<li><a href="https://lithyscaphe.blogspot.com/p/principia-apocrypha.html">伪经要义</a></li>
+<li><a href="https://www.prismaticwasteland.com/blog/the-universal-procedure-of-the-osr">OSR 通用流程</a></li>
+<li><a href="https://deepunderstone.wordpress.com/2019/11/23/weird-materialism-and-the-osr/">怪异唯物论与 OSR</a></li>
+</ul>
+<h3 id="冒险创作"> <a href="#冒险创作" class="anchor-heading" aria-labelledby="冒险创作"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 冒险创作 </h3>
+<ul>
+<li><a href="http://throneofsalt.blogspot.com/2022/02/adventure-writing-tips.html">冒险创作要诀</a></li>
+<li><a href="https://lukegearing.blot.im/against-incentive">反对激励</a></li>
+<li><a href="https://www.youtube.com/watch?v=Dzxc8wQ57uI">构筑街区</a></li>
+<li><a href="http://goblinpunch.blogspot.com/2016/01/dungeon-checklist.html">地牢清单</a></li>
+<li><a href="https://alldeadgenerations.blogspot.com/2022/12/dungeon-design-process-and-keys.html">地牢设计：流程与关键</a></li>
+<li><a href="https://www.necropraxis.com/2017/11/22/hazard-system-v0-3/">危害系统 v0.3</a></li>
+<li><a href="https://batintheattic.blogspot.com/2009/08/how-to-make-fantasy-sandbox.html">如何构建奇幻沙盒</a></li>
+<li><a href="https://www.bastionland.com/2018/09/the-ici-doctrine-information-choice.html">信息、选择、影响</a></li>
+<li><a href="http://udan-adan.blogspot.com/2018/02/when-all-you-have-is-hammer-item-based.html">OSR D&D 中以物品为基础的问题解决</a></li>
+<li><a href="https://diyanddragons.blogspot.com/2019/10/landmark-hidden-secret.html">地标、隐藏、秘密</a></li>
+<li><a href="https://lukegearing.blot.im/techniques-to-write-adventures#map-first">地图优先</a></li>
+<li><a href="https://maziriansgarden.blogspot.com/2022/10/my-process.html">我的流程，作者 Ben L.</a></li>
+<li><a href="https://grognardia.blogspot.com/2009/02/old-school-dungeon-design-guidelines.html">老派地城设计指南</a></li>
+<li><a href="https://slightadjustments.blogspot.com/2020/04/osr-social-challenges.html">OSR 社交挑战</a></li>
+<li><a href="https://meanderingbanter.blogspot.com/2018/10/OVERLOAD-YOUR-ENCOUNTER-DICE.html">让你的遭遇骰超载</a></li>
+<li><a href="https://maziriansgarden.blogspot.com/2019/04/pleasures-of-osr-secrecy-and-discovery.html">OSR 的乐趣：隐秘与发现</a></li>
+<li><a href="https://www.mindstormpress.com/question-based-adventure-design">基于问题的冒险设计</a></li>
+<li><a href="https://maziriansgarden.blogspot.com/2017/12/world-building-and-old-school-games.html">世界构建与老派游戏</a></li>
+</ul>
+<h3 id="成长"> <a href="#成长" class="anchor-heading" aria-labelledby="成长"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 成长 </h3>
+<ul>
+<li><a href="https://lichvanwinkle.blogspot.com/2021/11/coins-in-d-and-found-advancement.html">D&D 中的钱币与发现式进阶</a></li>
+<li><a href="https://dreamingdragonslayer.wordpress.com/2020/06/13/diegetic-advancement-triggers/">叙事内成长触发</a></li>
+<li><a href="https://cavegirlgames.blogspot.com/2019/09/terminology-diegetic-vs-non-diegetic.html">叙事内与非叙事内</a></li>
+<li><a href="https://mhuthulan.mediumquality.uk/2021/11/28/examples-of-things-that-cause-foreground-growth/">支持前景成长的要素示例</a></li>
+<li><a href="https://www.bastionland.com/2016/05/foreground-growth-and-becoming-odd.html">前景成长与渐趋怪异</a></li>
+<li><a href="https://udan-adan.blogspot.com/2021/10/game-enhancing-powers-game-ruining.html">增强游戏的力量、破坏游戏的力量，以及更多魔法物品</a></li>
+<li><a href="https://aboleth-overlords.com/2020/09/19/less-rules-to-do-more-advancement/">以更少规则成就更多：成长</a></li>
+</ul>
+<h3 id="机制"> <a href="#机制" class="anchor-heading" aria-labelledby="机制"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 机制 </h3>
+<ul>
+<li><a href="https://pointlessmonument.blot.im/a-player-facing-sandbox-part-1-the-map">面向玩家的沙盒</a></li>
+<li><a href="https://blog.thesconesalone.com/2018/07/a-simple-resource-management-system.html">《Into the Odd》的简易资源管理系统</a></li>
+<li><a href="https://gundobadgames.blogspot.com/2020/10/abstract-vs-pointcrawl-navigating-in.html">抽象导航 vs 节点探险：在雅卡尔式超级地城中寻路</a></li>
+<li><a href="https://dreamingdragonslayer.wordpress.com/2020/03/28/advantage-and-impact/">优势与冲击</a></li>
+<li><a href="https://riseupcomus.blogspot.com/2020/11/diegetic-classes-wilderland.html">叙事内职业（荒境）</a></li>
+<li><a href="https://www.bastionland.com/2020/03/difficulty-in-bastionland.html">堡垒之地的难度</a></li>
+<li><a href="https://dicegoblin.blog/the-things-we-find-along-the-way-filling-the-gaps-in-a-hexcrawl-or-pointcrawl">填补六角探险或节点探险中的空白</a></li>
+<li><a href="https://iuliu-cosmin-oniscu.medium.com/guidance-and-orientation-in-open-world-maps-c7ff78a12a05">开放世界地图中的引导与定位</a></li>
+<li><a href="https://goblinpunch.blogspot.com/2024/01/hexcrawls-kinda-suck.html">六角探险其实很烂</a></li>
+<li><a href="https://permacrandam.blogspot.com/2022/09/hexcrawls-are-pathcrawls.html">六角探险就是路径探险</a></li>
+<li><a href="http://hillcantons.blogspot.com/2014/11/pointcrawl-series-index.html">山丘边区：节点探险系列索引</a></li>
+<li><a href="https://www.youtube.com/watch?v=4Yi0EnZATng">如何设计节点探险地图</a></li>
+<li><a href="https://talesofthegrotesqueanddungeonesque.blogspot.com/2016/08/just-use-bears.html">直接用熊就行</a></li>
+<li><a href="http://detectmagic.blogspot.com/2014/04/pathcrawl.html">路径探险</a></li>
+<li><a href="https://retiredadventurer.blogspot.com/2019/07/rationalising-overland-travel-paces.html">合理化陆路旅行速度</a></li>
+<li><a href="https://sachagoat.blot.im/re-inventing-the-wilderness-part-1-introduction">重塑荒野</a></li>
+<li><a href="https://blog.d4caltrops.com/2019/04/see-forest-for-trees.html">见林亦见树</a></li>
+<li><a href="https://diyanddragons.blogspot.com/2018/02/sub-hex-crawling-mechanics-part-1.html">子六角格探索机制</a></li>
+<li><a href="https://dicegoblin.blog/time-gear-skill-a-different-approach-to-skill-checks">时间、装备与技能：技能检定的另一种思路</a></li>
+<li><a href="https://maziriansgarden.blogspot.com/2021/08/using-landmarks-in-wilderness-travel.html">在荒野旅行中使用地标</a></li>
+<li><a href="https://silverarmpress.com/why-i-use-point-crawls-more-than-hex-crawls/">为何我用节点探险多于六角探险</a></li>
+<li><a href="https://blog.trilemma.com/2021/08/wilderness-paths.html">荒野路径</a></li>
+</ul>
+<h3 id="世界构建"> <a href="#世界构建" class="anchor-heading" aria-labelledby="世界构建"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 世界构建 </h3>
+<ul>
+<li><a href="https://wizardthieffighter.blogspot.com/2018/02/ultraviolet-grasslands-100-misfortunes.html">旅途中的 100 种不幸</a></li>
+<li><a href="https://chaosgrenade.com/5-point-conflict-map">五点冲突地图</a></li>
+<li><a href="https://crateredland.blogspot.com/2019/06/distant-lands-and-creation-thereof.html">遥远之地及其创生</a></li>
+<li><a href="https://xenio.bearblog.dev/factions-updated/">派系，更新版</a></li>
+<li><a href="https://blog.d4caltrops.com/2022/05/table-talk-my-process-for-random-tables.html">我的随机表制作流程</a></li>
+<li><a href="https://www.youtube.com/watch?v=jS51XkA9-_k">如何写好失败职业</a></li>
+<li><a href="https://goblinpunch.blogspot.com/2013/05/wtf-are-those-goblins-doing.html">这些哥布林到底在搞什么鬼？</a></li>
+</ul>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>

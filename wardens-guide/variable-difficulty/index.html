@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>可变难度 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item"><a href="/players-guide/procedures/" class="nav-list-link">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/players-guide/character-creation/" class="nav-list-link">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link">创建背景</a></li><li class="nav-list-item"><a href="/wardens-guide/bibliography/" class="nav-list-link">参考文献</a></li><li class="nav-list-item active"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link active">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item"><a href="/wardens-guide/spellbooks/" class="nav-list-link">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item">
+            <a href="https://cairnrpg.com" class="site-button">Cairn 官方原版</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/second-edition/">第二版</a></li><li class="breadcrumb-nav-list-item"><a href="/wardens-guide/">监守手册</a></li><li class="breadcrumb-nav-list-item"><span>可变难度</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="可变难度"> <a href="#可变难度" class="anchor-heading" aria-labelledby="可变难度"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 可变难度 </h1>
+<h2 id="引言"> <a href="#引言" class="anchor-heading" aria-labelledby="引言"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 引言 </h2>
+<p>在《石冢》中，我们鼓励玩家通过提问、批判性思考，并利用游戏世界的虚构情境来获取优势，从而克服难题。以下原则与示例将帮助监守做出一致而公正的裁决，既挑战玩家，也奖励他们的努力。</p>
+<h2 id="可变难度原则"> <a href="#可变难度原则" class="anchor-heading" aria-labelledby="可变难度原则"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 可变难度原则 </h2>
+<ul>
+<li>奖励跳出框架的思考。这可以是风险的简单减轻、一条新知识、角色成长等等。</li>
+<li>根据投入的努力调整结果。如果玩家角色为了成功克服危险付出了极大努力，就应提升结果以匹配他们的付出。</li>
+<li>强调虚构后果而非机械增益。纯粹的机械奖励通常是空洞的，缺乏游戏世界内收益的潜力。</li>
+<li>许多危险在时间、努力和技巧面前都可以减轻或消除。如果没有真正的风险，直接跳过检定！</li>
+<li>创造强调非机械解决方案的情境。当解决问题的关键可以纯粹在虚构情境中理解时，问题会更有趣。</li>
+</ul>
+<h2 id="示例"> <a href="#示例" class="anchor-heading" aria-labelledby="示例"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 示例 </h2>
+<h3 id="扭转局势"> <a href="#扭转局势" class="anchor-heading" aria-labelledby="扭转局势"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 扭转局势 </h3>
+<blockquote><p>芙蕾雅在与队伍失散后，正面对一只木巨魔。她被逼在巨魔和洞壁之间，别无选择，只能直接战斗。她已经通过了先攻的敏捷豁免，因此可以在对手之前攻击。</p></blockquote>
+<p><strong>芙蕾雅</strong>：<em>“我知道我正面打不过这家伙，所以我想看看附近有没有什么能稍微扭转局势的东西。我在街头长大，这意味着我知道怎么耍阴招。我想试着弄瞎他，同时不让自己挨揍。我有什么选择？”</em></p>
+<p><strong>监守</strong>：<em>“我来投命运骰，看看这周围有多大的灰尘。4！好吧，你和对手之间肯定有些灰尘，但你可能需要靠近他才能抓一把。你需要进行一次敏捷豁免。”</em></p>
+<blockquote><p>芙蕾雅投出 13：成功！</p></blockquote>
+<p><strong>监守</strong>：<em>"你从面前的地上抓起一把尘土，径直朝对手脸上撒去。他踉跄后退，一边拼命揉眼清除沙砾，一边无力招架！"</em></p>
+<blockquote><p>木巨魔因试图清除脸上的尘土而失去一回合。此状态下它无法依赖耐久度；伤害将直接作用于力量！</p></blockquote>
+<p><strong>芙蕾雅</strong>：<em>"我知道我该撒腿就跑……但我实在忍不住想趁火打劫。我想让这家伙见识见识'双子'。"</em></p>
+<blockquote><p>芙蕾雅为她的匕首投掷d6+d6（掷出 3 和 5），直接对木巨魔的力量属性造成 5 点伤害。随后监守为巨魔进行致命伤害豁免，掷出 19：失败！</p></blockquote>
+<p><strong>监守</strong>：<em>"你双刃齐刺，绿色血液从绽开的伤口中喷涌而出，怪物愤怒地咆哮。看看它能否挺过这一击！哦——它力量豁免失败，承受<strong>致命伤害</strong>！它倒下了！"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"好吧，我就当这是个预兆。该撤了！"</em></p>
+<blockquote><p>芙蕾雅逃离现场（无需敏捷豁免），留下木巨魔流血等死。倘若她知晓这怪物能缓慢自愈，或许会留下来……</p></blockquote>
+<h3 id="团队协作"> <a href="#团队协作" class="anchor-heading" aria-labelledby="团队协作"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 团队协作 </h3>
+<blockquote><p>沃尔夫拉姆、卢修斯与芙蕾雅正在调查一则传闻：一只隐形生物一直在森林中袭击当地人。他们追踪该生物至其岛屿巢穴，距一处毒湖岸边仅 40 尺。湖泊与周围森林之间隔着厚重的泥滩。</p></blockquote>
+<p><strong>监守</strong>：<em>"生物的足迹止于一片翻腾的湖畔，湖水剧烈冒泡、翻搅。以你对本地区历史的了解，你意识到就算湖水没要了你的命，湖面散发的毒气也绝对会！"</em></p>
+<p><strong>沃尔夫拉姆</strong>：<em>"我们知道那该死的东西就住在那边那堆岩石上。显然我们游不过去，但我有个主意能把它引出来！卢修斯，抱歉，但咱们三人里，你最……软。换句话说，完美的诱饵！咱们就假装你的车陷在泥里了。我包里一直卷着条毯子。也许芙蕾雅和我可以躲在下面，然后看准时机扑向那生物？"</em></p>
+<p><strong>卢修斯</strong>：<em>"我就知道今天不该戴我这顶漂亮帽子！行吧，照办。"</em></p>
+<p><strong>监守</strong>：<em>"队伍按计划行事，为毫无戒心的猎物布下完美诱饵。我来投命运骰，看看那生物是否注意到……掷出 5！好，这意味着它肯定想过来一探究竟，但还有个变数：天开始黑了。"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"这么说，沃尔夫拉姆和我躲在下面时能窥视那座岛，对吧？而卢修斯仍然背对着，假装在摆弄卡住的车轮？"</em></p>
+<p><strong>监守</strong>：<em>"没错。沃尔夫拉姆和芙蕾雅都能透过车板缝隙看到，有什么东西从岛上那堆岩石下爬了出来，一路朝水边移动，把石头四散踢开。不过你们看不出究竟是什么移动了岩石。它真的是隐形的！就在你们注视时，某物滑入毒水，发出轻微的溅水声。而涟漪正朝你们的方向涌来！"</em></p>
+<p><strong>沃尔弗拉姆</strong>：<em>"好吧，我想现在正是拿出虚空玻璃碎片的好时机！它能让我看见隐形生物，但代价也不小！之后一个小时我会有只眼睛看不见，这段时间我的战斗能力会……大打折扣。我能不能一边透过玻璃看，一边用弩射击？"</em></p>
+<p><strong>监守</strong>：<em>"用弩需要两只手。"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"我可以帮他举着虚空玻璃碎片贴在他眼睛上。"</em></p>
+<p><strong>监守</strong>：<em>"这样可行，但在那生物有机会反应之前，你无法进行自己的行动。"</em></p>
+<p><strong>卢修斯</strong>：<em>"呃，那我呢？我根本看不见那生物，更别说自卫了！我想在沃尔弗拉姆射击的瞬间准备一个动作。上次行动的大袋子我还留着。我在想，能不能等那生物靠近时扑上去，像抓大鱼一样把它罩住？"</em></p>
+<p><strong>监守</strong>：<em>"可以！你们各自为即将到来的战斗做好准备。芙蕾雅和沃尔弗拉姆，你们在寂静中等待，涟漪越来越近。终于，它们停下了！芙蕾雅将虚空玻璃碎片贴在沃尔弗拉姆眼前，他举起了弩。沃尔弗拉姆，你看见一个黏滑的、鱼一样的生物从水中爬出，泛黄的鳞片交错覆盖着它多肢的身体。短暂的、令人窒息的停顿之后，一声响亮的‘嘣’——他射出了弩矢。"</em></p>
+<blockquote><p>沃尔弗拉姆投出d8，结果为 6！由于该生物未察觉攻击者，伤害直接作用于力量。它进行致命伤害豁免，结果为 3：成功。</p></blockquote>
+<p><strong>监守</strong>：<em>"那生物被弩矢刺穿，绿色液体从体内喷涌而出。液体落在地面，表面发出嘶嘶声，仿佛接触到酸液。它转向马车，但还没来得及反应，卢修斯就将大袋子罩了上去。那生物在袋中翻腾扭动，四处挣扎。"</em></p>
+<blockquote><p>监守为该生物进行敏捷豁免，看它能否迅速挣脱袋子。离开水后，它只有 8 点敏捷。它投出 12：失败。无法自卫的生物很快被捆好，放进马车，同时带上一罐有毒的水以备旅途之需。队伍齐心协力，迅速返回城镇。</p></blockquote>
+<h3 id="角色历史"> <a href="#角色历史" class="anchor-heading" aria-labelledby="角色历史"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 角色历史 </h3>
+<blockquote><p>队伍正护送一名阿尔萨斯派系的密探深入敌境。他们的目的地隐藏在一座被高大木墙环绕的小村庄中。任务是悄悄将委托人送入戒备森严的镇子，再进入德·图恩的古老地窖。当他们接近村庄时，太阳刚刚开始西沉，卢修斯已被派往前去侦察，假扮成来自南方的游吟诗人。</p></blockquote>
+<p><strong>监守</strong>：<em>“你沿着土径走近这座带围墙的村庄，小径直通镇子的正门。大门紧闭，两名守卫分立两侧。二人几乎一模一样，只是其中一人蓄着稀疏的小胡子。”</em></p>
+<p><strong>卢修斯</strong>：<em>"嗨，两位好先生！容在下冒昧一问，今晚能否获准进入贵村？我长途跋涉而来，但囊中丰盈，很想分享一些我的好运！"</em></p>
+<p><strong>监守</strong>：<em>"两人交换了一个眼神。留胡子的守卫答道：‘天黑后不得入内。这是规矩。’"</em></p>
+<blockquote><p>此时，卢修斯正施展浑身魅力，实质上是在试图贿赂守卫以获准进入。他也是当前处境中最危险的人，因为那两人装备精良，足以对付一个独行旅人，而且还有后援。如果需要，应由卢修斯进行意志豁免，而非守卫。</p></blockquote>
+<p><strong>卢修斯</strong>：<em>"是，我明白。但天还没全黑，对吧？太阳才刚落山。能让我进去吗？我很乐意先和你们俩分享我新得的财富，如果你懂我意思的话。也许我还能请你们每人喝杯应得的啤酒？当然，是为了表达我的感激。</em>"</p>
+<p><strong>监守</strong>：<em>"两人又交换了一下眼神，但这次另一个人笑着回答：'好吧……就这一次。太阳还没真正落山。而且我们确实渴了。'"</em></p>
+<blockquote><p>监守根据对这些人的了解做出裁决：他们只是普通的村庄守卫，工作了一整天，而且热爱啤酒。换作其他角色，这或许行不通，但卢修斯是个江湖骗子，他赢得目标信任的能力早已得到证实。守卫放他进去了。</p></blockquote>
+<h3 id="风险越大回报越大"> <a href="#风险越大回报越大" class="anchor-heading" aria-labelledby="风险越大回报越大"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 风险越大，回报越大 </h3>
+<blockquote><p>队伍派芙蕾雅趁夜色去侦察敌方营地。她的目标是查明敌人的总人数，以及那里可能潜伏着何种危险。</p></blockquote>
+<p><strong>监守</strong>：<em>"去营地的半路上，你看到小径上有一道闪烁的光。有人朝你来了！你怎么办？"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"我溜进路边灌木丛，尽量不发出声音。这需要豁免吗？"</em></p>
+<p><strong>监守</strong>：<em>"不用，因为你离那人足够远，而且没点任何光源。你可以安全躲藏，不会被发现。"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"如果我觉得这人可能和敌人是一伙的，我想伏击他们，偷走他们的衣服。我不想惊动别人，所以我得又快又狠。"</em></p>
+<p><strong>监守</strong>：<em>"好。那他们得做一次敏捷豁免，以及时反应挡开你的攻击。事情可能不会像你希望的那样顺利！"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"那如果我改用树枝砸晕他们呢？我这儿有把手斧。"</em></p>
+<p><strong>监守</strong>：<em>"那也许行得通。你得往回冲刺一段，爬上树，然后做力量豁免，看能否在恰当时机砍下树枝，又不惊动目标。如果失败，你会和树枝一起掉下来，可能受伤，还会陷入非常危险的境地。"</em></p>
+<blockquote><p>芙蕾雅沿小径冲回去，爬上树，开始用手斧砍一根树枝。她掷力量豁免：7，成功！她在恰当时机砍下树枝，树枝落在下方独行旅人身上，将其砸晕。芙蕾雅偷走他们的衣服和火把，然后沿小径朝营地出发。</p></blockquote>
+<h2 id="战斗即战争"> <a href="#战斗即战争" class="anchor-heading" aria-labelledby="战斗即战争"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 战斗即战争 </h2>
+<blockquote><p><strong>沃尔夫拉姆</strong>、<strong>卢修斯</strong>和<strong>芙蕾雅</strong>正被一支十二人的城市守卫<em>分遣队</em>追捕 [4 耐久度, 1 护甲, 11 力量, 14 敏捷, 12 意志, 短剑 (d6)]，他们躲藏在森林边缘一座烧毁的旧哨站里，只能通过一架梯子进入。士兵们各持短剑和弓，除了他们的首领——一个肩上戴着亮蓝色肩章的高个子男人。士兵们知道队伍躲进了哨站，正在安全距离外、队伍藏身处的正北方互相交谈。这支<em>分遣队</em>在受到致命伤害前，将视为单一实体。</p></blockquote>
+<p><strong>监守</strong>：<em>"哨站残存的断墙勉强提供掩护。透过板缝，你看见士兵们分作两路：六人朝西南方、紧贴林线而去，其余的人（包括那个高个子）则奔向东南方，那里的墙体损毁最重。看来他们打算两翼夹击。不到一分钟，他们就会抵达盾墙的敞口一侧！你打算怎么做？"</em></p>
+<p><strong>沃尔弗拉姆</strong>：<em>"我当过兵，这套路我懂。那个挂着花哨绶带的家伙就是头儿。干掉他，剩下的多半会溃散。我要等他靠得足够近，再扣弩射他。要是因此暴露了，那就暴露吧！"</em></p>
+<p><strong>卢修斯</strong>：<em>"你还是这么直来直去啊，小沃！我要把一些我大名鼎鼎的奇迹油浇在通往上层的梯子上。既管用，又好看！"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"可要是他们直接从南面的大窟窿往咱们藏身处开火，你拿什么挡？往最好了说，他们只要等咱们断粮就行。我另有主意：我从活板门探出头，往建筑东西两侧各扔一颗烟雾弹。等那两套计划都泡汤时，这能给我们争取优势！"</em></p>
+<p><strong>卢修斯</strong>：<em>"呃，那我就在她扔完烟雾弹之后再用油，行吧？"</em></p>
+<p><strong>监守</strong>：<em>"可以，没问题。但注意，沃尔弗拉姆起身射击的那一刻，战斗就正式打响。既然你们都已就位，无需进行敏捷豁免：你们先手。"</em></p>
+<p><strong>监守</strong>：<em>"士兵们继续推进，终于，头领将剑高举向天，嘶吼道：'冲锋！'士兵们朝你们扑来。一切同时发生。沃尔弗拉姆起身，弩箭射向头领。由于头领属于一支分队，沃尔弗拉姆只能投d4。"</em></p>
+<blockquote><p>沃尔弗拉姆的攻击结果为 3，头领的头盔吸收了 1 点伤害，因此他只损失 2 点耐久度。</p></blockquote>
+<p><strong>监守</strong>：<em>"箭矢擦过头领的肩头，撕裂了他那鲜艳的肩章。他龇牙咧嘴，朝建筑东侧冲去。与此同时，芙蕾雅，你从活板门探出头，往建筑东西两侧各扔一颗烟雾弹——请勾掉 2 次使用次数。卢修斯，你站在她身后，她一让开，你就把奇迹油浇在梯子上。"</em></p>
+<p><strong>监守</strong>：<em>"烟雾弥漫在建筑两侧，敌我难辨。几个人试图爬梯，却立刻滑落，摔作一团。敌人基本等于失去了这一轮，但烟雾正在消散。在咳嗽与叫喊声中，你听见有人高呼：'烧了它！'"</em></p>
+<p><strong>沃尔弗拉姆</strong>：<em>"好歹争取了点时间。嘿，卢修斯，你那油有多易燃？"</em></p>
+<p><strong>卢修斯</strong>：<em>"非常易燃。看来我们快没别的招了。"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"好吧，玩得挺开心，但我宁可下去战死，也不想跟你们这帮家伙一起被活活烧死！别见怪。"</em></p>
+<p><strong>沃尔弗拉姆</strong>：<em>"不怪你。你试试能不能干掉他们的头领，我们想办法开条退路。"</em></p>
+<p><strong>沃尔弗拉姆</strong>：<em>"我要对自己施放解体术，然后尖叫'他要把我的胳膊扯下来！'接着我会跳到地上，开始原地转圈跑。卢修斯，等我的胳膊掉下来，我要你捡起来追我。"</em></p>
+<p><strong>卢修斯</strong>：<em>"好吧。我真希望这能奏效……要是不行，至少我们也能战死！或者尖叫着死。多半是后者。"</em></p>
+<p><strong>监守</strong>：<em>"芙蕾雅，你的目标是谁，用什么武器？"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"他们的首领，我用双刃。"</em></p>
+<p><strong>监守</strong>：<em>"好。芙蕾雅跃向烟雾弥漫的地面，直奔首领而去。她拔出双匕，但由于仍在攻击一个分队，每把匕首仍只能投掷一次d4。"</em></p>
+<blockquote><p>芙蕾雅进行两次d4投掷，结果为 4 和 1。她取较高者，首领的头盔再次吸收 1 点伤害。剩余的 3 点伤害足以触发分队的一次致命伤害豁免。结果为 15（失败），随着首领被击败，该分队既溃散又逃窜。</p></blockquote>
+<p><strong>监守</strong>：<em>"芙蕾雅挥刀砍向首领，但他幸运地后退一步，匕首落空。然而第二次攻击他就没那么走运了，她刺中了他的胸膛。他瘫倒在地，离他最近的人惊呼出声，有些人甚至开始后退。就在此时，你听到一声尖叫，接着看到沃尔弗拉姆从哨站跳下地面，开始绕圈奔跑，卢修斯紧随其后，抓着他朋友的双臂。其他人随即抬起首领，在‘巫术！’和‘我们没受过这种训练！’的尖叫声中，拼命逃回山丘边缘。"</em></p>
+<p><strong>沃尔弗拉姆</strong>：<em>"我就知道那会奏效！"</em></p>
+<p><strong>芙蕾雅</strong>：<em>"我敢肯定这全是我的功劳，不过随便吧。"</em></p>
+<p><strong>卢修斯</strong>：<em>"谁在乎呢？趁情况还好，我们赶紧离开这里吧。"</em></p>
+<p><strong>监守</strong>：<em>"你们有机会逃进附近的森林，或者如果觉得自己跑得够快，也可以穿过开阔的田野。你们怎么做？"</em></p>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>

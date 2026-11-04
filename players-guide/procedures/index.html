@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>流程 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item active"><a href="/players-guide/procedures/" class="nav-list-link active">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/players-guide/character-creation/" class="nav-list-link">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link">创建背景</a></li><li class="nav-list-item"><a href="/wardens-guide/bibliography/" class="nav-list-link">参考文献</a></li><li class="nav-list-item"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item"><a href="/wardens-guide/spellbooks/" class="nav-list-link">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item">
+            <a href="https://cairnrpg.com" class="site-button">Cairn 官方原版</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/second-edition/">第二版</a></li><li class="breadcrumb-nav-list-item"><a href="/players-guide/">玩家手册</a></li><li class="breadcrumb-nav-list-item"><span>流程</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="流程"> <a href="#流程" class="anchor-heading" aria-labelledby="流程"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 流程 </h1>
+<h2 id="地城探索"> <a href="#地城探索" class="anchor-heading" aria-labelledby="地城探索"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 地城探索 </h2>
+<h3 id="基础"> <a href="#基础" class="anchor-heading" aria-labelledby="基础"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 基础 </h3>
+<ul>
+<li>地城探索循环（见下）由一系列<strong>轮</strong>、<strong>行动</strong>及其后果构成。</li>
+<li>在角色的<strong>轮</strong>内，其可移动至多等同于火把光照范围的距离（约 40 英尺），并执行一次<strong>行动</strong>。玩家也可将<strong>行动</strong>用于移动，距离至多为此三倍，但会增加触发<a href="#dungeon-events"><strong>地城事件</strong></a>表格掷骰的概率。</li>
+<li><strong>监守</strong>应自由、无代价地提供关于某区域及其危险的明显信息。快速移动或疏于防备，可能提高遭遇游荡怪物、触发陷阱或引发<a href="#dungeon-events"><strong>地下城事件</strong></a>表掷骰的几率。</li>
+</ul>
+<blockquote><p>尽管此处使用“地下城”一词，但它可指任何危险的场所（宅邸、农舍、冒险地点等）。</p></blockquote>
+<h3 id="地下城探索循环"> <a href="#地下城探索循环" class="anchor-heading" aria-labelledby="地下城探索循环"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 地下城探索循环 </h3>
+<ol>
+<li><strong>监守</strong>描述队伍周遭的环境与眼前的危险（战斗、陷阱、突袭等）。随后，玩家宣告各自角色的移动意图与<strong>行动</strong>。</li>
+<li>监守同时结算每个角色的<strong>行动</strong>，以及所有已在进行的<strong>行动</strong>。记住，每当监守拿不定主意时，命运骰都是趁手的工具！</li>
+<li>玩家记录一切资源损失与新增状态（如物品使用、<em>匮乏</em>等）。随后循环重新开始。若有必要，<strong>监守</strong>应在<a href="#dungeon-events"><strong>地城事件</strong></a>表上投骰。解读结果时，切记结合常理判断！</li>
+</ol>
+<h3 id="地城事件"> <a href="#地城事件" class="anchor-heading" aria-labelledby="地城事件"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 地城事件 </h3>
+<p>探索地城总是危机四伏，时间必须时刻与风险相权衡——惊动此地的居民、遭遇自然险情，乃至更糟的东西。 当队伍：</p>
+<ul>
+<li>在单个房间或地点停留超过一个地城循环</li>
+<li>匆忙或胡乱地穿过房间</li>
+<li>进入新的区域、楼层或地带</li>
+<li>制造巨大动静</li>
+</ul>
+<p><strong>在下表中掷骰。</strong></p>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: center"></th>
+<th style="text-align: center"></th>
+<th style="text-align: center"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><strong>1</strong></td>
+<td style="text-align: center"><strong>遭遇</strong></td>
+<td style="text-align: center">在遭遇表上投掷。可能是<strong>敌对</strong>的。（见<a href="/second-edition/players-guide/core-rules/#reactions">反应</a>。）</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>2</strong></td>
+<td style="text-align: center"><strong>迹象</strong></td>
+<td style="text-align: center">发现线索、兽迹、踪迹、废弃巢穴、气味、受害者等。</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>3</strong></td>
+<td style="text-align: center"><strong>环境</strong></td>
+<td style="text-align: center">周遭生变，局势升级。水位上涨，洞顶坍塌，仪式将成，诸如此类。</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>4</strong></td>
+<td style="text-align: center"><strong>损失</strong></td>
+<td style="text-align: center">火把熄灭、持续中的法术失效，诸如此类。队伍须先处理完该效果，方可继续前进。</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>5</strong></td>
+<td style="text-align: center"><strong>力竭</strong></td>
+<td style="text-align: center">队伍必须休整（在此表上再投一次）、累积一点<strong>疲乏</strong>，或消耗 1 份口粮。</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>6</strong></td>
+<td style="text-align: center"><strong>安静</strong></td>
+<td style="text-align: center">队伍暂时独处（且安全）。</td>
+</tr>
+</tbody></table></div>
+<h3 id="行动"> <a href="#行动" class="anchor-heading" aria-labelledby="行动"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 行动 </h3>
+<ul>
+<li><strong>动作</strong>指任何非被动行为，例如<em>搜寻陷阱</em>、<em>强行开门</em>、<em>聆听危险</em>、<em>解除陷阱</em>、<em>与敌交战</em>、<em>施放法术</em>、<em>闪避陷阱</em>、<em>逃跑</em>、<em>休息</em>等。</li>
+<li>有些<strong>行动</strong>有特殊规则（见下文），另一些则可能需耗费多个<strong>回合</strong>才能完成。</li>
+<li>响亮或引人注目的<strong>行动</strong>也可能触发与地城居民的<strong>遭遇</strong>。</li>
+</ul>
+<h4 id="搜索"> <a href="#搜索" class="anchor-heading" aria-labelledby="搜索"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 搜索 </h4>
+<ul>
+<li>角色可以花费一个<strong>回合</strong>，彻底搜索区域内<strong>一个</strong>物件或地点，找出相关的隐藏宝藏、陷阱、密门等。</li>
+<li>较大的房间，以及艰险或复杂的地城地形，可能需要数个<strong>回合</strong>才能彻底搜索。</li>
+<li>探索地城时，<em>先</em>搜索房间更为安全，但代价高昂：时间。</li>
+</ul>
+<h4 id="休整"> <a href="#休整" class="anchor-heading" aria-labelledby="休整"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 休整 </h4>
+<ul>
+<li>角色可花费一个回合<strong>休整</strong>，恢复全部<strong>耐久度</strong>。</li>
+<li><strong>休整</strong>需有光源与<em>安全地点</em>。若危险当前或迫近，则无法<strong>休整</strong>。</li>
+<li><strong>休息</strong>不恢复<strong>疲乏</strong>，因为在地下城中无法安全<strong>扎营</strong>。</li>
+</ul>
+<h3 id="恐慌"> <a href="#恐慌" class="anchor-heading" aria-labelledby="恐慌"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 恐慌 </h3>
+<ul>
+<li>角色若被敌人包围、陷入黑暗，或直面最深的恐惧，便可能陷入<em>恐慌</em>。通常须进行一次<strong>意志</strong> <strong>豁免</strong>，以免失控而陷入<em>恐慌</em>。</li>
+<li><em>恐慌</em>的角色必须在自己的<strong>回合</strong>用一次<strong>行动</strong>进行<strong>意志</strong> <strong>豁免</strong>，方能摆脱该状态。</li>
+<li><em>恐慌</em>的角色<strong>耐久度</strong>为 0，战斗首轮无法行动，且其所有攻击均为<em>受损</em>。</li>
+</ul>
+<h3 id="地城元素"> <a href="#地城元素" class="anchor-heading" aria-labelledby="地城元素"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 地城元素 </h3>
+<h4 id="光照"> <a href="#光照" class="anchor-heading" aria-labelledby="光照"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 光照 </h4>
+<ul>
+<li>火把及其他放射状光源可照亮地城 40 尺，再远便只剩物体的模糊轮廓。火把持续燃烧，直至被角色或环境熄灭。</li>
+<li>一支火把可点燃 3 次，之后彻底损坏。一盏提灯每罐灯油可重燃 6 次，但占用更多物品栏。</li>
+<li>没有光源的角色可能陷入<em>恐慌</em>，直至处境得到改善。</li>
+</ul>
+<h4 id="门"> <a href="#门" class="anchor-heading" aria-labelledby="门"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 门 </h4>
+<ul>
+<li>门与入口可能上锁、卡死或彻底堵死。角色可借助手头资源（铁钉、胶）或纯粹蛮力强行撞开门（或将门楔死）。</li>
+<li>队伍的行进顺序决定了门后无论有什么，谁将首当其冲。</li>
+<li>角色可以通过仔细观察（倾听、嗅闻等），察觉附近门后与墙后的生命迹象及其他凶险。</li>
+</ul>
+<h4 id="陷阱"> <a href="#陷阱" class="anchor-heading" aria-labelledby="陷阱"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 陷阱 </h4>
+<ul>
+<li>面对谨慎的角色，监守应向其提供一切相关信息，使其有机会<em>避免</em>触发陷阱。粗心的角色会依剧情触发陷阱，否则有 2/6 的几率。</li>
+<li><strong>陷阱</strong>通常可通过仔细<strong>搜寻</strong>房间来发现。</li>
+<li>陷阱造成的伤害从属性（通常为<strong>力量</strong>或<strong>敏捷</strong>）中扣除，<em>而非<strong></em>耐久度</strong>。护甲可减免伤害，但仅限适用情形（例如盾牌无法减免毒气伤害）。</li>
+</ul>
+<h2 id="荒野探索"> <a href="#荒野探索" class="anchor-heading" aria-labelledby="荒野探索"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 荒野探索 </h2>
+<h3 id="轮班"> <a href="#轮班" class="anchor-heading" aria-labelledby="轮班"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 轮班 </h3>
+<ul>
+<li>一天分为三个<strong>轮班</strong>，分别称为<em>清晨</em>、<em>午后</em>与<em>夜晚</em>。</li>
+<li>每个角色每<strong>轮班</strong>可选择 <em>一项</em> <a href="#wilderness-actions"><strong>荒野行动</strong></a>。</li>
+<li>若角色分头行动，每组均视为独立个体。</li>
+</ul>
+<h3 id="据点"> <a href="#据点" class="anchor-heading" aria-labelledby="据点"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 据点 </h3>
+<ul>
+<li>地图上可能的目的地称为<strong>据点</strong>。</li>
+<li>在地图上的两个<strong>据点</strong>之间跋涉，可能需要一个或数个<strong>轮班</strong>，具体取决于路线、地形、天气与队伍状态。</li>
+<li>队伍对抵达目的地途中会遭遇何种挑战只有大致概念，却极少知晓具体细节。</li>
+</ul>
+<h3 id="旅行耗时"> <a href="#旅行耗时" class="anchor-heading" aria-labelledby="旅行耗时"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 旅行耗时 </h3>
+<p>在《石冢》中，旅行时间以「轮班」计，每日分三个轮班，每班八小时。不过，多数队伍会选择将当日第三班用于休整，因此不妨以「天」作为旅行时间的简写。</p>
+<p>若要确定两地之间的距离，须将路径、地形与天气难度表中的所有减值相加，并计入沿途这些要素的任何变化。经由水路旅行时，参照周边地形难度。若地形格外广袤，可为旅程增加至多 +2 轮班的减值。</p>
+<p>天气、地形、黑暗、受伤的队员与其他阻碍都会影响旅行，甚至令其无法成行！有时，队伍须额外承受<strong>疲乏</strong>或消耗资源，方能维持行进速度。坐骑、向导与地图可提升队伍的旅行速度，甚至抵消某些减值。</p>
+<h3 id="路径难度"> <a href="#路径难度" class="anchor-heading" aria-labelledby="路径难度"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 路径难度 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>路径</strong></td>
+<td style="text-align: left"><strong>惩罚</strong></td>
+<td style="text-align: left"><strong>迷路几率</strong></td>
+</tr>
+<tr>
+<td style="text-align: left">道路</td>
+<td style="text-align: left">无</td>
+<td style="text-align: left">无</td>
+</tr>
+<tr>
+<td style="text-align: left">小径</td>
+<td style="text-align: left">+1 轮班</td>
+<td style="text-align: left">2/6</td>
+</tr>
+<tr>
+<td style="text-align: left">荒野</td>
+<td style="text-align: left">+2 轮班</td>
+<td style="text-align: left">6 中 3</td>
+</tr>
+</tbody></table></div>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>路程</strong></td>
+<td style="text-align: left"><strong>惩罚</strong></td>
+</tr>
+<tr>
+<td style="text-align: left">短途</td>
+<td style="text-align: left">+1 轮班</td>
+</tr>
+<tr>
+<td style="text-align: left">中</td>
+<td style="text-align: left">+2 轮班</td>
+</tr>
+<tr>
+<td style="text-align: left">长途</td>
+<td style="text-align: left">+3 轮班</td>
+</tr>
+</tbody></table></div>
+<h2 id="地形难度"> <a href="#地形难度" class="anchor-heading" aria-labelledby="地形难度"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 地形难度 </h2>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>难度</strong></td>
+<td style="text-align: left"><strong>地形</strong></td>
+<td style="text-align: left"><strong>惩罚</strong></td>
+<td style="text-align: left"><strong>因素</strong></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>轻松</strong></td>
+<td style="text-align: left"><strong>平原、高原、河谷</strong></td>
+<td style="text-align: left">无</td>
+<td style="text-align: left"><em>可安全休整的地带，偶遇同行旅人，视野开阔</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>艰难</strong></td>
+<td style="text-align: left"><strong>森林、沙漠、丘陵</strong></td>
+<td style="text-align: left">+1 轮班</td>
+<td style="text-align: left"><em>野兽、洪水、装备损坏、落石、不安全的庇护所、猎人的陷阱</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>险恶</strong></td>
+<td style="text-align: left"><strong>山脉、丛林、沼泽</strong></td>
+<td style="text-align: left">+2 轮班</td>
+<td style="text-align: left"><em>流沙、噬人的泥沼、缠颈的藤蔓、污浊的水源、有毒的动植物、难辨的方向</em></td>
+</tr>
+</tbody></table></div>
+<h3 id="天气"> <a href="#天气" class="anchor-heading" aria-labelledby="天气"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 天气 </h3>
+<p>每天，监守应依当前季节在天气表上投骰。若连续两次掷出“<strong>极端</strong>”天气，天气便转为“<strong>灾难</strong>”。狂风化作飓风，暴雨淹没山谷，诸如此类。</p>
+<h4 id="天气类型"> <a href="#天气类型" class="anchor-heading" aria-labelledby="天气类型"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 天气类型 </h4>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: center"></th>
+<th style="text-align: center"></th>
+<th style="text-align: center"></th>
+<th style="text-align: center"></th>
+<th style="text-align: center"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><strong>d6</strong></td>
+<td style="text-align: center"><strong>春</strong></td>
+<td style="text-align: center"><strong>夏</strong></td>
+<td style="text-align: center"><strong>秋</strong></td>
+<td style="text-align: center"><strong>冬</strong></td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>1</strong></td>
+<td style="text-align: center">宜人</td>
+<td style="text-align: center">宜人</td>
+<td style="text-align: center">尚可</td>
+<td style="text-align: center">尚可</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>2</strong></td>
+<td style="text-align: center">尚可</td>
+<td style="text-align: center">宜人</td>
+<td style="text-align: center">尚可</td>
+<td style="text-align: center">欠佳</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>3</strong></td>
+<td style="text-align: center">尚可</td>
+<td style="text-align: center">尚可</td>
+<td style="text-align: center">欠佳</td>
+<td style="text-align: center">恶劣</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>4</strong></td>
+<td style="text-align: center">欠佳</td>
+<td style="text-align: center">欠佳</td>
+<td style="text-align: center">恶劣</td>
+<td style="text-align: center">恶劣</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>5</strong></td>
+<td style="text-align: center">恶劣</td>
+<td style="text-align: center">恶劣</td>
+<td style="text-align: center">恶劣</td>
+<td style="text-align: center">极端</td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>6</strong></td>
+<td style="text-align: center">极端</td>
+<td style="text-align: center">极端</td>
+<td style="text-align: center">极端</td>
+<td style="text-align: center">极端</td>
+</tr>
+</tbody></table></div>
+<h4 id="天气难度"> <a href="#天气难度" class="anchor-heading" aria-labelledby="天气难度"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 天气难度 </h4>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: center"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><strong>天气</strong></td>
+<td style="text-align: left"><strong>效果</strong></td>
+<td style="text-align: left"><strong>示例</strong></td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>宜人</strong></td>
+<td style="text-align: left">天气适宜出行。</td>
+<td style="text-align: left"><em>晴空万里，阳光明媚</em></td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>尚可</strong></td>
+<td style="text-align: left">天气适宜出行。</td>
+<td style="text-align: left"><em>阴云密布，微风习习</em></td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>欠佳</strong></td>
+<td style="text-align: left">增加 1 点 <strong>疲乏</strong>，<em>或</em>为旅程增加一个 <strong>轮班</strong>。</td>
+<td style="text-align: left"><em>狂风阵阵、骤雨、酷热、寒气</em></td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>恶劣</strong></td>
+<td style="text-align: left">增加 1 点 <strong>疲乏</strong>，<em>或</em>增加 <strong>+1 轮班</strong>。地形 <strong>难度</strong> 提高一档。</td>
+<td style="text-align: left"><em>雷暴、闪电、骤雨、泥泞地面</em></td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>极端</strong></td>
+<td style="text-align: left">增加一次 <strong>疲乏</strong> <em>并</em> 增加 <strong>+1 轮班</strong>。地形 <strong>难度</strong> 提升一级。</td>
+<td style="text-align: left"><em>暴风雪、刺骨寒风、洪水、泥石流</em></td>
+</tr>
+<tr>
+<td style="text-align: center"><strong>灾难</strong></td>
+<td style="text-align: left">在这种条件下，多数队伍都无法行进。</td>
+<td style="text-align: left"><em>龙卷风、海啸、飓风、火山喷发</em></td>
+</tr>
+</tbody></table></div>
+<h3 id="荒野探索循环"> <a href="#荒野探索循环" class="anchor-heading" aria-labelledby="荒野探索循环"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 荒野探索循环 </h3>
+<ol>
+<li><strong>监守</strong>描述地图上当前的<strong>地点</strong>或<strong>区域</strong>，以及道路、天气、地形或队伍状态可能如何影响<strong>行进速度</strong>。队伍规划或调整前往目的地的路线。</li>
+<li>每名队员选择一项<strong>荒野行动</strong>。<strong>监守</strong>叙述结果，然后在<a href="#wilderness-events"><strong>荒野事件</strong></a>表上掷骰。队伍应对结果。</li>
+<li><strong>玩家</strong>与<strong>监守</strong>记录一切资源损耗与新增状态（如火把消耗、<em>匮乏</em>等），随后循环往复。</li>
+</ol>
+<h3 id="荒野事件"> <a href="#荒野事件" class="anchor-heading" aria-labelledby="荒野事件"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 荒野事件 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left"><strong>遭遇</strong></td>
+<td style="text-align: left">就该地形或地点投掷遭遇表。若适用，别忘了为 NPC <a href="/second-edition/players-guide/core-rules.md/#reactions">反应</a> 投骰。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left"><strong>迹象</strong></td>
+<td style="text-align: left">队伍发现线索、踪迹，或附近遭遇、地点、隐藏要素的迹象，抑或有关附近区域的信息。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left"><strong>环境</strong></td>
+<td style="text-align: left">天气或地形发生变化。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left"><strong>损失</strong></td>
+<td style="text-align: left">队伍面临一个抉择：需付出资源（口粮、工具等）、时间或精力。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left"><strong>力竭</strong></td>
+<td style="text-align: left">队伍遭遇阻碍，需竭力应对、小心处置，或被拖慢进度。这或许意味着耗费额外时间（并追加一次<strong>荒野行动</strong>），或将<strong>疲乏</strong>加入角色的物品栏，以示其困顿。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left"><strong>发现</strong></td>
+<td style="text-align: left">队伍找到食物、财宝或其他有用资源。<strong>监守</strong>也可改为揭示该区域的主要特征。</td>
+</tr>
+</tbody></table></div>
+<h3 id="荒野要素"> <a href="#荒野要素" class="anchor-heading" aria-labelledby="荒野要素"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 荒野要素 </h3>
+<h4 id="夜晚"> <a href="#夜晚" class="anchor-heading" aria-labelledby="夜晚"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 夜晚 </h4>
+<ul>
+<li>队伍可以选择夜间赶路、白天休息，但夜行要慢得多，也凶险得多！</li>
+<li>夜间出行总是更加危险！<strong>监守</strong>应在<a href="#wilderness-events"><strong>荒野事件</strong></a>表上投掷<em>两次</em>。</li>
+<li>某些地形与天气在夜间反而更易通行（例如沙漠）。<strong>监守</strong>应将此类挑战与其他因素一并权衡。</li>
+</ul>
+<h4 id="睡眠术"> <a href="#睡眠术" class="anchor-heading" aria-labelledby="睡眠术"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 睡眠术 </h4>
+<ul>
+<li>一天中的最后一个<strong>轮班</strong>，通常用于<a href="#make-camp"><strong>扎营</strong></a>行动。</li>
+<li>角色通常每天都需要睡眠。任何超出轻微干扰的情况都可能抵消或取消睡眠的益处。</li>
+<li>若队伍跳过<strong>扎营</strong>行动，则每人将一张<strong>疲乏</strong>加入物品栏，并陷入<em>匮乏</em>。此外，在睡眠匮乏状态下出行会使地形<strong>难度</strong>提升一级（即<em>简单</em>变为<em>艰难</em>）。</li>
+</ul>
+<h4 id="光照-1"> <a href="#光照-1" class="anchor-heading" aria-labelledby="光照-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 光照 </h4>
+<ul>
+<li>火把及其他辐射状光源可照亮队伍前方 40 尺，再远便只能勾勒出物体的模糊轮廓。</li>
+<li>没有光源的角色可能陷入<em>恐慌</em>，直至处境得到改善。</li>
+<li>环境状况（突起的阵风、尘土、水等）很容易吹灭火把。</li>
+</ul>
+<ul>
+<li>一支火把可点燃 3 次，之后便会损耗。</li>
+<li>提灯可无限次重新点燃，但需另备一罐灯油（6 次使用）。</li>
+</ul>
+<h3 id="野外行动"> <a href="#野外行动" class="anchor-heading" aria-labelledby="野外行动"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 野外行动 </h3>
+<h4 id="旅行"> <a href="#旅行" class="anchor-heading" aria-labelledby="旅行"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 旅行 </h4>
+<ul>
+<li>旅行开始。附近区域的显眼地点、特征与地形会依其距离远近依次显现。此行动通常由全队共同进行，视作一次。</li>
+<li>队伍投掷 1d6，以判定途中是否迷路。该风险可增可减，取决于路径的<strong>难度</strong>、地图、队伍技能与向导。</li>
+<li>若迷失方向，队伍可能需花费一次<strong>荒野行动</strong>来重新找到路。否则，队伍将抵达其路线上的下一个<strong>节点</strong>。</li>
+</ul>
+<blockquote><p>记住把迷路的结果与相应路径的<strong>难度</strong>作比对。</p></blockquote>
+<h4 id="探索"> <a href="#探索" class="anchor-heading" aria-labelledby="探索"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 探索 </h4>
+<ul>
+<li>一名或多名队员搜索大片区域，寻找隐藏之物、向前侦察，或小心行进。</li>
+<li>发现一处地点（庇护所、村庄、洞穴等）或景物（间歇泉、地下河、搁浅的船等）。</li>
+<li>即使当前区域已完全探索，仍需采取<strong>旅行</strong>行动才能<em>离开</em>。</li>
+</ul>
+<h4 id="补给"> <a href="#补给" class="anchor-heading" aria-labelledby="补给"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 补给 </h4>
+<ul>
+<li>一名或多名队员可狩猎、捕鱼或采集食物，获得 1d4 份<strong>口粮</strong>（每份可用 3 次）。每多一名参与者，获得更多收获的几率便随之提升（如 1d4 变为 1d6，最高可达 1d12）。</li>
+<li>相关经验或装备也可能增加收获。</li>
+<li>队伍可能遇到民居或小村庄，花费金币和一整个<strong>轮班</strong>即可补给。</li>
+</ul>
+<h4 id="扎营"> <a href="#扎营" class="anchor-heading" aria-labelledby="扎营"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 扎营 </h4>
+<ul>
+<li>队伍在荒野中停下扎营。每名队员（及其坐骑）消耗一份<strong>口粮</strong>。</li>
+<li>设定<strong>轮值守夜</strong>，以便队伍能安然入睡。人数较少的队伍或许不得不冒险无人看守地睡眠，或分多日轮流睡觉。</li>
+<li>得以休整的队员从物品栏中移除所有<strong>疲乏</strong>。</li>
+</ul>
+<h2 id="休整期"> <a href="#休整期" class="anchor-heading" aria-labelledby="休整期"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 休整期 </h2>
+<p>游戏间隙，玩家可从事多种活动，如研究、追查线索、提升技能或经营关系。一名玩家角色同时只能进行一项<strong>休整行动</strong>。此类行动不可在危险环境中进行，角色处于恢复期时亦不可进行。若某项行动会危及自身安全，角色便无法执行。</p>
+<h3 id="里程碑"> <a href="#里程碑" class="anchor-heading" aria-labelledby="里程碑"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 里程碑 </h3>
+<p>对于需要分步完成的活动，<strong>监守</strong>会分配 1-5 个<strong>里程碑</strong>供玩家记录进度。每个<strong>里程碑</strong>代表一项综合性的非交互任务。<strong>监守</strong>可提出不同的策略以达成这些目标，各策略对应不同的<strong>里程碑</strong>。<strong>监守</strong>亦有权根据游戏中事态的发展，增设新<strong>里程碑</strong>或舍弃现有<strong>里程碑</strong>。</p>
+<h3 id="代价"> <a href="#代价" class="anchor-heading" aria-labelledby="代价"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 代价 </h3>
+<p>玩家角色可进行一次<strong>休整行动</strong>并支付相应的<strong>代价</strong>，以完成单个<strong>里程碑</strong>。若角色无力支付<strong>代价</strong>，则须另寻他法达成目标。<strong>代价</strong>的几个示例：</p>
+<ul>
+<li><strong>金币</strong>：直接从角色物品栏中支付金币。</li>
+<li><strong>资源</strong>：非货币形式的代价，如物资、特定常见物品等。</li>
+<li><strong>声望</strong>：以角色的名望、个性、风度、人脉等作为赌注。</li>
+<li><strong>损失</strong>：献出某种具体而独特之物。一根手指、一个灵魂、一件<strong>奇物</strong>，等等。</li>
+</ul>
+<p>有些<strong>代价</strong>可凭角色的技能、人脉或意志力减轻，甚至一笔勾销。例如，某位玩家角色早已攒下足够的名望，得以踏入某家声名显赫的机构，这笔<strong>代价</strong>便随之减轻。换作另一位角色，或许就没这么走运，只能靠自身的人格魅力硬撑。此时，监守应言明风险（如永久禁止入内、损失名望等）。随后该玩家角色进行一次<strong>意志</strong>豁免；成功则代价减轻，或完全免除。</p>
+<h2 id="休整行动"> <a href="#休整行动" class="anchor-heading" aria-labelledby="休整行动"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 休整行动 </h2>
+<p>以下活动是玩家最常选择的<strong>休整行动</strong>。<strong>监守</strong>也可根据游玩需要自行设定行动。</p>
+<h3 id="研究"> <a href="#研究" class="anchor-heading" aria-labelledby="研究"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 研究 </h3>
+<p>角色调查某个问题：一段失落或湮没的秘闻、一件失物的所在、某位要人的下落，诸如此类。采取此行动，玩家必须先有明确要解答的问题，并在游戏世界中找到角色可接触的<strong>来源</strong>。若角色没有<strong>来源</strong>，可花费一次<strong>休整行动</strong>去寻找，但能否找到并无保证。问题提出、合适的<strong>来源</strong>确定后，<strong>监守</strong>应给出相应的<strong>里程碑</strong>与<strong>代价</strong>。</p>
+<h4 id="问题"> <a href="#问题" class="anchor-heading" aria-labelledby="问题"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 问题 </h4>
+<p>一如既往，问题必须源自某次游玩中的亲历。</p>
+<p><strong>示例：</strong></p>
+<ul>
+<li>“<strong>东尼普尔的失落神殿</strong>在哪里？”</li>
+<li>“<strong>财富城</strong>里谁懂得破解古代墓库？”</li>
+<li>“<strong>卷曲病</strong>的解药该往何处寻？”</li>
+</ul>
+<h4 id="情报来源"> <a href="#情报来源" class="anchor-heading" aria-labelledby="情报来源"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 情报来源 </h4>
+<p><strong>情报来源</strong>是掌握角色所求答案之部分或全部的人物、地点、势力或实体。他们可能是 NPC、势力、灵体，甚至其他玩家角色。</p>
+<ul>
+<li><strong>巧嘴凯尔</strong>，<strong>商人议会</strong>的常客。尽管与该派系关系极佳，但若请其协助非法勾当，代价可能极为高昂。</li>
+<li>一位<strong>林中野人</strong>，栖身于<strong>刀锋森林</strong>深处。队伍在此前的远征中与他相遇，那次会面不欢而散。但据说他识得百草的性味，通晓其疗愈之效。</li>
+<li><strong>木偶神殿</strong>，一支游牧马戏团，足迹遍及已知与未知之地。<strong>火雨</strong>降下之时，就连林中生灵也准备弃家而逃，队伍曾在那时搭救过他们中的一名成员。若有人听说过那些被遗忘的所在，那便是他们。</li>
+</ul>
+<h3 id="训练"> <a href="#训练" class="anchor-heading" aria-labelledby="训练"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 训练 </h3>
+<p>角色可以借助某件物品或某种能力提升技能，并在叙事或机制上得到明确结果。他们可能想用某件武器造成更高伤害，想降低在恶劣天气中迷路的几率，或想读懂古人的语言。玩家角色可以花费多次<strong>休整行动</strong>，以某件武器对练，逐周精进技艺；也可以远赴某位贤者的居所，通过短暂而密集的研习提升自我。</p>
+<p>玩家必须具体说明想提升什么，以及可能与之同练的<strong>导师</strong>。当然，角色精进的动机应源自游戏中的某段经历。<strong>监守</strong>应给出相应的<strong>里程碑</strong>与<strong>代价</strong>。</p>
+<p><strong>示例：</strong></p>
+<ul>
+<li><strong>双手格挡</strong>：空出一只手战斗时，角色的耐久度暂时增加1d4。队伍从<strong>陨坑地</strong>雇佣了一名雇员，那里的战士注重闪避敌人的攻击。她同意训练任何能在徒手格斗中击败她的人。</li>
+<li><strong>草药学</strong>：只要有合适的材料，角色就能在<strong>休整行动</strong>中制作<strong>治疗药膏</strong>（恢复1d4点力量，1 次使用）。在<strong>翠绿林地</strong>接受一位年迈草药师的照料后，受伤的角色请求学习治疗之术。<strong>大师</strong>同意了，但要求他们在训练开始前采集三株稀有草药。</li>
+<li><strong>鳟鱼大师</strong>：采取补给<strong>行动</strong>时，在寒冷淡水水源附近收集的<strong>口粮</strong>增加一档（例如1d4变为1d6）。队伍护送一位被困在臭名昭著的<strong>银荒原</strong>的自然学家安全返回城市。作为感谢，她提出训练一名角色识别并捕捉常见于较冷水域的湖鱼。</li>
+</ul>
+<h3 id="巩固关系"> <a href="#巩固关系" class="anchor-heading" aria-labelledby="巩固关系"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 巩固关系 </h3>
+<p>角色与游戏世界中的某个非玩家角色或派系建立联系。首先，他们须指明想要加深关系的对象，以及一个具体的<strong>意图</strong>（例如建立信任、修复友谊、谋求加入某派系、结成同盟等等）。随后，<strong>监守</strong>给出具体的举措（以<strong>里程碑</strong>与<strong>代价</strong>描述），供角色施行以推进这段关系。每当一个<strong>里程碑</strong>达成，<strong>监守</strong>便描述角色的关系如何发展或变化。</p>
+<p><strong>示例：</strong></p>
+<ul>
+<li>一次深入<strong>根系</strong>的探索无功而返，某玩家角色却发现队伍里不知何时混进了一名偷渡客：一只刚破壳不久的无眼吞噬者。众人决定留下这头生物，暗中驯养。</li>
+<li>一次游戏进程中，某玩家角色与<strong>头盔骑士团</strong>的一名代理人交好。他深为教团的信条所折服，便打听加入需要什么条件。</li>
+<li>某强大派系的一名代理人，在<strong>群蛙之战</strong>期间受队伍照看时殒命。如今责任方愿意作出补偿，好让队伍再度为该派系效力。</li>
+</ul>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>

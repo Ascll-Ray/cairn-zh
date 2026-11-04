@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>创建背景 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item"><a href="/players-guide/procedures/" class="nav-list-link">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/players-guide/character-creation/" class="nav-list-link">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item active"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link active">创建背景</a></li><li class="nav-list-item"><a href="/wardens-guide/bibliography/" class="nav-list-link">参考文献</a></li><li class="nav-list-item"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item"><a href="/wardens-guide/spellbooks/" class="nav-list-link">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item">
+            <a href="https://cairnrpg.com" class="site-button">Cairn 官方原版</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/second-edition/">第二版</a></li><li class="breadcrumb-nav-list-item"><a href="/wardens-guide/">监守手册</a></li><li class="breadcrumb-nav-list-item"><span>创建背景</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="创建背景"> <a href="#创建背景" class="anchor-heading" aria-labelledby="创建背景"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 创建背景 </h1>
+<h2 id="引言"> <a href="#引言" class="anchor-heading" aria-labelledby="引言"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 引言 </h2>
+<p>在《石冢》中，角色的背景是其人物最重要的元素，既代表过去，也映射当下。背景可以影响角色的知识、专长、与设定的联系等等。背景也是解读骰子结果的过滤器，或是不需掷骰的理由。采药人从毒草上摘叶时无需进行敏捷豁免，正如缮写师懂得阅读当地语言的古体。最重要的是，背景通过角色的初始装备和独特经历讲述故事，将角色与设定及其主题紧密相连。</p>
+<h2 id="原则"> <a href="#原则" class="anchor-heading" aria-labelledby="原则"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 原则 </h2>
+<ul>
+<li>玩家应当对在背景表上掷骰感到兴奋。</li>
+<li>背景可以典型而熟悉，但要为另类解读留出空间！</li>
+<li>背景应当向玩家透露一些隐含设定的信息。</li>
+<li>每个表上的结果都应独一无二，这样即使背景相同，角色之间也依然各有特色。</li>
+</ul>
+<h2 id="背景的解剖"> <a href="#背景的解剖" class="anchor-heading" aria-labelledby="背景的解剖"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 背景的解剖 </h2>
+<h3 id="主题"> <a href="#主题" class="anchor-heading" aria-labelledby="主题"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 主题 </h3>
+<p>准备一组描述新背景的常见形容词。如果设计一种职业，问问自己是什么会让一个人选择这样的生涯。如果写更独特的东西（比如半巫），考虑这种人的怪异如何使他们疏离他人或拉近距离。在撰写背景的初始装备和表格时，牢记游戏世界的隐含设定、灵感素材（书籍、电影等）以及现有套路可能如何影响结果。</p>
+<h3 id="初始装备"> <a href="#初始装备" class="anchor-heading" aria-labelledby="初始装备"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 初始装备 </h3>
+<p>《石冢》中的角色很大程度上由物品栏定义，因此初始装备应是描绘背景独特画卷的第一笔。每个背景拥有：</p>
+<ul>
+<li>金币、食物和某种光源。这些也应独特；某个背景可能以不寻常的口粮、蜡烛头盔等开始。</li>
+<li>至多四件强化总体主题的<em>独特</em>物品。其中至少一件应是某种武器。</li>
+<li>初始物品总共不应超过七格，以免角色物品栏负担过重。</li>
+</ul>
+<h3 id="表格"> <a href="#表格" class="anchor-heading" aria-labelledby="表格"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 表格 </h3>
+<p>表格是角色独特故事真正成形之处，也提供了足够的多样性，使任何两个角色都不尽相同。每个背景都有一个定义性问题，其后是六行答案。第一个表格的问题应围绕角色久远或近期的过往，以及哪些经历造就了其当前处境。第一个表格应为角色提供一件独特物品、一项能力，或两者的组合。第二个表格的问题聚焦于角色<em>当下</em>的身份，答案通常与某件具体物品或技能相关，该物品或技能从广义上定义了角色。</p>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>

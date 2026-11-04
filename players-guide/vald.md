@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 瓦尔德
 parent: 玩家手册

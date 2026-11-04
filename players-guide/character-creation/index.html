@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>角色创建 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item"><a href="/players-guide/procedures/" class="nav-list-link">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item active"><a href="/players-guide/character-creation/" class="nav-list-link active">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link">创建背景</a></li><li class="nav-list-item"><a href="/wardens-guide/bibliography/" class="nav-list-link">参考文献</a></li><li class="nav-list-item"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item"><a href="/wardens-guide/spellbooks/" class="nav-list-link">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item">
+            <a href="https://cairnrpg.com" class="site-button">Cairn 官方原版</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/second-edition/">第二版</a></li><li class="breadcrumb-nav-list-item"><a href="/players-guide/">玩家手册</a></li><li class="breadcrumb-nav-list-item"><span>角色创建</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="角色创建"> <a href="#角色创建" class="anchor-heading" aria-labelledby="角色创建"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 角色创建 </h1>
+<h2 id="掷骰或选择背景"> <a href="#掷骰或选择背景" class="anchor-heading" aria-labelledby="掷骰或选择背景"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 掷骰或选择背景 </h2>
+<ul>
+<li>首先，从下方<a href="#backgrounds">背景</a>表中掷骰或选择，并记下页码。接下来几步你会用到该页。</li>
+<li>从可用列表中选一个名字，然后记录角色所有初始物品。记录物品的方法见<a href="#inventory">物品栏</a>和<a href="#inventory-slots">物品栏位</a>。</li>
+<li>在背景所包含的每个表上掷骰。根据每个结果记录角色的物品、技能或能力。有些背景可能还会要求你参考<a href="/second-edition/players-guide/marketplace">市场</a>中的表格。</li>
+</ul>
+<h2 id="背景"> <a href="#背景" class="anchor-heading" aria-labelledby="背景"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 背景 </h2>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>d20</strong></td>
+<td style="text-align: left"><strong>背景</strong></td>
+<td style="text-align: left"></td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/aurifex">金匠</a></td>
+<td style="text-align: left"><strong>11</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/half-witch">半巫</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/barber-surgeon">剃头医师</a></td>
+<td style="text-align: left"><strong>12</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/hexenbane">屠巫者</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/beast-handler">驯兽师</a></td>
+<td style="text-align: left"><strong>13</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/jongleur/">吟游艺人</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/bonekeeper/">守骸人</a></td>
+<td style="text-align: left"><strong>14</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/kettlewright">补锅匠</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/cutpurse">扒手</a></td>
+<td style="text-align: left"><strong>15</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/marchguard/">边关守卫</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/fieldwarden/">田野监守</a></td>
+<td style="text-align: left"><strong>16</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/mountebank">江湖骗子</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/fletchwind">风矢匠</a></td>
+<td style="text-align: left"><strong>17</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/outrider">游骑</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/foundling">弃儿</a></td>
+<td style="text-align: left"><strong>18</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/prowler">潜行客</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/fungal-forager">菌菇采集者</a></td>
+<td style="text-align: left"><strong>19</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/rill-runner">溪行者</a></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/greenwise/">草木通</a></td>
+<td style="text-align: left"><strong>20</strong></td>
+<td style="text-align: left"><a href="/second-edition/backgrounds/scrivener">缮写师</a></td>
+</tr>
+</tbody></table></div>
+<h2 id="属性耐久度与特质"> <a href="#属性耐久度与特质" class="anchor-heading" aria-labelledby="属性耐久度与特质"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 属性、耐久度与特质 </h2>
+<ul>
+<li>为你的角色投掷<strong>属性</strong>与<strong>耐久度</strong>。</li>
+<li>再投掷角色其余的<a href="#character-traits-d10">特质</a>，然后投<a href="#bonds">羁绊</a>表。</li>
+<li>最后，投掷角色的<strong>年龄</strong>（2d20+10）。若你是最<em>年轻</em>的角色，则投<a href="#omens">预兆</a>表，并向其他玩家朗读结果。监守可自行斟酌，将预兆融入设定之中。</li>
+</ul>
+<h2 id="属性"> <a href="#属性" class="anchor-heading" aria-labelledby="属性"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 属性 </h2>
+<ul>
+<li>玩家角色只有三项属性：<strong>力量（STR）</strong>、<strong>敏捷（DEX）</strong>和<strong>意志（WIL）</strong>。</li>
+<li>依次为角色的每项<strong>属性</strong>投掷3d6。随后可任意交换其中两项的结果。</li>
+<li>属性并非万能标签。力量低的角色未必软弱无力：他们照样能试着抬起沉重的门，或在死斗中活下来！只是风险更高罢了。</li>
+</ul>
+<h2 id="耐久度"> <a href="#耐久度" class="anchor-heading" aria-labelledby="耐久度"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 耐久度 </h2>
+<ul>
+<li>投掷1d6，决定 PC 的初始<strong>耐久度</strong>（HP），它代表角色在战斗中规避伤害的能力，而非其健康或体魄，也不会长时间损失。参见<a href="/second-edition/players-guide/core-rules#healing--recovery">治疗与恢复</a>。</li>
+<li>若一次攻击恰好将 PC 的耐久度降至 0，玩家须投<a href="/second-edition/players-guide/core-rules#scars"><strong>伤痕</strong></a>表。</li>
+</ul>
+<h2 id="物品栏"> <a href="#物品栏" class="anchor-heading" aria-labelledby="物品栏"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 物品栏 </h2>
+<ul>
+<li>角色共有十个物品栏位，但若无提包、背包、马匹、货车等助力，仅能从容携带四到五件物品。</li>
+<li>每名玩家角色初始自带一只<strong>背包</strong>，最多可容纳六个栏位的物品或<strong>疲乏</strong>。货车（须双手拉拽）、马匹或骡子能极大改变玩家角色在冒险中可携带的物资总量。也可花钱雇<strong>雇员</strong>搬运装备。</li>
+<li>物品栏是抽象的，仅取决于叙事本身，由监守裁定。任何人装满物品栏（即填满全部 10 个栏位），耐久度即降至 0。角色无法占据超过十个栏位。</li>
+</ul>
+<h3 id="物品栏位"> <a href="#物品栏位" class="anchor-heading" aria-labelledby="物品栏位"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 物品栏位 </h3>
+<ul>
+<li>除另有说明外，多数物品占据一个栏位。</li>
+<li><em>琐细</em>物品不占任何栏位。<em>笨重</em>物品占据<strong>两个</strong>栏位。</li>
+<li>价值不足 100gp 的一袋硬币属于<em>琐细</em>物品，不占栏位。</li>
+</ul>
+<h2 id="角色特质d10"> <a href="#角色特质d10" class="anchor-heading" aria-labelledby="角色特质d10"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 角色特质（d10） </h2>
+<h3 id="体魄"> <a href="#体魄" class="anchor-heading" aria-labelledby="体魄"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 体魄 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">健壮</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">瘦弱</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">魁梧</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">矮小</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">松弛</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">匀称高挑</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">瘦长</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">敦实</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">粗犷</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">魁梧</td>
+</tr>
+</tbody></table></div>
+<h3 id="皮肤"> <a href="#皮肤" class="anchor-heading" aria-labelledby="皮肤"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 皮肤 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">有胎记</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">柔嫩</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">有印记</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">晒黑</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">油腻</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">有纹身</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">红润</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">饱经风霜</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">疤痕累累</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">指间有蹼</td>
+</tr>
+</tbody></table></div>
+<h3 id="头发"> <a href="#头发" class="anchor-heading" aria-labelledby="头发"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 头发 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">秃顶</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">长发</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">编辫</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">浓密华美</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">卷曲</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">油腻</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">污秽</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">波浪</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">毛躁</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">稀疏</td>
+</tr>
+</tbody></table></div>
+<h3 id="面部"> <a href="#面部" class="anchor-heading" aria-labelledby="面部"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 面部 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">瘦削</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">完美</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">残破</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">不羁</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">棱角分明</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">锐利</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">细长</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">方正</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">苍白</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">低沉</td>
+</tr>
+</tbody></table></div>
+<h3 id="平实"> <a href="#平实" class="anchor-heading" aria-labelledby="平实"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 平实 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">直率</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">粗粝</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">洪亮</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">精准</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">隐晦</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">尖细</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">低沉单调</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">口吃</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">正式</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">耳语般</td>
+</tr>
+</tbody></table></div>
+<h3 id="衣着"> <a href="#衣着" class="anchor-heading" aria-labelledby="衣着"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 衣着 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">古旧</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">褴褛</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">血污</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">寒酸</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">优雅</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">号衣</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">污秽</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">腐臭</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">异邦</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">污秽</td>
+</tr>
+</tbody></table></div>
+<h3 id="美德"> <a href="#美德" class="anchor-heading" aria-labelledby="美德"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 美德 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">雄心勃勃</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">重誉守节</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">谨慎</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">谦逊</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">勇敢</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">仁慈</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">自律</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">宁静</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">合群</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">宽容</td>
+</tr>
+</tbody></table></div>
+<h3 id="恶习"> <a href="#恶习" class="anchor-heading" aria-labelledby="恶习"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 恶习 </h3>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">好斗</td>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">懒惰</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">怨恨</td>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">紧张</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">懦弱</td>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">粗鲁</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">狡诈</td>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">虚荣</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">贪婪</td>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">复仇心重</td>
+</tr>
+</tbody></table></div>
+<h2 id="羁绊"> <a href="#羁绊" class="anchor-heading" aria-labelledby="羁绊"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 羁绊 </h2>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>D20</strong></td>
+<td style="text-align: left"><strong>羁绊</strong></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">你从一位早已过世的远亲那里继承了一枚<strong>单枚宝石</strong>（500 金币，冰冷易碎）。随它而来的还有一句警告：若挥霍这笔新得的财富，一笔早被遗忘的旧债便会有人上门追讨。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">一位远房表亲留给你一小笔遗产。获得 <strong>20Gp</strong> 和一只 <strong>奇异罗盘</strong>（<em>微末</em>），它总是指向林海深处的某样东西。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">你在吊坠盒中带着一幅<strong>肖像</strong>（<em>琐屑</em>），画的是很久以前消失在林地里的旧日恋人。不知何故，你知道那人仍然活着。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">你在泥土中掘出一枚<strong>微型水晶棱镜</strong>（<em>小物</em>）。将它举向光亮，便能看到林地深处某处未知之地的景象。有时，你会觉得有东西也在回望你。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">你曾把一位水泽仙女从淤塞的溪流中解救出来。作为回报，她赠你一些<strong>银苔</strong>（微末）。在水边将它吞下，那仙女便会现身一次，偿还这份恩情。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">你继承了一本古老的<strong>日志</strong>，以树皮装订。每到夜晚，书页上便写满当日之事，行文粗鄙，皆出日志自身之口。笔法拙劣，却字字属实。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">你守护着一桩沉睡已久的家族秘辛。取走半枚<strong>远古钥匙</strong>（<em>微末</em>）。据说它与另一半合璧后，能借任意一扇门开启一道<strong>异界之门</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">你收到一封<strong>信</strong>（<em>小巧</em>），内载确凿无疑的证据：你的生身血脉实为妖精贵族。信中另注明了一个日期与地点，要你深入林地，与写信之人相见。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">你欠某位贵族一大笔债，随身携带对方的<strong>玺戒</strong>（<em>琐细</em>），它既是其庇护的凭证，也是你身负重债的凭据。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">你吞下了一只<strong>顽劣精魂</strong>，它在你的体内大肆折腾，吵着要你送它回家——森林深处。它占用一格物品位，但每天吸收一点<strong>疲乏</strong>。它希望你活着（眼下如此）。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>11</strong></td>
+<td style="text-align: left">流浪的说书人曾为你讲过一段传说：密林深处埋着巨额宝藏。你只当是痴人说梦，直到对方递来一张标着 X 的<strong>卷起的地图</strong>（<em>小件</em>）。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>12</strong></td>
+<td style="text-align: left">旅途中，你遇见一位垂死的猎人，他托你把一句话捎给亲人。你拿到一封用树胶封口的<strong>信</strong>（<em>小件</em>），上面只写着收信人：<strong>凛冬之主</strong>。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>13</strong></td>
+<td style="text-align: left">你在林中见到一头受伤的野兽，却选择视而不见。如今它无处不在，却只在你孤身一人时现身。它神情哀伤，却无怒意。独自行动时，你无法陷入<em>恐慌</em>。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>14</strong></td>
+<td style="text-align: left">你曾答应一位儿时玩伴，要带一件稀世奇珍回去——世间独一无二的礼物。带上这只以麻绳与野花编成的<strong>手环</strong>（<em>小件</em>）。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>15</strong></td>
+<td style="text-align: left">你触怒了林中的生灵，它以<strong>石心</strong>诅咒了你。每过一月，石心便加重一格。债未清偿之前，你无法真正死去。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>16</strong></td>
+<td style="text-align: left">你从<strong>橡树之主</strong>的枝干上削出一支<strong>哨子</strong>（<em>小件</em>）。此举并未逃过他人眼睛。而这支哨子，你也始终摆脱不掉。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>17</strong></td>
+<td style="text-align: left"><strong>黎明兵团</strong>曾施恩于你家，以一枝干枯的<strong>血红花</strong>（<em>小件</em>）为凭。待花色转白，便是恩情待偿之时。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>18</strong></td>
+<td style="text-align: left">一名艺人曾造访你家，满室故事与歌声。某日他不辞而别，只留下一把<strong>微型鲁特琴</strong>。琴中似有物在响动。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>19</strong></td>
+<td style="text-align: left">梦中，一只白鸦衔着细枝向你现身。翌日清晨醒来，那根<strong>细枝</strong>（<em>琐物</em>）已握在手中。你相信它能带来好运。它隐约透着硫磺气味。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>20</strong></td>
+<td style="text-align: left">你的一位先祖曾得罪一位<strong>苔藓女巫</strong>，她诅咒了其血脉。你的面容会令镜子碎裂。你注意到，碎片有时能映出幻象。</td>
+</tr>
+</tbody></table></div>
+<h2 id="预兆"> <a href="#预兆" class="anchor-heading" aria-labelledby="预兆"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 预兆 </h2>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>d20</strong></td>
+<td style="text-align: left"><strong>预兆</strong></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">那条曾滋养万物的丰饶之河，如今黑浊腐臭，毒染土地，饮者皆病。村中长老指认近日的亵渎之举乃祸根，但众人多不理会。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">今年冬天似乎来得太急，霜雪出现得远比预料更早。人们说，窗上、池塘里、地缝间的霜纹自有一套规律，几乎像是一幅地图。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">浓重而异样的雾气开始侵入一片古老的神圣林地。据说这是一位伟大森林之灵的手笔——附近的滥伐激怒了它。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">夜空一夜比一夜暗淡，仿佛星辰正一颗颗消失。邪物掳走农夫、将他们拖入根须的传言如野火般蔓延。村中长老相信，这两件事彼此相关。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">近来，林中鸣鸟悄然噤声，静得诡异。猎人称，有人见过一个幽灵般的身影在林间游荡，每每遇见生人，便投去渴慕的目光。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">这一带陆续发现形如泪滴的怪石，宝石商与盗贼闻风而动，掀起一场别样的“淘金热”。当地人相信，那是大地之泪，为一场尚未降临的浩劫而泣。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left">成群的害虫啃噬着梦境的边缘；农夫们说起林深处传来的一阵响亮嗡鸣。他们还说，那声音正越来越近。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left">有一座村庄远近闻名，凭的是村里那棵气派的"母树"——据说镇上的秘密都藏在它的枝干之间。近来，母树开始渗出红色树液，令长老们忧心不已。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left">月亮化作深红，将夜色浸入诡异的血红光芒。有人说，这预示着混乱与纷争的时节将至——林与凡世之间的界限正日渐稀薄。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left">夜空出现奇异裂痕，露出光与色彩翻涌的漩涡。有人说，两界之间的界限正处在数百年来最薄弱之时，他们忧惧另一侧会有什么从中涌出。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>11</strong></td>
+<td style="text-align: left">一种曾被认为已经绝迹的夜花，正在整片树林中遍地萌发。其香令人迷醉，却也会引来逼真的梦魇。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>12</strong></td>
+<td style="text-align: left">近来，本地牲畜愈发躁动难驯。一位老牧人说，每逢满月，林中便传来一声令人不安的嗥叫，牲畜因此作乱。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>13</strong></td>
+<td style="text-align: left">成群的昆虫正大批逃出林地，所过之处，木造建筑尽遭摧毁。它们从头顶掠过，翅鸣嗡嗡，是一支熟悉的曲调，宛如一首被遗忘的童谣。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>14</strong></td>
+<td style="text-align: left">猎人们传言，谁若杀死带有白毛条纹的野兽，便会遭到诅咒：不久之后，他们便被发现死在自己家中。可供猎杀的野兽，一天比一天少。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>15</strong></td>
+<td style="text-align: left">人们说，全城的水井里隐约回荡着笑声，入夜后便化作呜咽。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>16</strong></td>
+<td style="text-align: left">夜空中的星座缓缓移位，结出陌生的图案，令占星者与贤者困惑不解。连飞禽走兽也惶惶不安。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>17</strong></td>
+<td style="text-align: left">一座古树矗立在沉睡的村庄中心，突然间枯萎死去，却毫无患病迹象。树干被砍开后，树心竟藏着一只血淋淋的手。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>18</strong></td>
+<td style="text-align: left">数月来，雕像不断淌血泪，村中妇人自此再未受孕。唯有一个孩子例外，被满心恐惧的长老们藏匿起来。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>19</strong></td>
+<td style="text-align: left">当地野兽行为怪异，或异常凶猛，或彻底逃离此地。猎人们提起林中有个暗影般的身影游荡，呼唤着动物。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>20</strong></td>
+<td style="text-align: left">近数周来，边地市镇屡生骚乱：多人声称有红袍身影现身孩童梦中，反复吐出同一句警告：火要来了，它将吞噬一切。</td>
+</tr>
+</tbody></table></div>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>

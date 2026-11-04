@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 角色创建
 parent: 玩家手册
@@ -12,23 +11,23 @@ grand_parent: 第二版
 
 - 首先，从下方[背景](#backgrounds)表中掷骰或选择，并记下页码。接下来几步你会用到该页。
 - 从可用列表中选一个名字，然后记录角色所有初始物品。记录物品的方法见[物品栏](#inventory)和[物品栏位](#inventory-slots)。
-- 在背景所包含的每个表上掷骰。根据每个结果记录角色的物品、技能或能力。有些背景可能还会要求你参考[市场](../marketplace)中的表格。
+- 在背景所包含的每个表上掷骰。根据每个结果记录角色的物品、技能或能力。有些背景可能还会要求你参考[市场](/second-edition/players-guide/marketplace)中的表格。
 
-## 背景 {: #backgrounds }
+## 背景 
 
 |         |                                                                                 |        |                                                                             |
 | ------- | ------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------------- |
 | **d20** | **背景** |        |                                                                             |
-| **1** | [金匠](https://cairnrpg.com/second-edition/backgrounds/aurifex) | **11** | [半巫](https://cairnrpg.com/second-edition/backgrounds/half-witch) |
-| **2** | [剃头医师](https://cairnrpg.com/second-edition/backgrounds/barber-surgeon) | **12** | [屠巫者](https://cairnrpg.com/second-edition/backgrounds/hexenbane) |
-| **3** | [驯兽师](https://cairnrpg.com/second-edition/backgrounds/beast-handler) | **13** | [吟游艺人](https://cairnrpg.com/second-edition/backgrounds/jongleur/) |
-| **4** | [守骸人](https://cairnrpg.com/second-edition/backgrounds/bonekeeper/) | **14** | [补锅匠](https://cairnrpg.com/second-edition/backgrounds/kettlewright) |
-| **5** | [扒手](https://cairnrpg.com/second-edition/backgrounds/cutpurse) | **15** | [边关守卫](https://cairnrpg.com/second-edition/backgrounds/marchguard/) |
-| **6** | [田野监守](https://cairnrpg.com/second-edition/backgrounds/fieldwarden/) | **16** | [江湖骗子](https://cairnrpg.com/second-edition/backgrounds/mountebank) |
-| **7** | [风矢匠](https://cairnrpg.com/second-edition/backgrounds/fletchwind) | **17** | [游骑](https://cairnrpg.com/second-edition/backgrounds/outrider) |
-| **8** | [弃儿](https://cairnrpg.com/second-edition/backgrounds/foundling) | **18** | [潜行客](https://cairnrpg.com/second-edition/backgrounds/prowler) |
-| **9** | [菌菇采集者](https://cairnrpg.com/second-edition/backgrounds/fungal-forager) | **19** | [溪行者](https://cairnrpg.com/second-edition/backgrounds/rill-runner) |
-| **10** | [草木通](https://cairnrpg.com/second-edition/backgrounds/greenwise/) | **20** | [缮写师](https://cairnrpg.com/second-edition/backgrounds/scrivener) |
+| **1** | [金匠](/second-edition/backgrounds/aurifex) | **11** | [半巫](/second-edition/backgrounds/half-witch) |
+| **2** | [剃头医师](/second-edition/backgrounds/barber-surgeon) | **12** | [屠巫者](/second-edition/backgrounds/hexenbane) |
+| **3** | [驯兽师](/second-edition/backgrounds/beast-handler) | **13** | [吟游艺人](/second-edition/backgrounds/jongleur/) |
+| **4** | [守骸人](/second-edition/backgrounds/bonekeeper/) | **14** | [补锅匠](/second-edition/backgrounds/kettlewright) |
+| **5** | [扒手](/second-edition/backgrounds/cutpurse) | **15** | [边关守卫](/second-edition/backgrounds/marchguard/) |
+| **6** | [田野监守](/second-edition/backgrounds/fieldwarden/) | **16** | [江湖骗子](/second-edition/backgrounds/mountebank) |
+| **7** | [风矢匠](/second-edition/backgrounds/fletchwind) | **17** | [游骑](/second-edition/backgrounds/outrider) |
+| **8** | [弃儿](/second-edition/backgrounds/foundling) | **18** | [潜行客](/second-edition/backgrounds/prowler) |
+| **9** | [菌菇采集者](/second-edition/backgrounds/fungal-forager) | **19** | [溪行者](/second-edition/backgrounds/rill-runner) |
+| **10** | [草木通](/second-edition/backgrounds/greenwise/) | **20** | [缮写师](/second-edition/backgrounds/scrivener) |
 
 ## 属性、耐久度与特质 
 
@@ -44,22 +43,22 @@ grand_parent: 第二版
 
 ## 耐久度
 
-- 投掷1d6，决定 PC 的初始**耐久度**（HP），它代表角色在战斗中规避伤害的能力，而非其健康或体魄，也不会长时间损失。参见[治疗与恢复](../core-rules#healing--recovery)。 
-- 若一次攻击恰好将 PC 的耐久度降至 0，玩家须投[**伤痕**](../core-rules#scars)表。
+- 投掷1d6，决定 PC 的初始**耐久度**（HP），它代表角色在战斗中规避伤害的能力，而非其健康或体魄，也不会长时间损失。参见[治疗与恢复](/second-edition/players-guide/core-rules#healing--recovery)。 
+- 若一次攻击恰好将 PC 的耐久度降至 0，玩家须投[**伤痕**](/second-edition/players-guide/core-rules#scars)表。
 
-## 物品栏 {: #inventory }
+## 物品栏 
 
 - 角色共有十个物品栏位，但若无提包、背包、马匹、货车等助力，仅能从容携带四到五件物品。
 - 每名玩家角色初始自带一只**背包**，最多可容纳六个栏位的物品或**疲乏**。货车（须双手拉拽）、马匹或骡子能极大改变玩家角色在冒险中可携带的物资总量。也可花钱雇**雇员**搬运装备。
 - 物品栏是抽象的，仅取决于叙事本身，由监守裁定。任何人装满物品栏（即填满全部 10 个栏位），耐久度即降至 0。角色无法占据超过十个栏位。
 
-### 物品栏位 {: #inventory-slots }
+### 物品栏位 
 
 - 除另有说明外，多数物品占据一个栏位。
 - *琐细*物品不占任何栏位。*笨重*物品占据**两个**栏位。
 - 价值不足 100gp 的一袋硬币属于*琐细*物品，不占栏位。
 
-## 角色特质（d10） {: #character-traits-d10 }
+## 角色特质（d10） 
 
 ### 体魄
 
@@ -141,7 +140,7 @@ grand_parent: 第二版
 | **4** | 狡诈 | **9** | 虚荣 |
 | **5** | 贪婪 | **10** | 复仇心重 |
 
-## 羁绊 {: #bonds }
+## 羁绊 
 
 |         |                                                                                                                                                                                                                                                                                          |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -167,8 +166,7 @@ grand_parent: 第二版
 | **19** | 梦中，一只白鸦衔着细枝向你现身。翌日清晨醒来，那根**细枝**（*琐物*）已握在手中。你相信它能带来好运。它隐约透着硫磺气味。 |
 | **20** | 你的一位先祖曾得罪一位**苔藓女巫**，她诅咒了其血脉。你的面容会令镜子碎裂。你注意到，碎片有时能映出幻象。 |
 
-
-## 预兆 {: #omens }
+## 预兆 
 
 |         |                                                                                                                                                                                                                                                    |
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

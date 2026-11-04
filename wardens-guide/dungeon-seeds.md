@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 地城种子
 parent: 监守手册
@@ -213,7 +212,7 @@ grand_parent: 第二版
 - 选择最靠近纸边的房间。这便是地城的*入口*。
 - 从入口开始，为地城地图上的每个房间编号。
 
-#### 地城骰落表 {: #dungeon-die-drop-table }
+#### 地城骰落表 
 
 | **d6** | **房间** |
 | :------- | :-------- |
@@ -414,7 +413,7 @@ grand_parent: 第二版
 
 ### 地图
 
-[![点我！](https://cairnrpg.com/img/2e/dungeon-seed-example.webp "点击放大"){:height="60%" width="60%"}](https://cairnrpg.com/img/2e/dungeon-seed-example.webp)
+[![点我！](/assets/dungeon-seed-example.webp "点击放大")](/img/2e/dungeon-seed-example.webp)
 
 ### 破碎神庙
 

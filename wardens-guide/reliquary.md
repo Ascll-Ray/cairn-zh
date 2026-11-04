@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 圣物阁
 parent: 监守手册

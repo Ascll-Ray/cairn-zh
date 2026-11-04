@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: NPC 表
 parent: 监守手册

@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 关于示例队伍
 parent: 监守手册

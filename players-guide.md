@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 玩家手册
 parent: 第二版

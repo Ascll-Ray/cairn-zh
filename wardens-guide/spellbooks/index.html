@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>法术书 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item"><a href="/players-guide/procedures/" class="nav-list-link">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/players-guide/character-creation/" class="nav-list-link">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link">创建背景</a></li><li class="nav-list-item"><a href="/wardens-guide/bibliography/" class="nav-list-link">参考文献</a></li><li class="nav-list-item"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item active"><a href="/wardens-guide/spellbooks/" class="nav-list-link active">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item">
+            <a href="https://cairnrpg.com" class="site-button">Cairn 官方原版</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/second-edition/">第二版</a></li><li class="breadcrumb-nav-list-item"><a href="/wardens-guide/">监守手册</a></li><li class="breadcrumb-nav-list-item"><span>法术书</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <h1 id="法术书"> <a href="#法术书" class="anchor-heading" aria-labelledby="法术书"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 法术书 </h1>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+<th style="text-align: left"></th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left"><strong>黏附术</strong></td>
+<td style="text-align: left">某件物品被极黏的黏液包裹。<em>相邻物品会被强力粘在书上。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left"><strong>定锚术</strong></td>
+<td style="text-align: left">一根坚韧的金属丝从你双臂生出，分别固定在两侧 50 尺内的两点上。<em>若将绳索穿过其书脊上的铁环，它便会重如大象。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left"><strong>活化物体</strong></td>
+<td style="text-align: left">某件物品会尽其所能遵从你的命令。<em>可如黏土般塑形。书页间会迸出孩童般的笑声。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left"><strong>赋形化人</strong></td>
+<td style="text-align: left">一只动物获得人类智力或人类外貌，持续一天。<em>依所受待遇不同，它会呜咽、呼噜或低吼。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left"><strong>奥术之眼</strong></td>
+<td style="text-align: left">你能透过一颗受你命令术驱使、四处飞行的魔法浮眼视物。<em>需喷些水方能睁开。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left"><strong>星界牢笼</strong></td>
+<td style="text-align: left">一件物品被冻结在时空之中，封于坚不可摧的水晶外壳内。<em>无声、抽象，面孔在痛苦中尖叫。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>7</strong></td>
+<td style="text-align: left"><strong>牵引术</strong></td>
+<td style="text-align: left">两件物品若相距 10 尺以内，便会强烈地相互磁吸。<em>附近的罗盘徒然乱转。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>8</strong></td>
+<td style="text-align: left"><strong>幻音术</strong></td>
+<td style="text-align: left">你制造出仿佛来自任意方向的幻音。<em>整日发出随机且偶尔不合时宜的声响。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>9</strong></td>
+<td style="text-align: left"><strong>惑语术</strong></td>
+<td style="text-align: left">一个生物必须大声清晰地复述你所想的一切，除此之外它无法出声。<em>朗读此文本时，他人之言皆变得含混难辨。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>10</strong></td>
+<td style="text-align: left"><strong>诱饵魔花</strong></td>
+<td style="text-align: left">一株植物破土而出，散发着腐肉的气味。<em>招引苍蝇。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>11</strong></td>
+<td style="text-align: left"><strong>化兽术</strong></td>
+<td style="text-align: left">你与随身物品化作一只寻常动物。<em>覆有厚毛，边缘生着一圈细齿。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>12</strong></td>
+<td style="text-align: left"><strong>迷乱术</strong></td>
+<td style="text-align: left">你选定的一只生物在法术持续期间无法形成新的短期记忆。<em>其内容每次打开都会变动。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>13</strong></td>
+<td style="text-align: left"><strong>移魂换躯</strong></td>
+<td style="text-align: left">你与你触碰的一只生物交换身体。若其中一具躯体死亡，另一具也随之死亡。<em>封面上绘着上一个读过它的生物。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>14</strong></td>
+<td style="text-align: left"><strong>魅惑术</strong></td>
+<td style="text-align: left">你可见的一只生物将你视为朋友。<em>触之温热，散发玫瑰香气。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>15</strong></td>
+<td style="text-align: left"><strong>命令术</strong></td>
+<td style="text-align: left">目标服从一句不超过三词、且不会对其造成伤害的命令术。<em>随时间推移愈发稀薄，直至最终永远消失。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>16</strong></td>
+<td style="text-align: left"><strong>通晓语言</strong></td>
+<td style="text-align: left">你在短时间内通晓所有语言。<em>滴落字母，沾染所触之物。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>17</strong></td>
+<td style="text-align: left"><strong>泡沫锥</strong></td>
+<td style="text-align: left">浓密泡沫自你手中喷出，覆盖目标。<em>海绵般湿润，残留皂沫。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>18</strong></td>
+<td style="text-align: left"><strong>操控植物</strong></td>
+<td style="text-align: left">附近的草木听从你的号令，并获得缓慢移动的能力。<em>脊背长出叶片，散发淡淡腐朽气息。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>19</strong></td>
+<td style="text-align: left"><strong>操控天气</strong></td>
+<td style="text-align: left">你可以随意改变天气类型，但除此之外无法控制它。<em>对火焰与水的伤害具有高度抗性。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>20</strong></td>
+<td style="text-align: left"><strong>疗伤术</strong></td>
+<td style="text-align: left">每日为你触碰的生物恢复 1d4 点力量。<em>气味如醋与百里香。用后转红。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>21</strong></td>
+<td style="text-align: left"><strong>震聋术</strong></td>
+<td style="text-align: left">附近所有生物失聪。<em>附近的乐器偶尔自行发声，似在抗议。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>22</strong></td>
+<td style="text-align: left"><strong>侦测魔法</strong></td>
+<td style="text-align: left">你能看见或听见附近的魔法灵光。<em>若附近有人施法，书页会微微发热。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>23</strong></td>
+<td style="text-align: left"><strong>解体术</strong></td>
+<td style="text-align: left">你的任何身体部位皆可随意卸下并重新接上，不引起疼痛或伤害。你仍能控制它们。<em>任何撕裂或污损的书页都会自行复原。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>24</strong></td>
+<td style="text-align: left"><strong>易容术</strong></td>
+<td style="text-align: left">你可随意改变一名角色的外貌，只要其保持人形。若试图模仿他人，会显得诡异不自然。<em>书页表面是一面完美的镜子。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>25</strong></td>
+<td style="text-align: left"><strong>错位术</strong></td>
+<td style="text-align: left">物体的实际位置似乎偏移至多 15 尺。<em>绳头、衣物碎片与落叶有时被塞在其中。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>26</strong></td>
+<td style="text-align: left"><strong>地震术</strong></td>
+<td style="text-align: left">地面开始剧烈震动。建筑可能受损或坍塌。<em>沙粒从角落不断淌落，似无止歇。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>27</strong></td>
+<td style="text-align: left"><strong>柔身术</strong></td>
+<td style="text-align: left">你的身体可伸展至多 10 尺。<em>散发太妃糖的气味，且极为柔韧。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>28</strong></td>
+<td style="text-align: left"><strong>元素之墙</strong></td>
+<td style="text-align: left">一道 50 尺长、10 尺高的冰墙或火墙自地面升起。<em>使用后，皮肤与温热之物会粘附其上。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>29</strong></td>
+<td style="text-align: left"><strong>隔空取物</strong></td>
+<td style="text-align: left">一件可见物品传送至你手中。<em>盟友珍视的物件，偶尔会夹在它的封皮之间。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>30</strong></td>
+<td style="text-align: left"><strong>鱼鳃呼吸</strong></td>
+<td style="text-align: left">目标可在水下呼吸，直至再次浮出水面。<em>散发浓烈海腥味。会招引野兽。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>31</strong></td>
+<td style="text-align: left"><strong>闪光术</strong></td>
+<td style="text-align: left">一团明亮能量射向天空，拖曳光迹，向敌友暴露你的位置。<em>在完全黑暗中微微发光。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>32</strong></td>
+<td style="text-align: left"><strong>云雾术</strong></td>
+<td style="text-align: left">浓雾自你周身弥漫开来。<em>浸入水中时，此书终将把全部液体化为蒸汽。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>33</strong></td>
+<td style="text-align: left"><strong>狂乱术</strong></td>
+<td style="text-align: left">附近一个生物爆发狂乱，陷入暴戾。<em>粗糙砂纸封面，触书即毁。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>34</strong></td>
+<td style="text-align: left"><strong>异界之门</strong></td>
+<td style="text-align: left">开启一道通往随机位面的传送门。<em>中央凿有大洞，尽头是虚空。落入其中的物品再不复见。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>35</strong></td>
+<td style="text-align: left"><strong>重力反转</strong></td>
+<td style="text-align: left">你可以改变重力的方向，但仅限自身。<em>它会自行附着在附近最大的物体上。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>36</strong></td>
+<td style="text-align: left"><strong>贪婪术</strong></td>
+<td style="text-align: left">一个生物会萌生难以抑制的冲动，想要占有你指定的某件可见物品。<em>封面随主人而变，隐约透露出其内心最深处的欲望。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>37</strong></td>
+<td style="text-align: left"><strong>加速术</strong></td>
+<td style="text-align: left">你的移动速度提升至三倍。<em>书页摊开时会疯狂翻动，可能割伤手指。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>38</strong></td>
+<td style="text-align: left"><strong>仇恨术</strong></td>
+<td style="text-align: left">一个生物会对另一个生物或群体生出深切的仇恨术，并渴望将其毁灭。<em>长期接触此书会令人多疑、偏执，不再信任他人。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>39</strong></td>
+<td style="text-align: left"><strong>聆听低语</strong></td>
+<td style="text-align: left">你能清晰地听见微弱的声音。<em>此后短时间内，读者的声音会被放大。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>40</strong></td>
+<td style="text-align: left"><strong>悬浮术</strong></td>
+<td style="text-align: left">一件物体悬浮于地面上方两尺处，无摩擦。至多可承载一名类人生物。<em>掉落时仍会漂浮。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>41</strong></td>
+<td style="text-align: left"><strong>催眠术</strong></td>
+<td style="text-align: left">一名生物陷入恍惚，如实回答你提出的一个答案为是或否的问题。<em>封面绘有醒目的旋涡纹样。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>42</strong></td>
+<td style="text-align: left"><strong>寒冰之触</strong></td>
+<td style="text-align: left">一层厚冰蔓延至被触碰的表面，半径至多十尺。<em>需戴手套。不可燃。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>43</strong></td>
+<td style="text-align: left"><strong>辨识旧主</strong></td>
+<td style="text-align: left">你所触碰的物体上方浮现文字，拼出该物主的姓名——若有物主的话。<em>书的内页列有前任物主的姓名。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>44</strong></td>
+<td style="text-align: left"><strong>光亮术</strong></td>
+<td style="text-align: left">一团浮光随你号令移动。<em>在光下持书，书页便化作绚烂彩虹的棱镜。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>45</strong></td>
+<td style="text-align: left"><strong>无形系索</strong></td>
+<td style="text-align: left">相距 10 尺内的两件物品无法被分开超过 10 尺。<em>其书页不借胶水或线绳相连，却始终聚而不散。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>46</strong></td>
+<td style="text-align: left"><strong>敲击开锁</strong></td>
+<td style="text-align: left">附近一把凡俗或魔法锁会大声开启。<em>已上锁。新主人在下一餐后便“造出”钥匙。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>47</strong></td>
+<td style="text-align: left"><strong>跳跃术</strong></td>
+<td style="text-align: left">你向上跃起至多 10 尺高，仅限一次。<em>掷出后，它只是一味前行。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>48</strong></td>
+<td style="text-align: left"><strong>液化空气</strong></td>
+<td style="text-align: left">你周围的空气变得可以游动。<em>自行漂浮，触物即弹开。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>49</strong></td>
+<td style="text-align: left"><strong>抑魔结界</strong></td>
+<td style="text-align: left">附近所有魔法效果的效力减半。<em>法术书 100 尺内的奇物无法充能。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>50</strong></td>
+<td style="text-align: left"><strong>幻境华宅</strong></td>
+<td style="text-align: left">一座坚固且陈设齐全的村舍会显现数小时。你可随意准许或禁止他人进入。<em>若将书与村舍一并留在其中，二者将永远消失。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>51</strong></td>
+<td style="text-align: left"><strong>弹珠狂潮</strong></td>
+<td style="text-align: left">你的口袋里装满弹珠，每 30 秒自动补满。<em>被推挤时会发出俏皮的哗啦声。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>52</strong></td>
+<td style="text-align: left"><strong>群像伪装</strong></td>
+<td style="text-align: left">被你触碰之人的容貌与嗓音，会变得与你所触碰的另一人完全相同。<em>长期使用会使原主生出无意识却显而易见的抽搐。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>53</strong></td>
+<td style="text-align: left"><strong>微缩术</strong></td>
+<td style="text-align: left">被你触碰的生物会缩小至老鼠大小。<em>其文字大得荒唐可笑。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>54</strong></td>
+<td style="text-align: left"><strong>镜像术</strong></td>
+<td style="text-align: left">一个由你操控的自身幻影分身显现。<em>久而久之，原主开始怀疑谁是本尊，谁又是分身。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>55</strong></td>
+<td style="text-align: left"><strong>镜界穿行</strong></td>
+<td style="text-align: left">一面镜子化作通往另一面镜子的门户，那面镜子是你今日曾照过的。<em>除非主人礼貌地叩击镜盖，否则不会开启。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>56</strong></td>
+<td style="text-align: left"><strong>千手化形</strong></td>
+<td style="text-align: left">你暂时多出一条手臂。<em>使用后，施法者会被幻肢综合征折磨一日。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>57</strong></td>
+<td style="text-align: left"><strong>暗夜球幕</strong></td>
+<td style="text-align: left">一个直径五十尺、显现夜空的黑暗球体出现在你面前。<em>其表面显出一组醒目的星座。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>58</strong></td>
+<td style="text-align: left"><strong>化生为物</strong></td>
+<td style="text-align: left">你变成任意一件无生命之物，大小介于三角钢琴与苹果之间。<em>使用后，物主会连续数日饱受强烈的空想性错视之苦。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>59</strong></td>
+<td style="text-align: left"><strong>软泥形态</strong></td>
+<td style="text-align: left">你化作一团活果冻。<em>缓缓滴落酸液，终将腐蚀它所触及的一切。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>60</strong></td>
+<td style="text-align: left"><strong>安抚术</strong></td>
+<td style="text-align: left">你身旁的生物厌恶暴力。<em>闻起来有茉莉与熏香的气味。会吸引孩童。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>61</strong></td>
+<td style="text-align: left"><strong>穿行通道</strong></td>
+<td style="text-align: left">在木头、石头或砖块中开出一条临时通道。<em>掉在书上的物件，终会从另一侧落下。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>62</strong></td>
+<td style="text-align: left"><strong>恐惧植根</strong></td>
+<td style="text-align: left">你身旁的生物会对你指定的某件物品心生恐惧。<em>随着时间推移，诡异的抽象画作开始填满它的书页。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>63</strong></td>
+<td style="text-align: left"><strong>陷坑术</strong></td>
+<td style="text-align: left">地上裂开一个宽 10 尺、深 10 尺的陷坑术。<em>一根标准岩钉可安全收纳于书脊之中。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>64</strong></td>
+<td style="text-align: left"><strong>原初狂潮</strong></td>
+<td style="text-align: left">你身旁的生物迅速进化为其物种的未来形态。<em>持有者常被自身先祖的怪异幻象所困扰。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>65</strong></td>
+<td style="text-align: left"><strong>推拉斥引</strong></td>
+<td style="text-align: left">任意大小的物体都会以一人之力被径直拉向你或推离你。<em>任何对抗此书的力都会被滑稽地放大。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>66</strong></td>
+<td style="text-align: left"><strong>唤起死尸</strong></td>
+<td style="text-align: left">一具骷髅从地下升起为你效劳。它蠢得惊人，只能听从简单的命令。<em>每次使用后，主人都会愈发痴迷于骸骨。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>67</strong></td>
+<td style="text-align: left"><strong>招魂问答</strong></td>
+<td style="text-align: left">附近一具尸体的灵魂显形，回答 1 个问题。<em>答案（而非问题）将永远铭刻于书页之上。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>68</strong></td>
+<td style="text-align: left"><strong>读心术</strong></td>
+<td style="text-align: left">你能听见附近生物的表层思绪。<em>长期持有会让读者将他人的思绪误认为自己的。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>69</strong></td>
+<td style="text-align: left"><strong>斥退术</strong></td>
+<td style="text-align: left">10 尺内的两件物体会因强磁力而相互排斥。<em>由两条强力皮带合上，却总在不当之时弹开。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>70</strong></td>
+<td style="text-align: left"><strong>探知术</strong></td>
+<td style="text-align: left">你能透过今日早些时候触碰过的生物之眼视物。<em>使用后，其主人的双眼会转为乳白色，持续一小时。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>71</strong></td>
+<td style="text-align: left"><strong>塑形元素</strong></td>
+<td style="text-align: left">在你手中，无生命材料如同黏土般可塑。<em>接触木材或布料会缓慢朽坏。埋入土中或浸入水中可恢复。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>72</strong></td>
+<td style="text-align: left"><strong>感官移位</strong></td>
+<td style="text-align: left">选择一种物件（钥匙、金币、箭矢、水罐等）。你能感知到最近的一个。<em>本书的前任主人始终知晓本书当前所在。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>73</strong></td>
+<td style="text-align: left"><strong>护盾术</strong></td>
+<td style="text-align: left">你触碰的生物在一分钟内免受寻常攻击。<em>以锈蚀的环甲包裹，颇为笨重。若持握，提供 +1 护甲。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>74</strong></td>
+<td style="text-align: left"><strong>隐蔽帷幕</strong></td>
+<td style="text-align: left">你触碰的生物在移动前处于隐形状态。<em>除本书现任主人外，无人能见。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>75</strong></td>
+<td style="text-align: left"><strong>移形换位</strong></td>
+<td style="text-align: left">两名你能看见的生物瞬间交换位置。<em>若被盗却尚未被阅读，它会在其主人最后留下它的地方重新出现。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>76</strong></td>
+<td style="text-align: left"><strong>巧手修复</strong></td>
+<td style="text-align: left">你对一件非生命物体进行小幅修补。<em>以一百本书的犊皮纸装订而成，没有两页相同。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>77</strong></td>
+<td style="text-align: left"><strong>睡眠术</strong></td>
+<td style="text-align: left">一名你能看见的生物陷入浅度睡眠。<em>柔软如枕，却只能换来断断续续的睡眠。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>78</strong></td>
+<td style="text-align: left"><strong>油腻术</strong></td>
+<td style="text-align: left">30 尺半径内的所有表面变得极其湿滑。<em>处理时须戴手套，以免书本以最滑稽的方式掉落。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>79</strong></td>
+<td style="text-align: left"><strong>化烟术</strong></td>
+<td style="text-align: left">你的身体化作一团你能操控的活体烟雾。<em>闻起来像篝火。书页无法被烧毁，但对湿气极为敏感。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>80</strong></td>
+<td style="text-align: left"><strong>敏锐嗅觉</strong></td>
+<td style="text-align: left">你能嗅出最微弱的气味痕迹。<em>能散发出只有其主人才可察觉的浓烈气味。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>81</strong></td>
+<td style="text-align: left"><strong>熄光术</strong></td>
+<td style="text-align: left">你目力所及的任何寻常光源都会瞬间熄灭。<em>若长时间置于一处，附近光源会逐渐变暗，最终彻底熄灭。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>82</strong></td>
+<td style="text-align: left"><strong>归类术</strong></td>
+<td style="text-align: left">无生命物品会按你设定的类别自行归类。<em>掉落或抛出时会自行摆正。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>83</strong></td>
+<td style="text-align: left"><strong>奥术飞锯</strong></td>
+<td style="text-align: left">一柄旋转的飞刃自你胸口飞出，清除沿途一切植物。除此之外并无杀伤。<em>以染污皮革包裹，每月至少上油一次。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>84</strong></td>
+<td style="text-align: left"><strong>蛛行术</strong></td>
+<td style="text-align: left">你能像蜘蛛一样攀爬表面。<em>每次使用前须先拨开新结的蛛网，它们极难清除。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>85</strong></td>
+<td style="text-align: left"><strong>虫群召唤</strong></td>
+<td style="text-align: left">你化作一群乌鸦、老鼠或食人鱼。只有<em>群攻</em>攻击能伤到你。<em>极易碎成十余个独立部分，它们会随时间缓慢彼此靠拢。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>86</strong></td>
+<td style="text-align: left"><strong>靶心诱引</strong></td>
+<td style="text-align: left">你触碰的物体成为附近任何法术的目标。<em>吸引各种魔法生物、法术泄漏与探知。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>87</strong></td>
+<td style="text-align: left"><strong>念动术</strong></td>
+<td style="text-align: left">你可以用意志移动一件 60 磅以下的物品。<em>持有者仅凭意念命令即可召唤此书（意志豁免，失败则陷入匮乏）。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>88</strong></td>
+<td style="text-align: left"><strong>心灵感应</strong></td>
+<td style="text-align: left">两个生物能听见彼此的心念，无论相隔多远。<em>持有者能听见（但无法回应）最后持有此书者的心念，反之亦然。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>89</strong></td>
+<td style="text-align: left"><strong>传送术</strong></td>
+<td style="text-align: left">你可见的物体或人被传送至 50 英尺半径内的另一处。<em>可被摧毁以开启通往另一维度的传送门。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>90</strong></td>
+<td style="text-align: left"><strong>荆棘丛生</strong></td>
+<td style="text-align: left">一片宽达 50 尺的树林与密灌骤然萌生。<em>藤蔓缠绕其上，每次使用后都须再度斩除。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>91</strong></td>
+<td style="text-align: left"><strong>时间操控</strong></td>
+<td style="text-align: left">50 尺气泡内的时间减缓或加快 10%，持续 30 秒。<em>其外观在陈旧得不可思议与墨迹新干之间交替。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>92</strong></td>
+<td style="text-align: left"><strong>真知术</strong></td>
+<td style="text-align: left">你看穿附近一切幻象。<em>无法以魔法隐匿，且格外扎眼。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>93</strong></td>
+<td style="text-align: left"><strong>涌泉术</strong></td>
+<td style="text-align: left">一汪海水泉眼涌现。<em>硬化皮革装帧，覆满盐垢与活藤壶。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>94</strong></td>
+<td style="text-align: left"><strong>幻象术</strong></td>
+<td style="text-align: left">你完全掌控一个生物的所见。<em>封面嵌着一只令人不安的无睑之眼。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>95</strong></td>
+<td style="text-align: left"><strong>视觉幻影</strong></td>
+<td style="text-align: left">一道寂静、静止、与你所选内容相仿、约房间大小的幻象浮现。<em>书页丰富绚丽，颇似孩童的睡前故事。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>96</strong></td>
+<td style="text-align: left"><strong>防护法阵</strong></td>
+<td style="text-align: left">地面上浮现一个直径 50 尺的银环。选定一个无法跨越它的物种。<em>封面上绘着怪诞诡异的异界生物，生有数千只眼睛。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>97</strong></td>
+<td style="text-align: left"><strong>蛛网术</strong></td>
+<td style="text-align: left">你的手腕射出浓稠的蛛丝。<em>文字陌生，却莫名可解，因其乃梦之语言。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>98</strong></td>
+<td style="text-align: left"><strong>巧造奇物</strong></td>
+<td style="text-align: left">一件所绘工具或物品的原始版本出现在你面前，片刻后消失。<em>散发着铁与锈、汗水与辛劳的气息。书页深处隐约传来粗重劳作的声响。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>99</strong></td>
+<td style="text-align: left"><strong>法师印记</strong></td>
+<td style="text-align: left">你的手指能射出一股焰色颜料。此颜料唯你可见，且无论多远皆能望见，甚至可穿透固体。<em>前封内侧有一小袋，装着一叠薄纸，列有此前所有物主的姓名与忌日。</em></td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>100</strong></td>
+<td style="text-align: left"><strong>透视之眼</strong></td>
+<td style="text-align: left">你能看穿墙壁、泥土、衣物等。<em>长期暴露会导致脱发、视力模糊与疲乏。</em></td>
+</tr>
+</tbody></table></div>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>

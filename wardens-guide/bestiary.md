@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 怪物图鉴
 parent: 监守手册

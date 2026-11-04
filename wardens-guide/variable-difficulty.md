@@ -1,10 +1,10 @@
 ---
-
 layout: default
 title: 可变难度
 parent: 监守手册
 grand_parent: 第二版
 ---
+
 # 可变难度
 
 ## 引言

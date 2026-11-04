@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: 概述与原则
 parent: 玩家手册
