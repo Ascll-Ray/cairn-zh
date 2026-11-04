@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+  <script src="/assets/js/vendor/lunr.min.js"></script>
+  <script src="/assets/js/just-the-docs.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAS-2：血螈潮涌 | Cairn 2e 简体中文</title>
+</head>
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+    <title>Link</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+    <title id="svg-external-link-title">(external link)</title>
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+  </symbol>
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-search" viewBox="0 0 24 24">
+    <title>Search</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+      <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </symbol>
+</svg>
+  <header class="side-bar">
+    <div class="site-header">
+      <a href="/" class="site-title lh-tight">
+        Cairn 2e 简体中文
+      </a>
+      <button id="menu-button" class="site-button btn-reset" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+    <nav aria-label="Main" id="site-nav" class="site-nav">
+      <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">首页</a></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="第二版 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/second-edition/" class="nav-list-link">第二版</a><ul class="nav-list"><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="玩家手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/players-guide/" class="nav-list-link">玩家手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/players-guide/core-rules/" class="nav-list-link">核心规则</a></li><li class="nav-list-item"><a href="/players-guide/overview-and-principles/" class="nav-list-link">概述与原则</a></li><li class="nav-list-item"><a href="/players-guide/procedures/" class="nav-list-link">流程</a></li><li class="nav-list-item"><a href="/players-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/players-guide/character-creation/" class="nav-list-link">角色创建</a></li><li class="nav-list-item"><a href="/players-guide/marketplace/" class="nav-list-link">集市</a></li></ul></li><li class="nav-list-item"><button class="nav-list-expander btn-reset" aria-label="监守手册 submenu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/wardens-guide/" class="nav-list-link">监守手册</a><ul class="nav-list"><li class="nav-list-item"><a href="/wardens-guide/npc-tables/" class="nav-list-link">NPC 表</a></li><li class="nav-list-item"><a href="/wardens-guide/about-the-example-party/" class="nav-list-link">关于示例队伍</a></li><li class="nav-list-item"><a href="/wardens-guide/detachments/" class="nav-list-link">分队</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-monsters/" class="nav-list-link">创建怪物</a></li><li class="nav-list-item"><a href="/wardens-guide/creating-backgrounds/" class="nav-list-link">创建背景</a></li><li class="nav-list-item"><a href="/wardens-guide/bibliography/" class="nav-list-link">参考文献</a></li><li class="nav-list-item"><a href="/wardens-guide/variable-difficulty/" class="nav-list-link">可变难度</a></li><li class="nav-list-item"><a href="/wardens-guide/naming-procedures/" class="nav-list-link">命名流程</a></li><li class="nav-list-item"><a href="/wardens-guide/reliquary/" class="nav-list-link">圣物阁</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-exploration/" class="nav-list-link">地城探索</a></li><li class="nav-list-item"><a href="/wardens-guide/dungeon-seeds/" class="nav-list-link">地城种子</a></li><li class="nav-list-item"><a href="/wardens-guide/bestiary/" class="nav-list-link">怪物图鉴</a></li><li class="nav-list-item"><a href="/wardens-guide/growth/" class="nav-list-link">成长</a></li><li class="nav-list-item"><a href="/wardens-guide/combat/" class="nav-list-link">战斗</a></li><li class="nav-list-item"><a href="/wardens-guide/forest-seeds/" class="nav-list-link">森林种子</a></li><li class="nav-list-item"><a href="/wardens-guide/spellbooks/" class="nav-list-link">法术书</a></li><li class="nav-list-item"><a href="/wardens-guide/vald/" class="nav-list-link">瓦尔德</a></li><li class="nav-list-item"><a href="/wardens-guide/knowledge-and-perception/" class="nav-list-link">知识与感知</a></li><li class="nav-list-item"><a href="/wardens-guide/bonds-and-omens/" class="nav-list-link">羁绊与预兆</a></li><li class="nav-list-item"><a href="/wardens-guide/pointcrawls/" class="nav-list-link">节点探险</a></li><li class="nav-list-item"><a href="/wardens-guide/wilderness-exploration/" class="nav-list-link">荒野探索</a></li><li class="nav-list-item"><a href="/wardens-guide/setting-seeds/" class="nav-list-link">设定种子</a></li><li class="nav-list-item"><a href="/wardens-guide/saves/" class="nav-list-link">豁免</a></li></ul></li></ul></li><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="冒险模组 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/adventures/" class="nav-list-link">冒险模组</a><ul class="nav-list"><li class="nav-list-item active"><button class="nav-list-expander btn-reset" aria-label="官方第一方模组 submenu" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg></button><a href="/adventures/first-party/" class="nav-list-link">官方第一方模组</a><ul class="nav-list"><li class="nav-list-item"><a href="/adventures/first-party/cas-1/" class="nav-list-link">CAS-1：双湖纷扰</a></li><li class="nav-list-item active"><a href="/adventures/first-party/cas-2/" class="nav-list-link active">CAS-2：血螈潮涌</a></li><li class="nav-list-item"><a href="/adventures/first-party/cas-3/" class="nav-list-link">CAS-3：泰格尼林地之宴</a></li><li class="nav-list-item"><a href="/adventures/first-party/cas-4/" class="nav-list-link">CAS-4：洛克伍德庄园之遗忘</a></li></ul></li></ul></li><li class="nav-list-item"><a href="/" class="nav-list-link">《石冢》(Cairn) 第二版 简体中文系统参考文档 (SRD)</a></li></ul>
+    </nav>
+    <div class="d-md-block d-none site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+      <div class="search" role="search">
+        <div class="search-input-wrap">
+          <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Cairn 2e 简体中文" autocomplete="off">
+          <label for="search-input" class="search-label">
+            <span class="sr-only">Search Cairn 2e 简体中文</span>
+            <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+          </label>
+        </div>
+        <div id="search-results" class="search-results"></div>
+      </div>
+      <nav aria-label="Auxiliary" class="aux-nav">
+        <ul class="aux-nav-list">
+          <li class="nav-list-item">
+            <a href="https://cairnrpg.com" class="site-button">Cairn 官方原版</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content-wrap">
+      <nav aria-label="Breadcrumb" class="breadcrumb-nav"><ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="/adventures/">冒险模组</a></li><li class="breadcrumb-nav-list-item"><a href="/adventures/first-party/">官方第一方模组</a></li><li class="breadcrumb-nav-list-item"><span>CAS-2：血螈潮涌</span></li></ol></nav>
+      <div id="main-content" class="main-content">
+        <main>
+          <p>以下冒险可供使用：</p>
+<ul>
+<li>见<a href="https://store.cairnrpg.com/products/cas-2-rise-of-the-blood-olms">印刷版</a></li>
+<li>见 <a href="https://yochaigal.itch.io/rise-of-the-blood-olms">PDF</a></li>
+<li>见 Markdown 版（见下文）</li>
+</ul>
+<p><img src="/assets/BloodOlm_Cover.webp" alt="血洞螈封面"></p>
+<h3 id="制作名单"> <a href="#制作名单" class="anchor-heading" aria-labelledby="制作名单"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 制作名单 </h3>
+<p><strong>文字</strong>：Yochai Gal；<strong>编辑</strong>：Derek B.；<strong>封面与地图美术</strong>：Ari-Matti Toivonen；<strong>排版与鲁萨尔美术</strong>：Adam Hensley。文本采用 CC-BY-SA 4.0 协议</p>
+<h3 id="关于本冒险"> <a href="#关于本冒险" class="anchor-heading" aria-labelledby="关于本冒险"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 关于本冒险 </h3>
+<p>《CAS-2：血螈潮涌》是一部入门冒险，新手与老练的监守皆可上手。本模组凶险异常，但角色若能审慎思考、细致探索，便可存活。若有队员身亡，让新角色尽快加入队伍，比维持叙事的真实感更为要紧。</p>
+<h2 id="原则"> <a href="#原则" class="anchor-heading" aria-labelledby="原则"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 原则 </h2>
+<ul>
+<li>描述房间时，务必反复点明即将发生什么。那只燃烧的木桶看着稳当，还是随时会炸？</li>
+<li>不断重述角色周遭的环境、他们在实体空间中的位置，以及感官捕捉到的信息。他们离潜在的危险有多近？他们站在物体的哪一侧？</li>
+<li>预示下一段走廊之外的情形。地势是否有起伏？空气温度是否不同？光线、气味或声响是否异样？</li>
+<li>不要告诉角色他们感受如何。写“一把长而锯齿状的刀”，胜过“一把凶恶的刀”。</li>
+</ul>
+<h1 id="布置"> <a href="#布置" class="anchor-heading" aria-labelledby="布置"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 布置 </h1>
+<ul>
+<li>三周前，<strong>九人团</strong>派遣了一支由<strong>高级诵经士格特利</strong>率领的学者队伍，前往调查<strong>银丝河</strong>沿岸新发现的洞穴系统。此后便再无音讯。</li>
+<li>议会悬赏<strong>1000gp</strong>（总额），以求安全寻回勘测队携走的贵重物品<strong><a href="#mud-sieve">泥砂筛</a></strong>。每安全救回一名远征队成员（共四人），议会另付 100gp。</li>
+<li>队伍沿河而行，抵达营地西侧。开场时，询问队伍希望何时抵达、偏好何种天气，然后投<strong>命运骰</strong>。据此调整周遭环境。</li>
+</ul>
+<h1 id="究竟发生了什么"> <a href="#究竟发生了什么" class="anchor-heading" aria-labelledby="究竟发生了什么"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 究竟发生了什么？ </h1>
+<p>抵达数日后，原远征队发现了<strong>赤隐树</strong>及其果实的神奇疗效。为便于采摘，他们在<strong><a href="#c9-blood-olm-lair">C9</a></strong>筑坝截流。果实采尽后，蝙蝠弃树而逃，飞往<strong><a href="#c6-bat-room">C6</a></strong>，洞螈则饥饿难耐。部分洞螈开始啃食管虫血肉，唤醒了深藏体内的食肉本能。与此同时，<strong>高级诵经士格特利</strong>因食用管虫血肉而发疯，当地洞穴探险者<strong>杰尔-弗里斯</strong>则困守于<strong><a href="#c10b-refuge">C10b</a></strong>。</p>
+<h1 id="监守信息"> <a href="#监守信息" class="anchor-heading" aria-labelledby="监守信息"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 监守信息 </h1>
+<h2 id="九人团"> <a href="#九人团" class="anchor-heading" aria-labelledby="九人团"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 九人团 </h2>
+<p>由商人、学者与权贵结成的联合体，倚仗雄厚财力与庞大的间谍网络达成目的。其首要事务在于发现、鉴定并管制<strong>门扉</strong>。他们相信<strong>奇物</strong>与<strong>根源</strong>渊源极深，凡提供二者相关情报者，必获重酬。</p>
+<h2 id="远征队"> <a href="#远征队" class="anchor-heading" aria-labelledby="远征队"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 远征队 </h2>
+<ul>
+<li><strong>高级诵经士格特利</strong>：一名缮写师。纵是顺遂之日，亦倨傲难近。<strong><em>存活</strong></em>。</li>
+<li><strong>杰尔-弗里斯</strong>：本地人，因洞穴探险经验受雇。<strong><em>存活</strong></em>。</li>
+<li><strong>法拉吉</strong>：缮写师，奇物专家，教团成员。<strong><em>死亡</strong></em>。</li>
+<li><strong>奥伦</strong>：游荡者兼保镖。<strong><em>死亡</strong></em>。</li>
+</ul>
+<h2 id="根须"> <a href="#根须" class="anchor-heading" aria-labelledby="根须"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 根须 </h2>
+<p>旧世界的遗存，其迷宫般的空洞向地下深处绵延无尽，将诸城的下水道与遥远边陲的废墟相连。<strong>根须</strong>的入口（称为<strong>门扉</strong>）遍布全境，但皆有防护，或被巧妙隐藏。</p>
+<h2 id="银丝河"> <a href="#银丝河" class="anchor-heading" aria-labelledby="银丝河"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 银丝河 </h2>
+<p>诸城的主要水源，流经一条名为<strong>指缝</strong>的狭窄峡谷。近几个月来，这条古老的河流水量大减，露出一处<a href="#c2-cave-entrance">巨大的蓝环洞穴</a>。受此水位下降影响，洞中的水位也显著降低。</p>
+<h2 id="赤隐树"> <a href="#赤隐树" class="anchor-heading" aria-labelledby="赤隐树"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 赤隐树 </h2>
+<p>倒悬生长，垂挂于半淹洞穴的洞顶。需水与甲烷方能存活。其葫芦状果实初时甘甜可食，一日后转褐，散发腐肉气味。此果乃珍馐，新鲜食用可闭合伤口、焕活血液（恢复 1 点力量并解除匮乏，每日一次）。生长于<strong><a href="#blue-mouth-caves">蓝口洞穴</a></strong>的那棵树正因缺水而枯死，此乃探险队在 <a href="#c9-blood-olm-lair">C9. 血洞螈巢穴</a>修筑临时水坝所致。</p>
+<h2 id="洞螈"> <a href="#洞螈" class="anchor-heading" aria-labelledby="洞螈"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 洞螈 </h2>
+<p>性情温和的盲眼洞穴居民。它们呼吸空气，但能游泳，也能长时间屏息。听觉极佳，连最细微的振动或温度变化都能察觉。以赤隐树的果实与河生植物为食。</p>
+<p>探险队封死<a href="#c7-atrium">C7. 中庭</a>的水源后，赤隐树便不再结果。失去食物，洞螈正逐渐死去。有些甚至改食管虫，因而发疯，沦为<a href="#blood-olm">血洞螈</a>。</p>
+<h2 id="管虫"> <a href="#管虫" class="anchor-heading" aria-labelledby="管虫"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 管虫 </h2>
+<p>犬般大小的食草动物，腿短而粗。双目失明，头顶生有鹿角状的管。洞中成体已尽数死绝。</p>
+<h1 id="蓝口洞穴"> <a href="#蓝口洞穴" class="anchor-heading" aria-labelledby="蓝口洞穴"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 蓝口洞穴 </h1>
+<p><img src="/assets/BloodOlm_Map (1" alt="血螈地图（1）">.webp)</p>
+<h2 id="地城概览"> <a href="#地城概览" class="anchor-heading" aria-labelledby="地城概览"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 地城概览 </h2>
+<ul>
+<li><strong>入口</strong>：队伍抵达 <a href="#c1-campsite">C1. 营地</a>，栖身于一处岩檐之下。<a href="#c2-cave-entrance">C2. 洞口</a>位于营地下坡处，从 <strong>C1</strong> 无法直接望见。</li>
+<li><strong>光</strong>：洞中无自然光，亦无人造光。</li>
+<li><strong>甲烷</strong>：<a href="#c3-tube-worm-hive">C3. 管虫巢穴</a>一带有一处裸露的甲烷喷口。空气极易燃，长时间暴露会引发头痛与恶心（受害者陷入匮乏）。此气体无味，但明火靠近喷口时会摇曳并转为蓝色。</li>
+<li><strong>地城事件</strong>：遭遇结果出现时，队伍应遭遇 <a href="#c9-blood-olm-lair">C9. 血洞螈巢穴</a> 中三只血洞螈之一。在 <a href="/second-edition/players-guide/core-rules/#reactions">反应表</a> 上投骰。</li>
+</ul>
+<h2 id="c1-营地"> <a href="#c1-营地" class="anchor-heading" aria-labelledby="c1-营地"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C1. 营地 </h2>
+<p><strong>空气</strong>中弥漫着浓烈的腐肉气味。一只烧尽的<strong>营火</strong>旁放着两个木<strong>板条箱</strong>，近处的地上还挖出一条小<strong>隧道</strong>。营地东端铺着四条<strong>毯子</strong>。</p>
+<ul>
+<li><strong>空气</strong>：气味源自那箱赤隐果。</li>
+<li><strong>板条箱</strong>：箱盖整齐地堆在一旁，箱内物品暴露在外。</li>
+<li>一只箱子里装着1d6件刚开始生锈的小型挖掘工具。箱底有一把鹤嘴锄（d6），仍完好如初。</li>
+<li>另一只箱子塞满了赤隐果，但除一颗外，其余皆已腐烂。</li>
+<li><strong>隧道</strong>：附近的岩钉上系着一架绳梯。</li>
+<li>通往<a href="#c5-ladder-room">C5. 梯井</a>的绳梯与隧道皆长 12 英尺。四壁泥泞，看上去是新近挖成的。</li>
+<li><strong>毯子</strong>：湿透且发霉。其中一条略小于其余几条，那是<strong>杰尔-弗里斯（<a href="#c10b-refuge">C10b. 避难所</a>）</strong>的。</li>
+<li>毯子下方的地面上散落着鞋印，一路向东通往<a href="#c2-cave-entrance">C2. 洞口</a>。</li>
+</ul>
+<h2 id="c2-洞口"> <a href="#c2-洞口" class="anchor-heading" aria-labelledby="c2-洞口"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C2. 洞口 </h2>
+<p>蓝色<strong>苔藓</strong>生长在一处巨大垂直<strong>洞口</strong>的边缘。枯死的<strong>河生植被</strong>与石块散落四周。洞口前的<strong>地面</strong>环绕着泥泞。</p>
+<ul>
+<li><strong>苔藓</strong>：不过是寻常的蓝色苔藓。一把在诸城约值 10gp。</li>
+<li><strong>洞穴</strong>：隐约可闻<a href="#c3-tube-worm-hive">C3. 管虫巢穴</a>逸出的甲烷嘶声，但唯有万籁俱寂时方能听见。</li>
+<li><strong>植被</strong>：枯死的植物、贝壳、扁平石块与水痕，皆有力地表明此地曾没于水下。</li>
+<li><strong>地面</strong>：西面泥泞的鞋印顺着坡向上，通往 <a href="#c1-campsite">C1. 营地</a>。</li>
+<li><strong>入口</strong>：明火靠近 <a href="#c3-tube-worm-hive">C3. 管虫巢穴</a> 时，火焰会开始泛出蓝光。</li>
+</ul>
+<h2 id="c3-管虫巢穴"> <a href="#c3-管虫巢穴" class="anchor-heading" aria-labelledby="c3-管虫巢穴"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C3. 管虫巢穴 </h2>
+<p>房内<strong>空气</strong>令人窒息。三具肥硕的<strong>虫尸</strong>散落地上。东北角堆着蛋状的<strong>囊袋</strong>。南墙<strong>地面</strong>上一处巨大的<strong>喷口</strong>嘶嘶作响。</p>
+<ul>
+<li><strong>空气</strong>：腐虫散发的臭气与甲烷喷口交混，使此室一触即燃。携明火进入会引发爆炸，对附近所有人造成 d6 点力量伤害，并摧毁火源。</li>
+<li><strong>尸骸</strong>：带有明显的啃咬痕迹。</li>
+<li><strong>卵囊</strong>：一窝 d6 枚卵。若置于水中，数日内便会孵化。</li>
+<li><strong>喷口</strong>：酷热难当。将其封堵后，空气需 1d4 小时方可呼吸。</li>
+<li><strong>地面</strong>：平坦，但越过西、北两处出口后向上倾斜。臭气向 <a href="#c4-ambush-room">C4. 伏击室</a> 升腾。</li>
+</ul>
+<h2 id="c4-伏击室"> <a href="#c4-伏击室" class="anchor-heading" aria-labelledby="c4-伏击室"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C4. 伏击室 </h2>
+<p>一条高顶沙地的狭窄走廊。东端两块巨<strong>岩</strong>之间形成一条窄道。天花板上有数根<strong>钟乳石</strong>与数处<strong>壁架</strong>。此处<strong>空气</strong>沉闷压抑。东侧出口向下倾斜，通往 <a href="#c3-tube-worm-hive">C3. 管虫巢穴</a>。</p>
+<ul>
+<li><strong>地面</strong>：平行的拖痕表明岩石是被拖到当前位置的。</li>
+<li><strong>岩石</strong>：被推挤到位，收窄了通行空间。</li>
+<li>第一个踏入岩石之间的人，会被上方壁架的<strong><a href="#high-lector-geteli">高级诵经士格特利</a></strong>掷下的钟乳石击中（d8 点力量伤害）。</li>
+<li><strong>钟乳石</strong>：半截断裂，似被砸断。悬于宽阔岩台近旁。</li>
+<li><strong>岩台</strong>：北壁有两处，南壁有一处。</li>
+<li>南侧岩台贴近洞顶，攀爬需耗时费力，或备妥称手工具。</li>
+<li>北侧岩台较易攀上。最上层岩台视野开阔，可清楚望见对面高处的南侧岩台。</li>
+<li>以光照向最低的岩架，可见一串人类足迹。</li>
+<li><strong>空气</strong>：来自<a href="#c3-tube-worm-hive">C3. 管虫巢穴</a>的气体飘入此室，点燃火焰时会泛出蓝色。</li>
+</ul>
+<h2 id="c5-梯井"> <a href="#c5-梯井" class="anchor-heading" aria-labelledby="c5-梯井"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C5. 梯井 </h2>
+<p>一条<strong>绳梯</strong>从天花板上的洞口垂下。西南角有一只<strong>铁箱</strong>。死鱼从泥泞的<strong>地面</strong>中探出，地面自东侧出口向高处倾斜。</p>
+<ul>
+<li><strong>绳索</strong>：通往洞外的隧道（<a href="#c1-campsite">C1. 营地</a>）。绳梯与隧道均长 12 英尺。与房间其余部分一样，隧道泥泞不堪，看上去是新近挖成的。</li>
+<li><strong>铁箱</strong>：两枚岩钉和干粮（还剩 2 次使用）。</li>
+<li><strong>地面</strong>：白色、沾着鸟粪的鞋印横穿房间。</li>
+</ul>
+<h2 id="c6-蝙蝠房"> <a href="#c6-蝙蝠房" class="anchor-heading" aria-labelledby="c6-蝙蝠房"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C6. 蝙蝠房 </h2>
+<p>房间臭气熏天，<strong>地面</strong>一片狼藉。头顶传来尖锐的<strong>声响</strong>，长长的钟乳石自天花板垂下。西墙上长着一大片白色<strong>真菌</strong>。</p>
+<ul>
+<li><strong>地面</strong>：鸟粪与腐烂的隐士树果实散落一地。</li>
+<li>白色黏稠物中可见带蹼的脚印，却无从追踪。</li>
+<li><strong>声响</strong>：数百只蝙蝠从<a href="#c7-atrium">C7. 中庭</a>逃来，栖于上方天花板。</li>
+<li><strong>真菌</strong>：成粗索状生长，可拨开。仅误食有毒。</li>
+<li>遮蔽着一条通往<a href="#c11-well">C11. 水井</a>的隧道。洞口仅容一人匍匐通过。</li>
+</ul>
+<h2 id="c7-中庭"> <a href="#c7-中庭" class="anchor-heading" aria-labelledby="c7-中庭"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C7. 中庭 </h2>
+<p>一株巨大的<strong>树</strong>倒悬于天花板，根系裸露。下方积着一小洼<strong>水</strong>。南<strong>墙</strong>附近，两具<strong>尸体</strong>面朝下伏卧。</p>
+<ul>
+<li><strong>树</strong>：一株赤隐树。它因缺水而濒死。</li>
+<li>若将水引回此室、让根系完全浸没，树便能存活并再度结果，<a href="#c8-olm-den">C8. 洞螈巢穴</a>的洞螈也将得以存活。</li>
+<li>树冠最上层的枝条上溅满鸟粪。这棵树通常栖满蝙蝠，但树停止结果后，它们便全数逃往<a href="#c6-bat-room">C6. 蝙蝠房</a>。</li>
+<li><strong>水</strong>：斜坡地面上凿有一方小池。水量足以补给队伍所需，但仅此而已。腐果浮在水面。</li>
+<li>摧毁<a href="#c9-blood-olm-lair">C9. 血洞螈巢穴</a>中的水坝，即可恢复水源。</li>
+<li><strong>尸体</strong>：<strong>法拉吉</strong>与<strong>奥伦</strong>的遗骸，已被血洞螈肢解。</li>
+<li>死亡时间仅约三日以上。</li>
+<li>两人中身形较大的<strong>奥伦</strong>随身带一把小刀（d6）、一支火把（尚余 1 次使用）与 47gp。身形较小的<strong>法拉吉</strong>带一只罗盘（55gp）与一把钝铲（d6）。</li>
+</ul>
+<p><img src="/assets/BloodOlm_Backcover.webp" alt="血洞螈封底"></p>
+<h2 id="c8-洞螈巢穴"> <a href="#c8-洞螈巢穴" class="anchor-heading" aria-labelledby="c8-洞螈巢穴"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C8. 洞螈巢穴 </h2>
+<p>温暖而逼仄。10-14 只<strong>洞螈</strong>在此沉睡、进食、低语。<strong>墙壁</strong>由夯实的泥土筑成，上面涂满斑斓的色彩。东北侧有一道小小的<strong>隔墙</strong>，里面积满了水。房间湿热难耐。腐烂的果实与粪便散落一地。</p>
+<ul>
+<li><strong>洞螈</strong>：病恹恹的。体型大小不一。有几只看上去一动不动。</li>
+<li>对玩家角色不予理会，除非他们身上带着新鲜水果（洞螈闻得出来）。</li>
+<li>无法言语，却显露出极高的智慧。</li>
+<li><strong>墙壁</strong>：由夯实的鸟粪与果泥涂抹而成的彩色漩涡。它们讲述着这样一个故事：</li>
+<li>洞螈（此处绘有双眼）顺山间河流而下，在洞穴中安了家。</li>
+<li>洞螈寻得果树，欢欣不已。</li>
+<li>一只洞螈啃咬管虫的血肉，随即被旧日族群逐出。</li>
+<li><strong>分水处</strong>：清泉汩汩涌出，四周环绕着齐腰高的泥墙。</li>
+<li>泉水仍十分康健：游鱼穿梭，草木生长，池底甲烷气孔不时逸出温热气体。水可安全饮用。</li>
+<li>若泥墙被毁，泉水将淹没 <a href="#c8-olm-den">C8. 洞螈巢穴</a>、<a href="#c3-tube-worm-hive">C3. 管虫巢穴</a> 与 <a href="#c2-cave-entrance">C2. 洞口</a>，使洞窟部分恢复生机。然而若不将水引回 <a href="#c7-atrium">C7. 中庭</a> 的红隐树，这些洞螈仍将死亡。</li>
+</ul>
+<h2 id="c9-血洞螈巢穴"> <a href="#c9-血洞螈巢穴" class="anchor-heading" aria-labelledby="c9-血洞螈巢穴"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C9. 血洞螈巢穴 </h2>
+<p>新近凿成的泥<strong>墙</strong>，湿气凝结。<strong>尸骸</strong>与<strong>残肢</strong>散落四周。此处有三只<strong>血洞螈</strong>。</p>
+<ul>
+<li><strong>墙壁</strong>：看上去成形不久。水从北侧的堤坝渗滴而下。</li>
+<li>探险队曾在此使用泥砂筛堵住地下河，断绝了赤隐树的水源。若泥砂筛受损，堤坝将在1d4分钟后溃决，淹没洞窟（敏捷豁免，游至安全处）。</li>
+<li><strong>残骸</strong>：半打洞螈、管虫与蝙蝠的遗骸。</li>
+<li><strong>血洞螈</strong>：至多三只，视队伍在洞中的行进路线而定。</li>
+<li>若玩家角色自<a href="#c1-campsite">C1. 营地</a>进入，或曾弄出大量响动，血洞螈便醒着，且处于戒备状态。<em>在<a href="/second-edition/players-guide/core-rules/#reactions">反应表</a>上投骰</em>。</li>
+<li>若玩家角色自 <a href="#c2-cave-entrance">C2. 洞口</a> 进入并谨慎穿越洞窟群，这些生物正在沉睡。</li>
+<li>血洞螈绝不容许玩家角色水淹其巢穴，凡欲毁坝者，必遭攻击。</li>
+</ul>
+<h2 id="c10a-封锁"> <a href="#c10a-封锁" class="anchor-heading" aria-labelledby="c10a-封锁"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C10a. 封锁 </h2>
+<p>通往此房间的走廊被一堵从地面直抵天花板的<strong>泥墙</strong>封死。白色的<strong>鞋印</strong>一路延伸进走廊。</p>
+<ul>
+<li><strong>泥墙</strong>：泥料压实风干，表面光滑平整。徒手挖掘约需一小时，若用挖掘工具则只需几分钟。</li>
+<li><strong>鞋印</strong>：因鸟粪而泛白。径直通向泥墙，仿佛那墙根本不存在。</li>
+<li>在此处大声说话会引来 <a href="#c10b-refuge">C10b. 避难所</a> 中的居住者，她会出声回应。不过隔着泥墙，她的声音会变得十分沉闷。</li>
+</ul>
+<h2 id="c10b-避难所"> <a href="#c10b-避难所" class="anchor-heading" aria-labelledby="c10b-避难所"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C10b. 避难所 </h2>
+<p>圆形房间，四壁光滑如镜。一名满身泥浆的年轻<strong>女子</strong>蹲伏在地，手持铁锹指向入口。</p>
+<ul>
+<li><strong>女子</strong>：杰尔-弗里斯，正躲避血洞螈与高级诵经士格特利。</li>
+<li>若她愿意交谈，便会告诉队伍：她的同伴曾遭一头可怕生物袭击，那东西先熄灭了他们的火把，随后发起攻击。她与<strong>高级诵经士格特利</strong>一同藏在<a href="#c8-olm-den">C8. 洞螈巢穴</a>的洞螈之间，但格特利转而对她下手，她便夺过泥砂筛，借<a href="#c10a-blockade">C10a. 封锁</a>后的屏障藏身。若问及<a href="#c3-tube-worm-hive">C3. 管虫巢穴</a>中的管虫，她会承认格特利确实吃过它们的肉。</li>
+</ul>
+<h2 id="c11-水井"> <a href="#c11-水井" class="anchor-heading" aria-labelledby="c11-水井"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> C11. 水井 </h2>
+<p>一间小巧的圆形石室，<strong>墙壁</strong>为石质，顶部则是一个巨洞。西侧堆着一堆<strong>垃圾</strong>（骨头、玻璃与金属）。东侧有一大卷帆布覆在石<strong>板</strong>上。除非蝙蝠已离开 <a href="#c6-bat-room">C6. 蝙蝠房</a>，否则<a href="#rusal">鲁萨尔</a>就在此处。</p>
+<ul>
+<li><strong>墙壁</strong>：这间屋子是一口枯井的最底部。上方的洞口向上延伸 80 英尺，才碰到泥泞的顶部——这是几十年前井壁坍塌造成的。</li>
+<li><strong>废弃物</strong>：一只古老的金属桶、若干小瓷杯，以及一具人类骸骨。</li>
+<li>这些杯子保存完好，但仍十分易碎。整套价值 150gp。</li>
+<li>鲁萨尔会说，他很多年前发现了这具骸骨，因为孤单，就把它留在了身边。谁想碰它，他就会攻击谁。</li>
+<li><strong>石板</strong>：鲁萨尔睡在帆布上。这块石板曾属于那座早已毁灭的旧村，村子曾使用这口井。</li>
+</ul>
+<h1 id="鲁萨尔"> <a href="#鲁萨尔" class="anchor-heading" aria-labelledby="鲁萨尔"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 鲁萨尔 </h1>
+<p><img src="/assets/Rusal1.webp" alt="Rusal1"></p>
+<p>一位绿肤老者，长须垂至脚趾。蛙眼浑浊，却转动敏捷。手足皆生蹼，终年赤身裸体。</p>
+<ul>
+<li>鲁萨尔是河流与洞窟的精魂，向来栖居于此地的洞穴之中。直到蝙蝠占据了他位于 <a href="#c6-bat-room">C6. 蝙蝠房</a> 的旧居，他才迁入这口古井。他深切关注自然界的失衡，却不会对血洞螈采取任何行动。“如今，它们也是新平衡的一部分了。”</li>
+<li>他对近来之事极为不满。先是河水大半枯竭，继而闯入者到来，把泥浆搬来搬去，仿佛那是水一般；接着那棵树开始枯死；最后洞螈竟同类相食。旧居覆满蝙蝠粪，他只得搬进“旧井”（<a href="#c11-well">C11. 水井</a>）。若能让蝙蝠重返中庭（<a href="#c7-atrium">C7. 中庭</a>），他将感激不尽，并赐予一名玩家角色一项<strong>恩惠</strong>。</li>
+<li>否则，他乐于与玩家角色交易，以巨大力量为酬，但索取代价。他只收冷僻抽象之物作报酬：某人的言语、对故乡的记忆、抱负、笑声等等。他极爱立约，任何形式皆可，尤爱约中之约。</li>
+<li>寻常手段伤不了他，但他会避开燃烧的烟草或熏香（他只是不喜欢那气味）。不过，他着实喜爱音乐与舞蹈。</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead><tr>
+<th style="text-align: left"><strong>d6</strong></th>
+<th style="text-align: left"><strong>恩惠</strong>（若结果重复或不适用，则重掷。）</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: left"><strong>1</strong></td>
+<td style="text-align: left">水下呼吸。在水中停留越久，越需要返回。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>2</strong></td>
+<td style="text-align: left">治愈一种疾病或病痛。重投力量或敏捷并保留结果。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>3</strong></td>
+<td style="text-align: left">得一份大才，堪配大匠。然而它不会给你带来任何欢愉。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>4</strong></td>
+<td style="text-align: left">将一本法术书永久烙入脑海（失去 1d4 点意志）。法术书随之焚毁。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>5</strong></td>
+<td style="text-align: left">一把能开任何门的钥匙，却只能用一次。形如鱼骨（微末）。</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>6</strong></td>
+<td style="text-align: left">一桩强大秘辛背后的真相。唯有你能听闻结果。</td>
+</tr>
+</tbody></table></div>
+<h1 id="npc-属性"> <a href="#npc-属性" class="anchor-heading" aria-labelledby="npc-属性"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> NPC 属性 </h1>
+<h3 id="高级诵经士格特利"> <a href="#高级诵经士格特利" class="anchor-heading" aria-labelledby="高级诵经士格特利"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 高级诵经士格特利 </h3>
+<p>耐久度 6，力量 11，敏捷 15，意志 17，磨尖的岩钉（d6）。一名瘦高傲慢的缮写师，已然疯癫。</p>
+<ul>
+<li>在<a href="#c9-blood-olm-lair">C9. 血洞螈巢穴</a>筑坝拦河数日后，他食用了管虫的血肉。这渐渐令他发狂，双眼化作深绯。他曾试图谋杀<strong>杰尔-弗里斯</strong>，但未能得手。</li>
+<li>随身携带一小卷轴（微末），其上说明泥砂筛的用法。卷轴页底有三道黑色标记，表示该奇物充能后尚余几次使用次数。</li>
+<li>唯有在诸城接受专门治疗方能痊愈。他会抗拒任何离开洞穴的尝试，并会试图杀死遇到的任何活物。</li>
+</ul>
+<h3 id="血洞螈"> <a href="#血洞螈" class="anchor-heading" aria-labelledby="血洞螈"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 血洞螈 </h3>
+<p>8 耐久度，14 力量，11 敏捷，4 意志，爪（d8+d8）</p>
+<ul>
+<li>盲眼、食人的类人生物，靠热源追踪猎物。公然同类相食。</li>
+<li>避开有甲烷气体的区域，并会试图扑灭任何明火。</li>
+<li><strong>致命伤害</strong>：一大块血肉被啃咬而下（d6 点力量伤害）</li>
+</ul>
+<h3 id="洞螈-1"> <a href="#洞螈-1" class="anchor-heading" aria-labelledby="洞螈-1"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 洞螈 </h3>
+<p>2 耐久度，8 力量，6 敏捷，12 意志，爪（d8+d8）</p>
+<ul>
+<li>素食者。仅在自卫时出手。</li>
+</ul>
+<h3 id="杰尔-弗里斯"> <a href="#杰尔-弗里斯" class="anchor-heading" aria-labelledby="杰尔-弗里斯"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 杰尔-弗里斯 </h3>
+<p>耐久度 2，力量 8，敏捷 14，意志 11，铁锹（d6）</p>
+<ul>
+<li>本地人，有洞穴潜水经验。年方十五。</li>
+<li>目前持有<a href="#mud-sieve">泥砂筛</a>。</li>
+</ul>
+<h1 id="奇物"> <a href="#奇物" class="anchor-heading" aria-labelledby="奇物"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 奇物 </h1>
+<h3 id="泥砂筛"> <a href="#泥砂筛" class="anchor-heading" aria-labelledby="泥砂筛"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> 泥砂筛 </h3>
+<p>一块可握于掌心的新月形石头。持有者能像塑造水流一般塑造并分离泥浆。3 次充能。</p>
+<ul>
+<li><strong>充能</strong>：置于湍急河流中一昼夜，即可恢复。</li>
+</ul>
+        </main>
+        <hr>
+        <footer>
+          <div class="d-md-none mt-4 fs-2">
+            This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>.
+          </div>
+          <p class="text-small text-grey-dk-000 mb-0">
+            原著作者：<strong>Yochai Gal</strong> | 授权协议：<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="search-overlay"></div>
+  </div>
+</body>
+</html>
