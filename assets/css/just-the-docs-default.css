@@ -7651,4 +7651,27 @@ blockquote.trpg-stat-block strong {
   text-decoration: none;
 }
 
+/* ==========================================================================
+   CJK Typography Patch: 纠正中文字符在 H4/H5 缺少西文 Uppercase 时的字阶坍塌
+   ========================================================================== */
+.main-content h4 {
+  font-size: 1.0rem !important;
+  font-weight: 600 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #24292f;
+}
+
+.main-content h5 {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  margin-top: 1.0rem !important;
+  margin-bottom: 0.4rem !important;
+  color: #57606a;
+}
+
 /*# sourceMappingURL=just-the-docs-default.css.map */
