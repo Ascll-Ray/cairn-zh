@@ -7594,4 +7594,61 @@ div.opaque {
   background-color: #27262b;
 }
 
+/* TRPG Module Stat Block & Anchor Alias Styles */
+.anchor-alias {
+  position: relative;
+  top: -4rem;
+  display: block;
+  visibility: hidden;
+}
+
+blockquote.trpg-stat-block {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1.15rem;
+  background-color: rgba(181, 74, 74, 0.05);
+  border: 1px solid rgba(181, 74, 74, 0.22);
+  border-left: 4px solid #b54a4a;
+  border-radius: 4px;
+  color: inherit;
+}
+
+blockquote.trpg-stat-block p {
+  margin: 0.25rem 0;
+  line-height: 1.6;
+}
+
+blockquote.trpg-stat-block strong {
+  color: #b54a4a;
+}
+
+/* Back to Top Module Styles */
+.back-to-top-wrapper {
+  text-align: center;
+  margin: 3.5rem 0 1.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.back-to-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #b54a4a;
+  background-color: rgba(181, 74, 74, 0.05);
+  border: 1px solid rgba(181, 74, 74, 0.3);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-to-top-btn:hover {
+  background-color: #b54a4a;
+  color: #ffffff;
+  border-color: #b54a4a;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=just-the-docs-default.css.map */
