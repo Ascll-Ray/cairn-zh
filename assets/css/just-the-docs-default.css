@@ -7652,35 +7652,55 @@ blockquote.trpg-stat-block strong {
 }
 
 /* ==========================================================================
-   CJK Typography Patch: 纠正中文字符在 H4/H5 缺少西文 Uppercase 时的字阶坍塌
+   Tenant Typography Scale & Header Hierarchy Standard (CJK Dark Theme)
    ========================================================================== */
-.main-content h4 {
-  font-size: 1.05rem !important;
-  font-weight: 600 !important;
+.main-content h1 {
+  font-size: 2.0rem !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
   letter-spacing: normal !important;
-  text-transform: none !important;
-  margin-top: 1.25rem !important;
-  margin-bottom: 0.5rem !important;
   color: #f5f6fa !important;
+  margin-top: 2.0rem !important;
+  margin-bottom: 0.75rem !important;
 }
 
-.main-content h5 {
+.main-content h2 {
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  letter-spacing: normal !important;
+  color: #f5f6fa !important;
+  margin-top: 1.75rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.main-content h3 {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  letter-spacing: normal !important;
+  color: #f5f6fa !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.main-content h4 {
   font-size: 1.0rem !important;
   font-weight: 600 !important;
+  line-height: 1.45 !important;
   letter-spacing: normal !important;
   text-transform: none !important;
-  margin-top: 1.0rem !important;
-  margin-bottom: 0.4rem !important;
   color: #f5f6fa !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.4rem !important;
 }
 
+.main-content h5,
 .main-content h6 {
   font-size: 0.95rem !important;
   font-weight: 600 !important;
   letter-spacing: normal !important;
   text-transform: none !important;
-  margin-top: 0.85rem !important;
-  margin-bottom: 0.35rem !important;
   color: #f5f6fa !important;
 }
 
