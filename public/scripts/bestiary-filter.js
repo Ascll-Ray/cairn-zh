@@ -197,16 +197,63 @@
     let currentCategory = '全部';
     let searchQuery = '';
 
+    const searchWrapper = document.createElement('div');
+    searchWrapper.style.cssText = 'position:relative;margin-bottom:0.85rem;';
+
     const searchInput = document.createElement('input');
     searchInput.type = 'text';
     searchInput.className = 'cairn-bestiary-search';
     searchInput.placeholder = '🔍 快速过滤怪物（输入名称或英文原名，如: 哥布林 / Lich / 狼）...';
+    searchInput.style.marginBottom = '0';
+    searchInput.style.paddingRight = '2.2rem';
+
+    const clearBtn = document.createElement('button');
+    clearBtn.type = 'button';
+    clearBtn.innerHTML = '✕';
+    clearBtn.title = '清除搜索';
+    clearBtn.style.cssText = 'position:absolute;right:0.6rem;top:50%;transform:translateY(-50%);background:none;border:none;color:#9e9da6;cursor:pointer;font-size:0.95rem;display:none;padding:2px 6px;line-height:1;transition:color 0.15s ease;';
+    clearBtn.addEventListener('mouseenter', () => { clearBtn.style.color = '#ffffff'; });
+    clearBtn.addEventListener('mouseleave', () => { clearBtn.style.color = '#9e9da6'; });
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearBtn.style.display = 'none';
+      searchInput.focus();
+      updateFilter();
+    });
+
+    searchWrapper.appendChild(searchInput);
+    searchWrapper.appendChild(clearBtn);
 
     const chipsContainer = document.createElement('div');
     chipsContainer.className = 'cairn-bestiary-chips';
 
     const countStatus = document.createElement('div');
     countStatus.className = 'cairn-bestiary-status';
+
+    const emptyState = document.createElement('div');
+    emptyState.id = 'cairn-bestiary-empty';
+    emptyState.style.cssText = 'border:1px dashed #44434d;border-radius:6px;padding:2rem 1.5rem;text-align:center;color:#9e9da6;margin:2rem 0;display:none;background:rgba(31,30,36,0.5);';
+    emptyState.innerHTML = `
+      <div style="font-size:1.6rem;margin-bottom:0.4rem;">🔍</div>
+      <div style="color:#ffffff;font-weight:600;font-size:0.95rem;margin-bottom:0.35rem;">未找到匹配的怪物</div>
+      <div style="font-size:0.825rem;margin-bottom:1rem;color:#8f8e99;">请尝试其他关键词（支持中英双语检索，如 “Goblin” 或 “狼”）</div>
+      <button type="button" id="cairn-bestiary-reset-all" style="background:#7253ed;color:#ffffff;border:none;border-radius:4px;padding:0.45rem 1rem;cursor:pointer;font-size:0.825rem;font-weight:600;transition:background 0.15s ease;">重置所有筛选</button>
+    `;
+    emptyState.querySelector('#cairn-bestiary-reset-all').addEventListener('click', () => {
+      resetAllFilters();
+    });
+
+    function resetAllFilters() {
+      currentCategory = '全部';
+      searchQuery = '';
+      searchInput.value = '';
+      clearBtn.style.display = 'none';
+      chipsContainer.querySelectorAll('.cairn-chip-btn').forEach((b) => {
+        b.classList.toggle('active', b.textContent === '全部');
+      });
+      updateFilter();
+    }
 
     function updateFilter() {
       let matchedCount = 0;
@@ -223,6 +270,12 @@
           card.style.display = 'none';
         }
       });
+
+      if (matchedCount === 0) {
+        emptyState.style.display = 'block';
+      } else {
+        emptyState.style.display = 'none';
+      }
 
       countStatus.innerHTML = `<span>当前分类: <strong style="color:#a981ff">${currentCategory}</strong></span><span>匹配 <strong>${matchedCount}</strong> / ${monsterCards.length} 个怪物</span>`;
     }
@@ -243,10 +296,11 @@
 
     searchInput.addEventListener('input', (e) => {
       searchQuery = e.target.value;
+      clearBtn.style.display = searchQuery ? 'block' : 'none';
       updateFilter();
     });
 
-    filterBar.appendChild(searchInput);
+    filterBar.appendChild(searchWrapper);
     filterBar.appendChild(chipsContainer);
     filterBar.appendChild(countStatus);
 
@@ -254,8 +308,10 @@
     const table = categoriesHeading.nextElementSibling;
     if (table && table.tagName === 'TABLE') {
       table.parentNode.insertBefore(filterBar, table.nextSibling);
+      table.parentNode.insertBefore(emptyState, filterBar.nextSibling);
     } else {
       categoriesHeading.parentNode.insertBefore(filterBar, monsterCards[0] || categoriesHeading.nextSibling);
+      categoriesHeading.parentNode.insertBefore(emptyState, filterBar.nextSibling);
     }
 
     // Reset filter when clicking on table anchor links
@@ -263,13 +319,7 @@
       table.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => {
           if (currentCategory !== '全部' || searchQuery) {
-            currentCategory = '全部';
-            searchQuery = '';
-            searchInput.value = '';
-            chipsContainer.querySelectorAll('.cairn-chip-btn').forEach((b) => {
-              b.classList.toggle('active', b.textContent === '全部');
-            });
-            updateFilter();
+            resetAllFilters();
           }
         });
       });

@@ -142,29 +142,44 @@ starlight-theme-select {
   border-bottom-color: #a981ff;
 }
 
-/* 侧边栏样式：高对比度清澈浅白灰，无需选定即可清晰阅读 */
-starlight-sidebar a {
+/* 侧边栏样式：真实 DOM 根节点穿透，高对比度清澈浅白灰，无需选定即可清晰阅读 */
+.sidebar-content a,
+nav.sidebar a,
+#starlight__sidebar a {
   color: #ded9e2 !important;
   transition: all 0.15s ease;
   font-size: 0.915rem;
 }
 
-starlight-sidebar a:hover {
+.sidebar-content a:hover,
+nav.sidebar a:hover,
+#starlight__sidebar a:hover {
   color: #ffffff !important;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.08) !important;
 }
 
-starlight-sidebar a[aria-current="page"] {
-  background-color: rgba(114, 83, 237, 0.25) !important;
+.sidebar-content a[aria-current="page"],
+nav.sidebar a[aria-current="page"],
+#starlight__sidebar a[aria-current="page"] {
+  background-color: rgba(114, 83, 237, 0.28) !important;
   color: #ffffff !important;
   border-left: 3px solid #7253ed !important;
   font-weight: 600;
 }
 
-/* 侧边栏折叠分组标题（Top-level Summary） */
-starlight-sidebar summary {
+/* 侧边栏折叠顶级分组与标题（Summary & Group Labels） */
+.sidebar-content summary,
+nav.sidebar summary,
+#starlight__sidebar summary,
+.sidebar-content .large,
+nav.sidebar .large {
   color: #ffffff !important;
   font-weight: 600;
+}
+
+.sidebar-content .caret,
+nav.sidebar .caret {
+  color: #ded9e2 !important;
 }
 
 /* 右侧大纲 (TOC) */
@@ -386,6 +401,16 @@ starlight-toc a[aria-current="true"] {
   opacity: 0.85 !important;
 }
 
+/* 搜索匹配关键词高亮：醒目高对比度微光紫罗兰 */
+#starlight__search mark,
+.pagefind-ui mark {
+  color: #ffffff !important;
+  background-color: rgba(114, 83, 237, 0.45) !important;
+  border-radius: 2px;
+  padding: 0.05em 0.25em;
+  font-weight: 600;
+}
+
 /* ==========================================================================
    怪物图鉴（Bestiary）极简 OSR 卡片与桌面速查过滤栏
    ========================================================================== */
@@ -500,4 +525,72 @@ starlight-toc a[aria-current="true"] {
 
 .cairn-monster-back-top:hover {
   color: #a981ff !important;
+}
+
+/* ==========================================================================
+   移动端避让、全局返回顶部悬浮按钮、掷骰微光与外链标识
+   ========================================================================== */
+
+/* 移动端避让底部分页（下一页）按钮 */
+@media (max-width: 50rem) {
+  .cairn-dice-tray {
+    bottom: 4.5rem !important;
+    right: 1rem !important;
+  }
+}
+
+/* 全局极简 OSR 返回顶部悬浮钮 */
+#cairn-back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(31, 30, 36, 0.88);
+  border: 1px solid #44434d;
+  color: #ded9e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9990;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.15s ease, background 0.15s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  font-size: 1.1rem;
+}
+
+#cairn-back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cairn-back-to-top:hover {
+  background: #7253ed;
+  color: #ffffff;
+  transform: translateY(-2px);
+  border-color: #a981ff;
+}
+
+/* 骰子托盘收起状态下，再次投骰的悬浮胶囊呼吸发光反馈 */
+@keyframes cairnDicePulse {
+  0% { box-shadow: 0 0 0 0 rgba(114, 83, 237, 0.7); transform: scale(1); }
+  50% { box-shadow: 0 0 0 8px rgba(114, 83, 237, 0); transform: scale(1.05); }
+  100% { box-shadow: 0 0 0 0 rgba(114, 83, 237, 0); transform: scale(1); }
+}
+
+.cairn-pulse {
+  animation: cairnDicePulse 0.4s ease-out;
+}
+
+/* 正文外部链接 ↗ 视觉标识 */
+.sl-markdown-content a[data-external="true"]::after {
+  content: " ↗";
+  font-size: 0.78em;
+  opacity: 0.75;
+  display: inline-block;
+  margin-left: 2px;
+  text-decoration: none !important;
 }

@@ -6,7 +6,7 @@
  * 4. Monster Statblock Capsule Formatter
  */
 (function () {
-  const DICE_REGEX = /\b(\d*d(?:4|6|8|10|12|20|66|100)(?:\s*[+\-]\s*\d+)?)\b/gi;
+  const DICE_REGEX = /(?<![a-zA-Z0-9_\/.#-])(\d*d(?:4|6|8|10|12|20|66|100)(?:\s*[+\-]\s*(?:\d*d(?:4|6|8|10|12|20|66|100)|\d+))*)(?![a-zA-Z0-9_])/gi;
   const SKIP_TAGS = new Set(['CODE', 'PRE', 'A', 'BUTTON', 'SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'TH']);
 
   const state = {
@@ -16,29 +16,47 @@
 
   function rollFormula(formula) {
     const clean = formula.toLowerCase().replace(/\s+/g, '');
-    const match = clean.match(/^(\d*)d(\d+)([+\-]\d+)?$/);
-    if (!match) return null;
+    const tokens = clean.match(/([+-]?[^+-]+)/g);
+    if (!tokens) return null;
 
-    const count = match[1] ? parseInt(match[1], 10) : 1;
-    const sides = parseInt(match[2], 10);
-    const mod = match[3] ? parseInt(match[3], 10) : 0;
+    let total = 0;
+    const details = [];
 
-    if (sides === 66) {
-      const tens = Math.floor(Math.random() * 6) + 1;
-      const ones = Math.floor(Math.random() * 6) + 1;
-      return { total: tens * 10 + ones, detail: `[${tens}, ${ones}]` };
+    for (const token of tokens) {
+      const sign = token.startsWith('-') ? -1 : 1;
+      const body = token.replace(/^[+-]/, '');
+
+      const diceMatch = body.match(/^(\d*)d(\d+)$/);
+      if (diceMatch) {
+        const count = diceMatch[1] ? parseInt(diceMatch[1], 10) : 1;
+        const sides = parseInt(diceMatch[2], 10);
+        if (sides === 66) {
+          const tens = Math.floor(Math.random() * 6) + 1;
+          const ones = Math.floor(Math.random() * 6) + 1;
+          const val = tens * 10 + ones;
+          total += sign * val;
+          details.push((sign < 0 ? '-' : '') + '[' + tens + ', ' + ones + ']');
+        } else {
+          const rolls = [];
+          let subSum = 0;
+          for (let i = 0; i < Math.min(count, 50); i++) {
+            const r = Math.floor(Math.random() * sides) + 1;
+            rolls.push(r);
+            subSum += r;
+          }
+          total += sign * subSum;
+          details.push((sign < 0 ? '-' : '') + '[' + rolls.join(', ') + ']');
+        }
+      } else if (/^\d+$/.test(body)) {
+        const num = parseInt(body, 10);
+        total += sign * num;
+        details.push((sign < 0 ? '-' : '+') + num);
+      } else {
+        return null;
+      }
     }
 
-    const rolls = [];
-    let sum = 0;
-    for (let i = 0; i < Math.min(count, 50); i++) {
-      const r = Math.floor(Math.random() * sides) + 1;
-      rolls.push(r);
-      sum += r;
-    }
-    const total = sum + mod;
-    const modStr = mod > 0 ? `+${mod}` : mod < 0 ? `${mod}` : '';
-    return { total, detail: `[${rolls.join(', ')}]${modStr}` };
+    return { total, detail: details.join(' ') };
   }
 
   // ==========================================
@@ -167,12 +185,22 @@
     });
     if (state.history.length > 5) state.history.pop();
 
-    state.trayCollapsed = false;
     const panel = document.getElementById('cairn-dice-panel');
-    if (panel) panel.style.display = 'flex';
+    // 尊重用户的收起偏好：仅当面板原本就是展开状态时才保持显示，收起状态下绝不强行弹开打扰阅读
+    if (!state.trayCollapsed && panel) {
+      panel.style.display = 'flex';
+    }
 
     const badge = document.getElementById('cairn-dice-last-badge');
     if (badge) badge.textContent = `${title}: ${resultStr}`;
+
+    // 悬浮胶囊呼吸发光反馈
+    const toggleBtn = document.getElementById('cairn-dice-toggle');
+    if (toggleBtn) {
+      toggleBtn.classList.remove('cairn-pulse');
+      void toggleBtn.offsetWidth;
+      toggleBtn.classList.add('cairn-pulse');
+    }
 
     renderDiceList();
   }
