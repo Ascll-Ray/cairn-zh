@@ -38,7 +38,7 @@ hero:
 
 - [**玩家手册**](/players-guide/overview-and-principles/)：属性豁免、战斗结算、危险流程与角色创建。
 - [**监守手册**](/wardens-guide/bestiary/)：84 只完整怪兽图鉴、怪兽与地城生成器、瓦尔德世界设定。
-- [**官方第一方模组**](/adventures/first-party/cas-1/)：CAS-1《双湖纷扰》（含 11 张区域与地城地图）。
+- [**官方第一方模组**](/adventures/first-party/cas-1/)：CAS-1《双湖纷扰》。
 
 ---
 

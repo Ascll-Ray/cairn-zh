@@ -14,7 +14,7 @@
   {
     "label": "官方第一方模组",
     "autogenerate": {
-      "directory": "adventures"
+      "directory": "adventures/first-party"
     }
   }
 ]
