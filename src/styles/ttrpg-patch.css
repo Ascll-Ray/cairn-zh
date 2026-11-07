@@ -1,0 +1,138 @@
+/* ==========================================================================
+   1. Flexoki 纸墨色盘内联 (覆盖 Starlight & Obsidian 默认色阶)
+   ========================================================================== */
+:root, ::backdrop {
+  --sl-color-bg: #100F0F;
+  --sl-color-bg-nav: #100F0F;
+  --sl-color-bg-sidebar: #161515;
+  --sl-color-text: #CECDC3;
+  --sl-color-text-accent: #D0A215;
+  --sl-color-gray-1: #ECEB80;
+  --sl-color-gray-2: #B7B5AC;
+  --sl-color-gray-3: #878580;
+  --sl-color-gray-4: #575653;
+  --sl-color-gray-5: #343331;
+  --sl-color-gray-6: #1C1B1A;
+  --sl-color-hairline: #282726;
+}
+
+:root[data-theme='light'], [data-theme='light'] ::backdrop {
+  --sl-color-bg: #FFFCF0;
+  --sl-color-bg-nav: #F2F0E5;
+  --sl-color-bg-sidebar: #F2F0E5;
+  --sl-color-text: #100F0F;
+  --sl-color-text-accent: #AD8301;
+  --sl-color-gray-5: #DAD8CE;
+  --sl-color-gray-6: #F2F0E5;
+  --sl-color-hairline: #E6E4D9;
+}
+
+/* ==========================================================================
+   2. 零侵入 Booktabs 表格 (防移动端撑裂 + 防桌面端短表坍缩)
+   ========================================================================== */
+.sl-markdown-content table {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-top: 2px solid var(--sl-color-text);
+  border-bottom: 2px solid var(--sl-color-text);
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-size: 0.925rem;
+}
+
+.sl-markdown-content tr:nth-child(2n) {
+  background-color: transparent !important;
+}
+
+.sl-markdown-content th,
+.sl-markdown-content td {
+  border: none !important;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.sl-markdown-content thead th {
+  border-bottom: 1px solid var(--sl-color-text) !important;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.sl-markdown-content td:first-child {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--sl-font-mono);
+  white-space: nowrap;
+  font-weight: 600;
+  width: 1%;
+}
+
+/* ==========================================================================
+   3. OSR 怪物/NPC 属性卡 (配合内部空行触发 Remark 解析)
+   ========================================================================== */
+.statblock {
+  border-top: 3px double var(--sl-color-text);
+  border-bottom: 3px double var(--sl-color-text);
+  background-color: var(--sl-color-gray-6);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.statblock h4 {
+  margin: 0 0 0.35rem 0 !important;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--sl-color-gray-5);
+  padding-bottom: 0.25rem;
+}
+
+.statblock p, .statblock ul {
+  margin: 0.35rem 0 !important;
+}
+
+/* ==========================================================================
+   4. 木刻版画双模态融合与跨语言首字下沉
+   ========================================================================== */
+.woodcut-frame {
+  border: 1px solid var(--sl-color-gray-5);
+  background-color: var(--sl-color-bg);
+  padding: 0.75rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.woodcut-frame img {
+  margin: 0 auto;
+  display: block;
+}
+
+:root[data-theme='light'] .woodcut-frame img {
+  mix-blend-mode: multiply;
+}
+
+:root[data-theme='dark'] .woodcut-frame img:not(.color-art) {
+  filter: invert(1) sepia(0.15) contrast(1.05);
+  mix-blend-mode: screen;
+  opacity: 0.88;
+}
+
+:root[data-theme='dark'] .woodcut-frame img.color-art {
+  filter: contrast(1.05) brightness(0.85);
+}
+
+:lang(en) .drop-cap > p:first-of-type::first-letter {
+  float: left;
+  font-size: 3.2rem;
+  line-height: 0.85;
+  padding-right: 0.5rem;
+  padding-top: 0.15rem;
+  font-weight: 700;
+}

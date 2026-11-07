@@ -1,0 +1,15 @@
+{
+  "name": "starlight-ttrpg-starter",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.33.0",
+    "astro": "^5.5.0"
+  }
+}

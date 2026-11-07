@@ -1,0 +1,285 @@
+/* ==========================================================================
+   Cairn 2e 官方视觉体系 (1:1 像素级对齐 Just-the-Docs Dark 原版画风)
+   ========================================================================== */
+
+:root {
+  --sl-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --sl-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Cairn 原版暗黑配色核心底色与文本 */
+  --sl-color-bg: #27262b;
+  --sl-color-bg-nav: #1f1e24;
+  --sl-color-bg-sidebar: #1f1e24;
+  --sl-color-bg-inline-code: #34333b;
+
+  --sl-color-white: #ffffff;
+  --sl-color-text: #e6e1e8;
+  --sl-color-text-accent: #a981ff;
+  --sl-color-text-invert: #1f1e24;
+
+  --sl-color-gray-1: #ffffff;
+  --sl-color-gray-2: #e6e1e8;
+  --sl-color-gray-3: #a7a5af;
+  --sl-color-gray-4: #6e6d78;
+  --sl-color-gray-5: #44434d;
+  --sl-color-gray-6: #2e2d33;
+  --sl-color-hairline: #44434d;
+  --sl-color-black: #18171b;
+
+  /* Cairn 经典紫罗兰高亮与徽章 */
+  --sl-color-accent: #7253ed;
+  --sl-color-accent-high: #a981ff;
+  --sl-color-accent-low: #3c2a80;
+}
+
+:root[data-theme='light'] {
+  --sl-color-bg: #27262b;
+  --sl-color-bg-nav: #1f1e24;
+  --sl-color-bg-sidebar: #1f1e24;
+  --sl-color-white: #ffffff;
+  --sl-color-text: #e6e1e8;
+  --sl-color-text-accent: #a981ff;
+  --sl-color-gray-5: #44434d;
+  --sl-color-gray-6: #2e2d33;
+}
+
+/* ==========================================================================
+   排版与标题：原版纯白高对比度沉浸感
+   ========================================================================== */
+h1, #_top, .content-panel h1,
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3,
+.sl-markdown-content h4 {
+  color: #ffffff !important;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1, #_top, .content-panel h1 {
+  font-size: 2.15rem;
+  border-bottom: 1px solid #44434d;
+  padding-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sl-markdown-content h2 {
+  font-size: 1.45rem;
+  border-bottom: 1px solid #3c3b44;
+  padding-bottom: 0.35rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.sl-markdown-content h3 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+  color: #f0edf2 !important;
+}
+
+/* 正文段落与列表 */
+.sl-markdown-content p,
+.sl-markdown-content li {
+  line-height: 1.65;
+  color: #e6e1e8;
+  font-size: 0.965rem;
+}
+
+/* 链接配色：原版紫罗兰 */
+.sl-markdown-content a:not(.btn):not(.cairn-btn) {
+  color: #a981ff !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.sl-markdown-content a:not(.btn):not(.cairn-btn):hover {
+  color: #c4a8ff !important;
+  border-bottom-color: #a981ff;
+}
+
+/* 侧边栏样式 */
+starlight-sidebar a {
+  color: #a7a5af !important;
+  transition: all 0.15s ease;
+}
+
+starlight-sidebar a:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+starlight-sidebar a[aria-current="page"] {
+  background-color: rgba(114, 83, 237, 0.22) !important;
+  color: #ffffff !important;
+  border-left: 3px solid #7253ed !important;
+  font-weight: 600;
+}
+
+/* 右侧大纲 (TOC) */
+starlight-toc a {
+  color: #9e9da6 !important;
+}
+
+starlight-toc a:hover,
+starlight-toc a[aria-current="true"] {
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   表格：Booktabs 纯暗色无溢出
+   ========================================================================== */
+.sl-markdown-content table {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-top: 2px solid #6e6d78;
+  border-bottom: 2px solid #6e6d78;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+  font-size: 0.925rem;
+  background-color: transparent;
+}
+
+.sl-markdown-content thead th {
+  border-bottom: 1px solid #6e6d78 !important;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0.65rem 0.85rem;
+  background-color: #2e2d33;
+}
+
+.sl-markdown-content td {
+  border: none !important;
+  border-bottom: 1px solid rgba(68, 67, 77, 0.5) !important;
+  padding: 0.6rem 0.85rem;
+  vertical-align: top;
+}
+
+.sl-markdown-content tr:nth-child(even) {
+  background-color: rgba(46, 45, 51, 0.45) !important;
+}
+
+.sl-markdown-content td:first-child {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #a981ff;
+}
+
+/* ==========================================================================
+   Cairn 2e 怪物卡片与属性框 (OSR Statblock)
+   ========================================================================== */
+.statblock, aside.monster {
+  border: 1px solid #44434d;
+  border-left: 4px solid #7253ed;
+  border-radius: 6px;
+  background-color: #2e2d33;
+  padding: 1.15rem 1.35rem;
+  margin: 1.5rem 0;
+  font-size: 0.925rem;
+  line-height: 1.6;
+}
+
+.statblock h4 {
+  margin: 0 0 0.5rem 0 !important;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  border-bottom: 1px solid #44434d;
+  padding-bottom: 0.35rem;
+}
+
+/* ==========================================================================
+   Starlight Hero 组件高对比度修正
+   ========================================================================== */
+.hero h1 {
+  color: #ffffff !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero .tagline {
+  color: #c2c0ca !important;
+  font-size: 1.15rem;
+}
+
+.hero .actions a.primary {
+  background-color: #7253ed !important;
+  color: #ffffff !important;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.hero .actions a.primary:hover {
+  background-color: #8b6ff7 !important;
+}
+
+.hero .actions a.secondary {
+  background-color: #2e2d33 !important;
+  border: 1px solid #44434d !important;
+  color: #e6e1e8 !important;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.hero .actions a.secondary:hover {
+  background-color: #3e3d45 !important;
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   Cairn 实体书支持 Hero Callout 与按钮
+   ========================================================================== */
+.cairn-hero-callout {
+  border: 1px solid #44434d;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0;
+  background-color: #2e2d33;
+}
+
+.cairn-hero-callout .badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 3px;
+  background-color: #235789;
+  color: #ffffff;
+}
+
+.cairn-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+}
+
+.cairn-btn-primary {
+  background-color: #7253ed;
+  color: #ffffff !important;
+}
+
+.cairn-btn-primary:hover {
+  background-color: #8b6ff7;
+}
+
+.cairn-btn-outline {
+  border: 1px solid #44434d;
+  color: #e6e1e8 !important;
+  background-color: transparent;
+}
+
+.cairn-btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #6e6d78;
+}

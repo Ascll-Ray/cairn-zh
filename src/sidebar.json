@@ -1,0 +1,20 @@
+[
+  {
+    "label": "玩家手册",
+    "autogenerate": {
+      "directory": "players-guide"
+    }
+  },
+  {
+    "label": "监守手册",
+    "autogenerate": {
+      "directory": "wardens-guide"
+    }
+  },
+  {
+    "label": "官方第一方模组",
+    "autogenerate": {
+      "directory": "adventures"
+    }
+  }
+]

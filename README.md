@@ -1,42 +1,37 @@
-# 《石冢》(Cairn) 第二版 简体中文系统参考文档 (SRD)
+# Cairn 2e 中文官方规则参考 (Cairn 2e Chinese SRD)
 
-欢迎查阅《石冢》(Cairn) 第二版（2e）官方简体中文系统参考文档（SRD）独立站点仓库。
+《石冢》（Cairn 2e）中文规则参考与官方第一方模组 CAS-1《双湖纷扰》。
 
-- 🌐 **官方在线阅读站点**：[https://zh.cairnrpg.com](https://zh.cairnrpg.com)
-- 📖 **规则范围**：31 个核心章节（《玩家手册》6 章 + 《监守手册》23 章全量对齐）
-- 🔍 **功能特性**：纯中文双层手风琴折叠导航、Lunr.js 离线全文搜索、响应式排版与深色模式支持
+本项目基于 [Astro 5](https://astro.build) 与 [Starlight](https://starlight.astro.build) 构建，采用冷峻纯暗色设计风格，提供完整的移动端适配与 Pagefind 中文即时检索。
 
----
+## 本地开发与构建
 
-## 游戏简介
+### 环境要求
+- Node.js 20+
+- npm 10+
 
-《石冢》(Cairn) 是一款由 **Yochai Gal** 设计的经典探险角色扮演游戏（TRPG），主题是探索幽暗神秘的森林，其中遍布怪诞民俗、隐秘财宝与不可名状的怪物。
+### 本地运行
+```bash
+# 安装依赖
+npm install
 
-- **快速轻量**：角色生成随机快捷，无复杂职业与经验值惩罚；
-- **探险驱动**：战斗混乱而致命，奖励谨慎规划与叙事内成长（Diegetic Growth）；
-- **经典溯源**：基于 Ben Milton 的《恶棍》(Knave) 与 Chris McDowall 的《涉足奇境》(Into the Odd)。
+# 启动本地开发服务 (默认 http://localhost:4321)
+npm run dev
 
----
+# 静态生产构建与检索索引生成
+npm run build
 
-## 致敬与版权说明
+# 本地静态产物预览
+npm run preview
+```
 
-- **游戏原作**：由 **Yochai Gal** 设计并编写，原版发布于 [cairnrpg.com](https://cairnrpg.com)。
-- **先驱致谢**：特别向《石冢》第一版（1e）中文译者 ZzNoah ([ZzNoah/cairn-cn](https://github.com/ZzNoah/cairn-cn)) 致敬。本译本在核心 TRPG 机制名词上，严格遵循并继承了其确立的中文经典跑团术语体系。
-- **第二版维护**：由 **Ascll-Ray** ([@Ascll-Ray](https://github.com/Ascll-Ray)) 完成第二版全量校对、Jekyll 架构装配与持续维护。
+## 自动化部署
 
----
+仓库配置了原生 GitHub Actions 自动化工作流（`.github/workflows/deploy.yml`）。每次推送到 `main` 分支时将自动触发静态构建并部署至 GitHub Pages。
 
-## 许可协议 (License)
+## 鸣谢与版权
 
-本项目文本完全继承官方许可，采用 **[知识共享 署名-相同方式共享 4.0 国际许可协议 (CC-BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)** 进行发布。
-
-你可以自由共享、演绎本作品，甚至用于商业目的，前提是保留原作者与译者的署名，并以相同许可方式分发衍生作品。
-
----
-
-## 勘误与社区反馈
-
-本规则站处于持续维护状态。如果你在阅读中发现任何错别字、行文不畅、断链或术语争议，非常欢迎通过以下渠道交流与反馈：
-
-1. **GitHub Issues**：在本项目提交 [New Issue](https://github.com/Ascll-Ray/cairn-zh/issues)；
-2. **Pull Requests**：直接提交修正补丁。
+- **原著作者**：Yochai Gal（[cairnrpg.com](https://cairnrpg.com)）
+- **官方实体店**：[store.cairnrpg.com](https://store.cairnrpg.com)
+- **中文维护与站点构建**：[Ascll-Ray](https://github.com/Ascll-Ray)
+- **授权协议**：本作品文本内容采用 [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可协议授权。
