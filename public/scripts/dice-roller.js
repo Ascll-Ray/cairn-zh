@@ -1,10 +1,18 @@
 /**
- * Zero-dependency OSR Tabletop Dice Roller for Starlight SRD.
- * Safely parses text nodes via TreeWalker without corrupting DOM attributes.
+ * Zero-dependency OSR Tabletop Tool Suite for Starlight SRD:
+ * 1. Safe TreeWalker Dice Formula Parser & Click-to-Roll
+ * 2. Multi-roll Floating Dice Tray (with history log)
+ * 3. Table Auto-Roller (one-click roll and scroll-to-row highlight)
+ * 4. Monster Statblock Capsule Formatter
  */
 (function () {
   const DICE_REGEX = /\b(\d*d(?:4|6|8|10|12|20|66|100)(?:\s*[+\-]\s*\d+)?)\b/gi;
-  const SKIP_TAGS = new Set(['CODE', 'PRE', 'A', 'BUTTON', 'SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT']);
+  const SKIP_TAGS = new Set(['CODE', 'PRE', 'A', 'BUTTON', 'SCRIPT', 'STYLE', 'TEXTAREA', 'INPUT', 'TH']);
+
+  const state = {
+    history: [],
+    trayCollapsed: true,
+  };
 
   function rollFormula(formula) {
     const clean = formula.toLowerCase().replace(/\s+/g, '');
@@ -33,29 +41,165 @@
     return { total, detail: `[${rolls.join(', ')}]${modStr}` };
   }
 
-  function showToast(formula, result) {
-    let toast = document.getElementById('osr-dice-toast');
-    if (!toast) {
-      toast = document.createElement('div');
-      toast.id = 'osr-dice-toast';
-      toast.style.cssText = [
-        'position:fixed', 'bottom:1.5rem', 'right:1.5rem', 'z-index:9999',
-        'padding:0.75rem 1.25rem', 'border:2px double var(--sl-color-text)',
-        'background:var(--sl-color-bg-sidebar)', 'color:var(--sl-color-text)',
-        'font-family:var(--sl-font-mono)', 'font-size:0.9rem',
-        'box-shadow:0 4px 12px rgba(0,0,0,0.4)', 'cursor:pointer',
-        'transition:opacity 0.2s ease'
-      ].join(';');
-      toast.title = 'Click to dismiss';
-      toast.addEventListener('click', () => { toast.style.opacity = '0'; });
-      document.body.appendChild(toast);
-    }
-    toast.style.opacity = '1';
-    toast.innerHTML = `<div><strong>ROLL ${formula.toUpperCase()}</strong></div>` +
-      `<div style="font-size:1.4rem;font-weight:700;color:var(--sl-color-text-accent)">Result: ${result.total}</div>` +
-      `<div style="font-size:0.75rem;opacity:0.75">Dice: ${result.detail}</div>`;
+  // ==========================================
+  // 1. 浮动 Dice Tray 托盘组件
+  // ==========================================
+  function ensureDiceTray() {
+    let tray = document.getElementById('cairn-dice-tray');
+    if (tray) return tray;
+
+    tray = document.createElement('div');
+    tray.id = 'cairn-dice-tray';
+    tray.className = 'cairn-dice-tray';
+    tray.style.cssText = [
+      'position:fixed',
+      'bottom:1.5rem',
+      'right:1.5rem',
+      'z-index:9998',
+      'font-family:var(--sl-font)',
+      'display:flex',
+      'flex-direction:column',
+      'align-items:flex-end',
+      'gap:0.5rem',
+      'pointer-events:none'
+    ].join(';');
+
+    // 托盘面板
+    const panel = document.createElement('div');
+    panel.id = 'cairn-dice-panel';
+    panel.style.cssText = [
+      'width:260px',
+      'background:#1f1e24',
+      'border:1px solid #44434d',
+      'border-radius:6px',
+      'box-shadow:0 8px 30px rgba(0,0,0,0.6)',
+      'padding:0.75rem',
+      'display:none',
+      'flex-direction:column',
+      'gap:0.5rem',
+      'pointer-events:auto',
+      'color:#e6e1e8',
+      'font-size:0.875rem'
+    ].join(';');
+
+    // 面板头部
+    const header = document.createElement('div');
+    header.style.cssText = 'display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #3c3b44;padding-bottom:0.4rem;';
+    header.innerHTML = `
+      <strong style="font-size:0.85rem;color:#ffffff;display:flex;align-items:center;gap:0.35rem;">
+        <span>🎲</span> 投骰记录
+      </strong>
+      <div style="display:flex;gap:0.5rem;">
+        <button id="cairn-dice-clear" type="button" style="background:none;border:none;color:#9e9da6;cursor:pointer;font-size:0.75rem;padding:0 2px;">清空</button>
+        <button id="cairn-dice-close" type="button" style="background:none;border:none;color:#9e9da6;cursor:pointer;font-size:0.85rem;line-height:1;padding:0 2px;">✕</button>
+      </div>
+    `;
+
+    // 记录列表
+    const list = document.createElement('div');
+    list.id = 'cairn-dice-list';
+    list.style.cssText = 'display:flex;flex-direction:column;gap:0.4rem;max-height:190px;overflow-y:auto;';
+
+    panel.appendChild(header);
+    panel.appendChild(list);
+
+    // 悬浮唤起胶囊按钮
+    const toggleBtn = document.createElement('button');
+    toggleBtn.id = 'cairn-dice-toggle';
+    toggleBtn.type = 'button';
+    toggleBtn.style.cssText = [
+      'background:#2e2d33',
+      'border:1px solid #44434d',
+      'color:#ffffff',
+      'border-radius:20px',
+      'padding:0.45rem 0.9rem',
+      'font-size:0.825rem',
+      'font-weight:600',
+      'cursor:pointer',
+      'pointer-events:auto',
+      'display:inline-flex',
+      'align-items:center',
+      'gap:0.4rem',
+      'box-shadow:0 4px 16px rgba(0,0,0,0.4)',
+      'transition:all 0.15s ease'
+    ].join(';');
+    toggleBtn.innerHTML = `<span>🎲</span> <span id="cairn-dice-last-badge">投骰</span>`;
+
+    toggleBtn.addEventListener('mouseenter', () => {
+      toggleBtn.style.borderColor = '#7253ed';
+      toggleBtn.style.color = '#a981ff';
+    });
+    toggleBtn.addEventListener('mouseleave', () => {
+      toggleBtn.style.borderColor = '#44434d';
+      toggleBtn.style.color = '#ffffff';
+    });
+
+    toggleBtn.addEventListener('click', () => {
+      state.trayCollapsed = !state.trayCollapsed;
+      panel.style.display = state.trayCollapsed ? 'none' : 'flex';
+    });
+
+    header.querySelector('#cairn-dice-close').addEventListener('click', () => {
+      state.trayCollapsed = true;
+      panel.style.display = 'none';
+    });
+
+    header.querySelector('#cairn-dice-clear').addEventListener('click', () => {
+      state.history = [];
+      renderDiceList();
+      toggleBtn.innerHTML = `<span>🎲</span> <span id="cairn-dice-last-badge">投骰</span>`;
+    });
+
+    tray.appendChild(panel);
+    tray.appendChild(toggleBtn);
+    document.body.appendChild(tray);
+
+    return tray;
   }
 
+  function addDiceRecord(title, resultStr, detailStr) {
+    ensureDiceTray();
+    state.history.unshift({
+      title,
+      result: resultStr,
+      detail: detailStr,
+      time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+    });
+    if (state.history.length > 5) state.history.pop();
+
+    state.trayCollapsed = false;
+    const panel = document.getElementById('cairn-dice-panel');
+    if (panel) panel.style.display = 'flex';
+
+    const badge = document.getElementById('cairn-dice-last-badge');
+    if (badge) badge.textContent = `${title}: ${resultStr}`;
+
+    renderDiceList();
+  }
+
+  function renderDiceList() {
+    const list = document.getElementById('cairn-dice-list');
+    if (!list) return;
+
+    if (state.history.length === 0) {
+      list.innerHTML = `<div style="color:#6e6d78;font-size:0.775rem;text-align:center;padding:0.75rem 0;">暂无投骰记录</div>`;
+      return;
+    }
+
+    list.innerHTML = state.history.map((item, idx) => `
+      <div style="background:${idx === 0 ? 'rgba(114, 83, 237, 0.15)' : 'rgba(255,255,255,0.03)'};border:1px solid ${idx === 0 ? 'rgba(114, 83, 237, 0.4)' : '#2e2d33'};border-radius:4px;padding:0.35rem 0.5rem;display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <div style="font-weight:600;font-size:0.8rem;color:${idx === 0 ? '#a981ff' : '#e6e1e8'}">${item.title}</div>
+          <div style="font-size:0.7rem;color:#9e9da6;font-family:var(--sl-font-mono)">${item.detail}</div>
+        </div>
+        <div style="font-size:1.15rem;font-weight:700;color:#ffffff;font-family:var(--sl-font-mono);">${item.result}</div>
+      </div>
+    `).join('');
+  }
+
+  // ==========================================
+  // 2. 正文内联骰子解析 (TreeWalker)
+  // ==========================================
   function hydrateDiceNodes() {
     const main = document.querySelector('.sl-markdown-content');
     if (!main) return;
@@ -93,11 +237,19 @@
         btn.className = 'dice-roll';
         btn.textContent = match[1];
         btn.dataset.formula = match[1];
-        btn.style.cssText = 'all:unset;cursor:pointer;font-family:var(--sl-font-mono);font-weight:600;border-bottom:1px dashed var(--sl-color-text-accent);color:var(--sl-color-text-accent);padding:0 2px;';
-        btn.addEventListener('click', () => {
+        btn.title = `点击投掷 ${match[1]}`;
+        btn.style.cssText = 'all:unset;cursor:pointer;font-family:var(--sl-font-mono);font-weight:600;border-bottom:1px dashed var(--sl-color-text-accent);color:var(--sl-color-text-accent);padding:0 2px;transition:all 0.15s ease;';
+        
+        btn.addEventListener('mouseenter', () => { btn.style.color = '#ffffff'; btn.style.background = 'rgba(114, 83, 237, 0.25)'; });
+        btn.addEventListener('mouseleave', () => { btn.style.color = 'var(--sl-color-text-accent)'; btn.style.background = 'transparent'; });
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
           const res = rollFormula(btn.dataset.formula);
-          if (res) showToast(btn.dataset.formula, res);
+          if (res) {
+            addDiceRecord(btn.dataset.formula.toUpperCase(), res.total, res.detail);
+          }
         });
+
         frag.appendChild(btn);
         lastIdx = DICE_REGEX.lastIndex;
       }
@@ -108,5 +260,173 @@
     });
   }
 
-  document.addEventListener('DOMContentLoaded', hydrateDiceNodes);
+  // ==========================================
+  // 3. 随机表格一键点选掷骰 (Table Auto-Roller)
+  // ==========================================
+  function hydrateTableRollers() {
+    const main = document.querySelector('.sl-markdown-content');
+    if (!main) return;
+
+    const tables = main.querySelectorAll('table');
+    tables.forEach((table) => {
+      if (table.dataset.cairnRollerBound) return;
+      table.dataset.cairnRollerBound = 'true';
+
+      const thFirst = table.querySelector('thead th:first-child');
+      const rows = Array.from(table.querySelectorAll('tbody tr'));
+      if (!thFirst || rows.length < 2) return;
+
+      // 解析第一列的区间特征
+      let maxVal = 0;
+      let minVal = 999;
+      const rowRanges = [];
+
+      rows.forEach((row, idx) => {
+        const td = row.querySelector('td:first-child');
+        if (!td) return;
+        const txt = td.textContent.trim();
+        // 匹配 "1-2" 或 "3" 或 "d20" 或 "12"
+        const rangeMatch = txt.match(/^(\d+)(?:\s*[-–—~至]\s*(\d+))?$/);
+        if (rangeMatch) {
+          const start = parseInt(rangeMatch[1], 10);
+          const end = rangeMatch[2] ? parseInt(rangeMatch[2], 10) : start;
+          minVal = Math.min(minVal, start);
+          maxVal = Math.max(maxVal, end);
+          rowRanges.push({ row, start, end, idx });
+        } else {
+          rowRanges.push({ row, start: idx + 1, end: idx + 1, idx });
+        }
+      });
+
+      if (rowRanges.length < 2) return;
+      if (maxVal === 0) {
+        minVal = 1;
+        maxVal = rows.length;
+      }
+
+      // 提取表头标记的骰子类型（如 d20、d6、2d6）
+      const thText = thFirst.textContent.toLowerCase();
+      let diceFormula = `1d${maxVal}`;
+      if (thText.includes('2d6')) diceFormula = '2d6';
+      else if (thText.includes('d20') || maxVal === 20) diceFormula = '1d20';
+      else if (thText.includes('d12') || maxVal === 12) diceFormula = '1d12';
+      else if (thText.includes('d10') || maxVal === 10) diceFormula = '1d10';
+      else if (thText.includes('d8') || maxVal === 8) diceFormula = '1d8';
+      else if (thText.includes('d6') || maxVal === 6) diceFormula = '1d6';
+      else if (thText.includes('d66') || maxVal === 66) diceFormula = '1d66';
+      else if (thText.includes('d100') || maxVal === 100) diceFormula = '1d100';
+
+      // 注入按钮
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'cairn-table-roll-btn';
+      btn.innerHTML = `🎲 投点`;
+      btn.title = `随机投掷此表 (${diceFormula})`;
+      btn.style.cssText = [
+        'display:inline-flex',
+        'align-items:center',
+        'gap:0.25rem',
+        'margin-left:0.5rem',
+        'padding:0.15rem 0.45rem',
+        'font-size:0.75rem',
+        'font-weight:600',
+        'color:#a981ff',
+        'background:rgba(114, 83, 237, 0.15)',
+        'border:1px solid rgba(114, 83, 237, 0.4)',
+        'border-radius:4px',
+        'cursor:pointer',
+        'vertical-align:middle',
+        'transition:all 0.15s ease'
+      ].join(';');
+
+      btn.addEventListener('mouseenter', () => {
+        btn.style.background = '#7253ed';
+        btn.style.color = '#ffffff';
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.background = 'rgba(114, 83, 237, 0.15)';
+        btn.style.color = '#a981ff';
+      });
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const res = rollFormula(diceFormula);
+        if (!res) return;
+
+        // 匹配命中行
+        let hit = rowRanges.find(r => res.total >= r.start && res.total <= r.end);
+        if (!hit) hit = rowRanges[Math.min(res.total - 1, rowRanges.length - 1)];
+
+        if (hit && hit.row) {
+          // 清除旧高亮
+          table.querySelectorAll('.cairn-row-highlight').forEach(el => el.classList.remove('cairn-row-highlight'));
+          hit.row.classList.add('cairn-row-highlight');
+          hit.row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          setTimeout(() => {
+            hit.row.classList.remove('cairn-row-highlight');
+          }, 2000);
+        }
+
+        addDiceRecord(`查表 (${diceFormula})`, res.total, res.detail);
+      });
+
+      thFirst.appendChild(btn);
+    });
+  }
+
+  // ==========================================
+  // 4. 怪物图鉴属性胶囊化 (Statblock Capsule)
+  // ==========================================
+  function hydrateMonsterStatblocks() {
+    const main = document.querySelector('.sl-markdown-content');
+    if (!main) return;
+
+    // 匹配如：4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，短剑（d6）
+    const STAT_LINE_REGEX = /^(\d+)\s*耐久度(?:[，,]\s*(\d+)\s*护甲)?(?:[，,]\s*(\d+)\s*力量)(?:[，,]\s*(\d+)\s*敏捷)(?:[，,]\s*(\d+)\s*意志)(.*)$/;
+
+    const ps = main.querySelectorAll('p');
+    ps.forEach((p) => {
+      if (p.dataset.statblockBound) return;
+      const text = p.textContent.trim();
+      const match = text.match(STAT_LINE_REGEX);
+      if (!match) return;
+
+      p.dataset.statblockBound = 'true';
+      const [, hp, armor, str, dex, wil, rest] = match;
+
+      const container = document.createElement('div');
+      container.className = 'cairn-stat-capsules';
+      container.style.cssText = 'display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center;margin:0.75rem 0;font-size:0.825rem;font-weight:600;';
+
+      const badges = [];
+      badges.push(`<span class="cairn-badge cairn-badge-hp" style="background:rgba(220,53,69,0.22);color:#ff8591;border:1px solid rgba(220,53,69,0.45);padding:0.2rem 0.55rem;border-radius:4px;">HP ${hp}</span>`);
+      if (armor) {
+        badges.push(`<span class="cairn-badge cairn-badge-armor" style="background:rgba(35,87,137,0.3);color:#7ec8ff;border:1px solid rgba(35,87,137,0.5);padding:0.2rem 0.55rem;border-radius:4px;">护甲 ${armor}</span>`);
+      }
+      badges.push(`<span class="cairn-badge cairn-badge-str" style="background:rgba(114,83,237,0.18);color:#d0baff;border:1px solid rgba(114,83,237,0.4);padding:0.2rem 0.55rem;border-radius:4px;">STR ${str}</span>`);
+      badges.push(`<span class="cairn-badge cairn-badge-dex" style="background:rgba(114,83,237,0.18);color:#d0baff;border:1px solid rgba(114,83,237,0.4);padding:0.2rem 0.55rem;border-radius:4px;">DEX ${dex}</span>`);
+      badges.push(`<span class="cairn-badge cairn-badge-wil" style="background:rgba(114,83,237,0.18);color:#d0baff;border:1px solid rgba(114,83,237,0.4);padding:0.2rem 0.55rem;border-radius:4px;">WIL ${wil}</span>`);
+
+      if (rest && rest.trim()) {
+        badges.push(`<span style="color:#e6e1e8;margin-left:0.25rem;">${rest.replace(/^[，,]/, '').trim()}</span>`);
+      }
+
+      container.innerHTML = badges.join('');
+      p.parentNode.replaceChild(container, p);
+    });
+  }
+
+  function runAllHydrations() {
+    hydrateDiceNodes();
+    hydrateTableRollers();
+    hydrateMonsterStatblocks();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', runAllHydrations);
+  } else {
+    runAllHydrations();
+  }
+
+  document.addEventListener('astro:page-load', runAllHydrations);
 })();

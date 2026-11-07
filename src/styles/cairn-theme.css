@@ -3,7 +3,7 @@
    ========================================================================== */
 
 :root {
-  --sl-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --sl-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans CN", sans-serif;
   --sl-font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   /* Cairn 原版暗黑配色核心底色与文本 */
@@ -78,12 +78,55 @@ h1, #_top, .content-panel h1 {
   color: #f0edf2 !important;
 }
 
+/* 正文内容区行宽与排版呼吸感 */
+.sl-markdown-content {
+  max-width: 72ch;
+}
+
 /* 正文段落与列表 */
 .sl-markdown-content p,
 .sl-markdown-content li {
-  line-height: 1.65;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
   color: #e6e1e8;
-  font-size: 0.965rem;
+  font-size: 0.975rem;
+}
+
+/* 沉浸式引用块 (Blockquote) */
+.sl-markdown-content blockquote {
+  border-left: 3px solid #7253ed !important;
+  background: linear-gradient(90deg, rgba(114, 83, 237, 0.08) 0%, rgba(39, 38, 43, 0.25) 100%) !important;
+  border-radius: 0 6px 6px 0;
+  padding: 0.85rem 1.25rem;
+  margin: 1.5rem 0;
+  font-style: normal;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+.sl-markdown-content blockquote p {
+  color: #ded9e2 !important;
+  margin-bottom: 0.5rem;
+}
+
+.sl-markdown-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* 锁定纯暗黑沉浸体验：隐藏浅色切换器 */
+starlight-theme-select {
+  display: none !important;
+}
+
+/* 图片平滑圆角与鼠标放大交互 */
+.sl-markdown-content img {
+  border-radius: 4px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.sl-markdown-content img:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5);
 }
 
 /* 链接配色：原版紫罗兰 */
@@ -282,4 +325,32 @@ starlight-toc a[aria-current="true"] {
 .cairn-btn-outline:hover {
   background-color: rgba(255, 255, 255, 0.08);
   border-color: #6e6d78;
+}
+
+/* ==========================================================================
+   TTRPG 实操交互：表格抽骰高亮行与滚动指示
+   ========================================================================== */
+.cairn-row-highlight td {
+  background-color: rgba(114, 83, 237, 0.38) !important;
+  color: #ffffff !important;
+  transition: background-color 0.25s ease;
+}
+
+#cairn-scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #7253ed;
+  width: 100%;
+  transform-origin: 0 50%;
+  animation: cairn-scroll-grow auto linear;
+  animation-timeline: scroll();
+  z-index: 10001;
+  pointer-events: none;
+}
+
+@keyframes cairn-scroll-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
