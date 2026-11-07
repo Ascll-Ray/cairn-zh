@@ -374,52 +374,9 @@
     });
   }
 
-  // ==========================================
-  // 4. 怪物图鉴属性胶囊化 (Statblock Capsule)
-  // ==========================================
-  function hydrateMonsterStatblocks() {
-    const main = document.querySelector('.sl-markdown-content');
-    if (!main) return;
-
-    // 匹配如：4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，短剑（d6）
-    const STAT_LINE_REGEX = /^(\d+)\s*耐久度(?:[，,]\s*(\d+)\s*护甲)?(?:[，,]\s*(\d+)\s*力量)(?:[，,]\s*(\d+)\s*敏捷)(?:[，,]\s*(\d+)\s*意志)(.*)$/;
-
-    const ps = main.querySelectorAll('p');
-    ps.forEach((p) => {
-      if (p.dataset.statblockBound) return;
-      const text = p.textContent.trim();
-      const match = text.match(STAT_LINE_REGEX);
-      if (!match) return;
-
-      p.dataset.statblockBound = 'true';
-      const [, hp, armor, str, dex, wil, rest] = match;
-
-      const container = document.createElement('div');
-      container.className = 'cairn-stat-capsules';
-      container.style.cssText = 'display:flex;flex-wrap:wrap;gap:0.4rem;align-items:center;margin:0.75rem 0;font-size:0.825rem;font-weight:600;';
-
-      const badges = [];
-      badges.push(`<span class="cairn-badge cairn-badge-hp" style="background:rgba(220,53,69,0.22);color:#ff8591;border:1px solid rgba(220,53,69,0.45);padding:0.2rem 0.55rem;border-radius:4px;">HP ${hp}</span>`);
-      if (armor) {
-        badges.push(`<span class="cairn-badge cairn-badge-armor" style="background:rgba(35,87,137,0.3);color:#7ec8ff;border:1px solid rgba(35,87,137,0.5);padding:0.2rem 0.55rem;border-radius:4px;">护甲 ${armor}</span>`);
-      }
-      badges.push(`<span class="cairn-badge cairn-badge-str" style="background:rgba(114,83,237,0.18);color:#d0baff;border:1px solid rgba(114,83,237,0.4);padding:0.2rem 0.55rem;border-radius:4px;">STR ${str}</span>`);
-      badges.push(`<span class="cairn-badge cairn-badge-dex" style="background:rgba(114,83,237,0.18);color:#d0baff;border:1px solid rgba(114,83,237,0.4);padding:0.2rem 0.55rem;border-radius:4px;">DEX ${dex}</span>`);
-      badges.push(`<span class="cairn-badge cairn-badge-wil" style="background:rgba(114,83,237,0.18);color:#d0baff;border:1px solid rgba(114,83,237,0.4);padding:0.2rem 0.55rem;border-radius:4px;">WIL ${wil}</span>`);
-
-      if (rest && rest.trim()) {
-        badges.push(`<span style="color:#e6e1e8;margin-left:0.25rem;">${rest.replace(/^[，,]/, '').trim()}</span>`);
-      }
-
-      container.innerHTML = badges.join('');
-      p.parentNode.replaceChild(container, p);
-    });
-  }
-
   function runAllHydrations() {
     hydrateDiceNodes();
     hydrateTableRollers();
-    hydrateMonsterStatblocks();
   }
 
   if (document.readyState === 'loading') {

@@ -45,6 +45,10 @@ export default defineConfig({
           tag: 'script',
           attrs: { src: '/scripts/search-ux.js', defer: true },
         },
+        {
+          tag: 'script',
+          attrs: { src: '/scripts/bestiary-filter.js', defer: true },
+        },
       ],
       ...i18nConfig,
       sidebar: sidebarConfig,
