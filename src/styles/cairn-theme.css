@@ -142,27 +142,34 @@ starlight-theme-select {
   border-bottom-color: #a981ff;
 }
 
-/* 侧边栏样式 */
+/* 侧边栏样式：高对比度清澈浅白灰，无需选定即可清晰阅读 */
 starlight-sidebar a {
-  color: #a7a5af !important;
+  color: #ded9e2 !important;
   transition: all 0.15s ease;
+  font-size: 0.915rem;
 }
 
 starlight-sidebar a:hover {
   color: #ffffff !important;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 starlight-sidebar a[aria-current="page"] {
-  background-color: rgba(114, 83, 237, 0.22) !important;
+  background-color: rgba(114, 83, 237, 0.25) !important;
   color: #ffffff !important;
   border-left: 3px solid #7253ed !important;
   font-weight: 600;
 }
 
+/* 侧边栏折叠分组标题（Top-level Summary） */
+starlight-sidebar summary {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
 /* 右侧大纲 (TOC) */
 starlight-toc a {
-  color: #9e9da6 !important;
+  color: #c2c0ca !important;
 }
 
 starlight-toc a:hover,
@@ -353,4 +360,28 @@ starlight-toc a[aria-current="true"] {
 @keyframes cairn-scroll-grow {
   from { transform: scaleX(0); }
   to { transform: scaleX(1); }
+}
+
+/* ==========================================================================
+   Starlight / Pagefind 搜索模态框交互与紫罗兰闪烁光标 (|) 增强
+   ========================================================================== */
+#starlight__search .pagefind-ui__search-input,
+.pagefind-ui__search-input {
+  caret-color: #a981ff !important;
+  color: #ffffff !important;
+  background-color: #18171b !important;
+  border: 1px solid #44434d !important;
+}
+
+#starlight__search .pagefind-ui__search-input:focus,
+.pagefind-ui__search-input:focus {
+  outline: 2px solid #7253ed !important;
+  outline-offset: -1px;
+  border-color: #7253ed !important;
+  box-shadow: 0 0 0 3px rgba(114, 83, 237, 0.28) !important;
+}
+
+#starlight__search .pagefind-ui__search-input::placeholder {
+  color: #8f8e99 !important;
+  opacity: 0.85 !important;
 }

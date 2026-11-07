@@ -45,27 +45,61 @@
 
     const closeBtn = document.createElement('button');
     closeBtn.type = 'button';
-    closeBtn.setAttribute('aria-label', 'Close image');
-    closeBtn.innerHTML = '&times;';
+    closeBtn.setAttribute('aria-label', '关闭图片 (ESC 或点击外侧黑框)');
+    closeBtn.title = '关闭 (ESC)';
+    closeBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
     closeBtn.style.cssText = [
-      'position:absolute',
+      'position:fixed',
       'top:1.25rem',
       'right:1.5rem',
-      'background:transparent',
-      'border:none',
-      'color:#e6e1e8',
-      'font-size:2.25rem',
-      'line-height:1',
+      'width:44px',
+      'height:44px',
+      'border-radius:50%',
+      'background:rgba(39, 38, 43, 0.92)',
+      'border:1px solid rgba(255, 255, 255, 0.25)',
+      'color:#ffffff',
+      'display:flex',
+      'align-items:center',
+      'justify-content:center',
       'cursor:pointer',
-      'padding:0.25rem 0.5rem',
-      'opacity:0.8',
-      'transition:opacity 0.15s ease'
+      'box-shadow:0 4px 16px rgba(0,0,0,0.6)',
+      'z-index:100000',
+      'transition:all 0.15s ease'
     ].join(';');
-    closeBtn.addEventListener('mouseenter', () => { closeBtn.style.opacity = '1'; });
-    closeBtn.addEventListener('mouseleave', () => { closeBtn.style.opacity = '0.8'; });
+    closeBtn.addEventListener('mouseenter', () => {
+      closeBtn.style.backgroundColor = '#7253ed';
+      closeBtn.style.transform = 'scale(1.08)';
+    });
+    closeBtn.addEventListener('mouseleave', () => {
+      closeBtn.style.backgroundColor = 'rgba(39, 38, 43, 0.92)';
+      closeBtn.style.transform = 'scale(1)';
+    });
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      close();
+    });
+
+    const hint = document.createElement('div');
+    hint.textContent = '点击外侧黑框或按 ESC 退出';
+    hint.style.cssText = [
+      'position:fixed',
+      'bottom:1.25rem',
+      'left:50%',
+      'transform:translateX(-50%)',
+      'background:rgba(31, 30, 36, 0.85)',
+      'border:1px solid rgba(255, 255, 255, 0.15)',
+      'color:#ded9e2',
+      'font-size:0.8rem',
+      'padding:0.35rem 0.85rem',
+      'border-radius:20px',
+      'pointer-events:none',
+      'letter-spacing:0.02em',
+      'box-shadow:0 2px 8px rgba(0,0,0,0.4)'
+    ].join(';');
 
     overlay.appendChild(overlayImg);
     overlay.appendChild(closeBtn);
+    overlay.appendChild(hint);
     document.body.appendChild(overlay);
 
     function close() {
@@ -113,13 +147,16 @@
       img.dataset.lightboxBound = 'true';
       img.style.cursor = 'zoom-in';
       img.addEventListener('click', (e) => {
-        // 若图片被 <a> 链接包裹且目标为外部外链，不拦截
         const parentLink = img.closest('a');
-        if (parentLink && parentLink.getAttribute('href') && !parentLink.getAttribute('href').startsWith('#')) {
-          return;
+        const href = parentLink ? parentLink.getAttribute('href') : null;
+        const isImageLink = href && /\.(png|jpe?g|webp|svg|gif|avif)($|\?)/i.test(href);
+        const isHashLink = href && href.startsWith('#');
+        // 若没有父链接，或父链接指向图片自身，或父链接仅为锚点，一律拦截并调起灯箱，杜绝浏览器跳页
+        if (!parentLink || isImageLink || isHashLink || href === img.getAttribute('src')) {
+          e.preventDefault();
+          e.stopPropagation();
+          open(img.currentSrc || img.src, img.alt);
         }
-        e.preventDefault();
-        open(img.currentSrc || img.src, img.alt);
       });
     });
   }

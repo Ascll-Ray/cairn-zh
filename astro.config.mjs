@@ -41,6 +41,10 @@ export default defineConfig({
           tag: 'script',
           attrs: { src: '/scripts/lightbox.js', defer: true },
         },
+        {
+          tag: 'script',
+          attrs: { src: '/scripts/search-ux.js', defer: true },
+        },
       ],
       ...i18nConfig,
       sidebar: sidebarConfig,
