@@ -1,5 +1,6 @@
 ---
 title: "集市"
+description: "Official System Reference Document and Rules Compendium."
 ---
 
 > 所有价格均以金币计

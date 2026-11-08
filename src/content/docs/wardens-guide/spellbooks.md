@@ -1,5 +1,6 @@
 ---
 title: "法术书"
+description: "Official System Reference Document and Rules Compendium."
 ---
 
 |         |                       |                                                                                                                                                                                                                                                                                              |

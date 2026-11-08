@@ -136,3 +136,16 @@
   padding-top: 0.15rem;
   font-weight: 700;
 }
+
+/* ==========================================================================
+   5. 图像加载态与防抖骨架 (Prevent Cumulative Layout Shift)
+   ========================================================================== */
+.sl-markdown-content img,
+.woodcut-frame img {
+  content-visibility: auto;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.sl-markdown-content img:not([src]) {
+  visibility: hidden;
+}

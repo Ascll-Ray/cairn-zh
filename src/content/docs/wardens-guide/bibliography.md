@@ -1,5 +1,6 @@
 ---
 title: "参考文献"
+description: "Official System Reference Document and Rules Compendium."
 ---
 
 ## 游戏与扩展

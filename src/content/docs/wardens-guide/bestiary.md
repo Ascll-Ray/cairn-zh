@@ -1,43 +1,41 @@
 ---
 title: "怪物图鉴"
-tableOfContents: false
+description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式匕首（d6）"
 ---
 
 ## 怪物分类
 
 | **d20** | **类别** | **怪物** |
 | :------- | :------------- | :--------------------------------------------------------------------------- |
-| **1** | 禽鸟 | [不死鸟 Phoenix](#不死鸟-phoenix)、[大鹏 Roc](#大鹏-roc)、[双足飞龙 Wyvern](#双足飞龙-wyvern) |
-| **2** | 野兽 | [血麋 Blood Elk](#血麋-blood-elk)、[灰熊 Grizzly Bear](#灰熊-grizzly-bear)、[杀人蜂 Killer Bees](#杀人蜂-killer-bees)、[夜猫 Night Cat](#夜猫-night-cat)、[毒蛇 Viper](#毒蛇-viper)、[狼 Wolf](#狼-wolf) |
-| **3** | 巨兽 | [绿龙 Green Dragon](#绿龙-green-dragon)、[紫虫 Purple Worm](#紫虫-purple-worm) |
-| **4** | 构装体 | [骸骨造物 Bone Construct](#骸骨造物-bone-construct)、[卵石猎犬 Cobblehounds](#卵石猎犬-cobblehounds)、[石像鬼 Gargoyle](#石像鬼-gargoyle) |
-| **5** | 恶魔 | [地狱犬 Hellhound](#地狱犬-hellhound)、[梦魇 Nightmare](#梦魇-nightmare) |
-| **6** | 异界生物 | [恐惧之眼 Eye of Terror](#恐惧之眼-eye-of-terror)、[夺心鞭 Mind Lasher](#夺心鞭-mind-lasher) |
-| **7** | 妖精 | [博格特 Boggart](#博格特-boggart)、[树精 Dryad](#树精-dryad)、[霜精灵 Frost Elf](#霜精灵-frost-elf)、[小妖精 Pixie](#小妖精-pixie)、[红帽妖 Red Cap](#红帽妖-red-cap)、[夜鬼婆 Night Hag](#夜鬼婆-night-hag)、[海鬼婆 Sea Hag](#海鬼婆-sea-hag)、[鬼火 Will-o-Wisp](#鬼火-will-o-wisp) |
-| **8** | 巨人 | [双头巨人 Ettin](#双头巨人-ettin)、[天穹巨人 Sky Giant](#天穹巨人-sky-giant)、[风暴巨人 Storm Giant](#风暴巨人-storm-giant)、[泰坦 Titan](#泰坦-titan) |
-| **9** | 类地精 | [熊地精 Bugbear](#熊地精-bugbear)、[哥布林 Goblin](#哥布林-goblin)、[大地精 Hobgoblin](#大地精-hobgoblin)、[食人魔 Ogre](#食人魔-ogre)、[根地精 Root Goblin](#根地精-root-goblin)、[巨魔 Troll](#巨魔-troll)、[木巨魔 Wood Troll](#木巨魔-wood-troll) |
-| **10** | 类人 | [侍僧 Acolyte](#侍僧-acolyte)、[强盗 Bandit](#强盗-bandit)、[豺狼人 Gnoll](#豺狼人-gnoll)、[兜帽人 Hooded Men](#兜帽人-hooded-men)、[海卫 Triton](#海卫-triton) |
-| **11** | 混种 | [半人马 Centaur](#半人马-centaur)、[蝎狮 Manticore](#蝎狮-manticore)、[牛头人 Minotaur](#牛头人-minotaur)、[枭熊 Owlbear](#枭熊-owlbear)、[斯芬克斯 Sphinx](#斯芬克斯-sphinx) |
-| **12** | 虚体 | [隐形潜猎者 Invisible Stalker](#隐形潜猎者-invisible-stalker)、[暗影 Shadow](#暗影-shadow) |
-| **13** | 类虫 | [蛛化人 Aranea](#蛛化人-aranea)、[掘地恐魔 Burrowing Horror](#掘地恐魔-burrowing-horror)、[洞穴蝗虫 Cave Locust](#洞穴蝗虫-cave-locust)、[巨蝎 Giant Scorpion](#巨蝎-giant-scorpion) |
-| **14** | 蜥蜴 | [石化蜥蜴 Basilisk](#石化蜥蜴-basilisk)、[九头蛇 Hydra](#九头蛇-hydra)、[狗头人 Kobold](#狗头人-kobold)、[娜迦 Naga](#娜迦-naga)、[蜥蜴人 Reptilian](#蜥蜴人-reptilian) |
-| **15** | 魔法生物 | [闪现犬 Blink Dog](#闪现犬-blink-dog)、[次元豹 Warp Panther](#次元豹-warp-panther)、[水元素 Water Elemental](#水元素-water-elemental) |
-| **16** | 神话生物 | [报丧女妖 Banshee](#报丧女妖-banshee)、[狮鹫 Griffon](#狮鹫-griffon)、[鹰身女妖 Harpy](#鹰身女妖-harpy)、[九头蛇 Hydra](#九头蛇-hydra)、[拉弥亚 Lamia](#拉弥亚-lamia)、[独角兽 Unicorn](#独角兽-unicorn) |
-| **17** | 植物 | [蔓生藤蔓 Creeping Vines](#蔓生藤蔓-creeping-vines)、[根须女巫 Root Witch](#根须女巫-root-witch)、[蹒跚蔓尸 Shambling Mound](#蹒跚蔓尸-shambling-mound)、[树人 Treant](#树人-treant) |
-| **18** | 变形者 | [猪形怪 Swine Thing](#猪形怪-swine-thing)、[狼人 Werewolf](#狼人-werewolf) |
-| **19** | 亡灵 | [墓穴守卫 Crypt Guardian](#墓穴守卫-crypt-guardian)、[幽灵 Ghost](#幽灵-ghost)、[食尸鬼 Ghoul](#食尸鬼-ghoul)、[巫妖 Lich](#巫妖-lich)、[木乃伊 Mummy](#木乃伊-mummy)、[骷髅 Skeleton](#骷髅-skeleton)、[吸血鬼 Vampire](#吸血鬼-vampire)、[尸妖 Wight](#尸妖-wight)、[僵尸 Zombie](#僵尸-zombie) |
-| **20** | 异怪 | [凝胶软泥怪 Gelatinous Ooze](#凝胶软泥怪-gelatinous-ooze)、[拟形怪 Mimic](#拟形怪-mimic)、[锈蚀怪 Rust Monster](#锈蚀怪-rust-monster)、[战士蜗牛 Warrior Snail](#战士蜗牛-warrior-snail) |
+| **1** | 禽鸟 | 凤凰、大鹏、双足飞龙 |
+| **2** | 野兽 | 血鹿、灰熊、杀人蜂、夜猫、毒蛇、狼 |
+| **3** | 巨兽 | 绿龙、紫虫 |
+| **4** | 构装体 | 骸骨构装体、碎石猎犬、石像鬼 |
+| **5** | 恶魔 | 地狱犬、梦魇 |
+| **6** | 异界生物 | 恐惧之眼、夺心鞭笞者 |
+| **7** | 妖精 | 博格特、树精、霜精灵、小妖精、红帽妖、夜鬼婆、海鬼婆、鬼火 |
+| **8** | 巨人 | 双头巨人、天穹巨人、风暴巨人、泰坦 |
+| **9** | 类地精 | 熊地精、地精、大地精、食人魔、根地精、巨魔、木巨魔 |
+| **10** | 类人 | 侍僧、强盗、豺狼人、兜帽人、海卫 |
+| **11** | 混种 | 半人马、蝎尾狮、牛头人、枭熊 |
+| **12** | 虚体 | 隐形追猎者、暗影 |
+| **13** | 类虫 | 蛛化人、掘地恐魔、洞穴蝗虫、巨型蝎 |
+| **14** | 蜥蜴 | 石化蜥、九头蛇、狗头人、娜迦、爬虫类 |
+| **15** | 魔法生物 | 闪现犬、扭曲黑豹、水元素 |
+| **16** | 神话生物 | 报丧女妖、狮鹫、鹰身女妖、九头蛇、拉弥亚、独角兽 |
+| **17** | 植物 | 匍匐藤蔓、根巫、蹒跚苔丘、树人 |
+| **18** | 变形者 | 猪形怪、狼人 |
+| **19** | 亡灵 | 墓穴守卫、幽灵、食尸鬼、巫妖、木乃伊、骷髅、吸血鬼、尸鬼、僵尸 |
+| **20** | 异怪 | 凝胶怪、拟形怪、锈蚀怪、战士蜗牛 |
 
-## 侍僧 Acolyte
+## 侍僧
 
 4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式匕首（d6）
 
 - 侍奉特定神祇的神圣仆从。通常四人或以上结伴而行。
 - 随身携带一枚圣徽（每日一次 *防护*）。
 
-## 蛛化人 Aranea
-
-*类虫 Insectoid*
+## 蛛化人
 
 耐久度 6，力量 13，敏捷 12，意志 15，啃咬（d8）
 

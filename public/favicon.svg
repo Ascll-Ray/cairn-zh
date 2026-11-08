@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <style>
+    .bg { fill: #100f0f; }
+    .fg { fill: none; stroke: #cecdc3; stroke-width: 1.5; stroke-linejoin: round; }
+    .core { fill: #d0a215; }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #fffcf0; }
+      .fg { stroke: #100f0f; }
+      .core { fill: #ad8301; }
+    }
+  </style>
+  <rect width="32" height="32" rx="6" class="bg"/>
+  <!-- D20 Geometric facets -->
+  <polygon points="16,4 28,11 28,21 16,28 4,21 4,11" class="fg"/>
+  <polygon points="16,4 23,16 9,16" class="fg"/>
+  <line x1="28" y1="11" x2="23" y2="16" class="fg"/>
+  <line x1="4" y1="11" x2="9" y2="16" class="fg"/>
+  <line x1="23" y1="16" x2="16" y2="28" class="fg"/>
+  <line x1="9" y1="16" x2="16" y2="28" class="fg"/>
+  <circle cx="16" cy="12" r="2" class="core"/>
+</svg>

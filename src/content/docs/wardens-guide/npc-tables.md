@@ -1,5 +1,6 @@
 ---
 title: "NPC 表"
+description: "Official System Reference Document and Rules Compendium."
 ---
 
 | **d20** | **名字** |

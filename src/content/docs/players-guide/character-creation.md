@@ -1,5 +1,6 @@
 ---
 title: "角色创建"
+description: "Official System Reference Document and Rules Compendium."
 ---
 
 ## 掷骰或选择背景

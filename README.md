@@ -1,4 +1,4 @@
-# Cairn 2e 中文官方规则参考 (Cairn 2e Chinese SRD)
+# Cairn 第二版规则参考
 
 《石冢》（Cairn 2e）中文规则参考与官方第一方模组 CAS-1《双湖纷扰》。
 
@@ -9,5 +9,5 @@
 - **原著作者**：Yochai Gal（[cairnrpg.com](https://cairnrpg.com)）
 - **官方实体店**：[store.cairnrpg.com](https://store.cairnrpg.com)
 - **1e 简体中文翻译与体系奠基**：ZzNoah
-- **2e 中文维护与站点构建**：[Ascll-Ray](https://github.com/Ascll-Ray)
+- **中文维护与站点构建**：[Ascll-Ray](https://github.com/Ascll-Ray)
 - **授权协议**：本作品文本内容采用 [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) 许可协议授权。

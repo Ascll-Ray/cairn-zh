@@ -1,5 +1,6 @@
 ---
 title: "圣物阁"
+description: "Official System Reference Document and Rules Compendium."
 ---
 
 ## 希望之刃 (d6)

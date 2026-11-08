@@ -82,7 +82,6 @@
       'pointer-events:none'
     ].join(';');
 
-    // 托盘面板
     const panel = document.createElement('div');
     panel.id = 'cairn-dice-panel';
     panel.style.cssText = [
@@ -100,7 +99,6 @@
       'font-size:0.875rem'
     ].join(';');
 
-    // 面板头部
     const header = document.createElement('div');
     header.style.cssText = 'display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #3c3b44;padding-bottom:0.4rem;';
     header.innerHTML = `
@@ -113,7 +111,6 @@
       </div>
     `;
 
-    // 记录列表
     const list = document.createElement('div');
     list.id = 'cairn-dice-list';
     list.style.cssText = 'display:flex;flex-direction:column;gap:0.4rem;max-height:190px;overflow-y:auto;';
@@ -121,7 +118,6 @@
     panel.appendChild(header);
     panel.appendChild(list);
 
-    // 悬浮唤起胶囊按钮
     const toggleBtn = document.createElement('button');
     toggleBtn.id = 'cairn-dice-toggle';
     toggleBtn.type = 'button';
@@ -267,7 +263,7 @@
         btn.dataset.formula = match[1];
         btn.title = `点击投掷 ${match[1]}`;
         btn.style.cssText = 'all:unset;cursor:pointer;font-family:var(--sl-font-mono);font-weight:600;border-bottom:1px dashed var(--sl-color-text-accent);color:var(--sl-color-text-accent);padding:0 2px;transition:all 0.15s ease;';
-        
+
         btn.addEventListener('mouseenter', () => { btn.style.color = '#ffffff'; btn.style.background = 'rgba(114, 83, 237, 0.25)'; });
         btn.addEventListener('mouseleave', () => { btn.style.color = 'var(--sl-color-text-accent)'; btn.style.background = 'transparent'; });
         btn.addEventListener('click', (e) => {
@@ -304,7 +300,6 @@
       const rows = Array.from(table.querySelectorAll('tbody tr'));
       if (!thFirst || rows.length < 2) return;
 
-      // 解析第一列的区间特征
       let maxVal = 0;
       let minVal = 999;
       const rowRanges = [];
@@ -313,7 +308,6 @@
         const td = row.querySelector('td:first-child');
         if (!td) return;
         const txt = td.textContent.trim();
-        // 匹配 "1-2" 或 "3" 或 "d20" 或 "12"
         const rangeMatch = txt.match(/^(\d+)(?:\s*[-–—~至]\s*(\d+))?$/);
         if (rangeMatch) {
           const start = parseInt(rangeMatch[1], 10);
@@ -332,7 +326,6 @@
         maxVal = rows.length;
       }
 
-      // 提取表头标记的骰子类型（如 d20、d6、2d6）
       const thText = thFirst.textContent.toLowerCase();
       let diceFormula = `1d${maxVal}`;
       if (thText.includes('2d6')) diceFormula = '2d6';
@@ -344,7 +337,6 @@
       else if (thText.includes('d66') || maxVal === 66) diceFormula = '1d66';
       else if (thText.includes('d100') || maxVal === 100) diceFormula = '1d100';
 
-      // 注入按钮
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'cairn-table-roll-btn';
@@ -381,12 +373,10 @@
         const res = rollFormula(diceFormula);
         if (!res) return;
 
-        // 匹配命中行
         let hit = rowRanges.find(r => res.total >= r.start && res.total <= r.end);
         if (!hit) hit = rowRanges[Math.min(res.total - 1, rowRanges.length - 1)];
 
         if (hit && hit.row) {
-          // 清除旧高亮
           table.querySelectorAll('.cairn-row-highlight').forEach(el => el.classList.remove('cairn-row-highlight'));
           hit.row.classList.add('cairn-row-highlight');
           hit.row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });

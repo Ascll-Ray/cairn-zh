@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zh.cairnrpg.com/sitemap-index.xml
