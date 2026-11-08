@@ -1,41 +1,47 @@
 ---
 title: "怪物图鉴"
+tableOfContents: false
 description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式匕首（d6）"
 ---
+
 
 ## 怪物分类
 
 | **d20** | **类别** | **怪物** |
 | :------- | :------------- | :--------------------------------------------------------------------------- |
-| **1** | 禽鸟 | 凤凰、大鹏、双足飞龙 |
-| **2** | 野兽 | 血鹿、灰熊、杀人蜂、夜猫、毒蛇、狼 |
-| **3** | 巨兽 | 绿龙、紫虫 |
-| **4** | 构装体 | 骸骨构装体、碎石猎犬、石像鬼 |
-| **5** | 恶魔 | 地狱犬、梦魇 |
-| **6** | 异界生物 | 恐惧之眼、夺心鞭笞者 |
-| **7** | 妖精 | 博格特、树精、霜精灵、小妖精、红帽妖、夜鬼婆、海鬼婆、鬼火 |
-| **8** | 巨人 | 双头巨人、天穹巨人、风暴巨人、泰坦 |
-| **9** | 类地精 | 熊地精、地精、大地精、食人魔、根地精、巨魔、木巨魔 |
-| **10** | 类人 | 侍僧、强盗、豺狼人、兜帽人、海卫 |
-| **11** | 混种 | 半人马、蝎尾狮、牛头人、枭熊 |
-| **12** | 虚体 | 隐形追猎者、暗影 |
-| **13** | 类虫 | 蛛化人、掘地恐魔、洞穴蝗虫、巨型蝎 |
-| **14** | 蜥蜴 | 石化蜥、九头蛇、狗头人、娜迦、爬虫类 |
-| **15** | 魔法生物 | 闪现犬、扭曲黑豹、水元素 |
-| **16** | 神话生物 | 报丧女妖、狮鹫、鹰身女妖、九头蛇、拉弥亚、独角兽 |
-| **17** | 植物 | 匍匐藤蔓、根巫、蹒跚苔丘、树人 |
-| **18** | 变形者 | 猪形怪、狼人 |
-| **19** | 亡灵 | 墓穴守卫、幽灵、食尸鬼、巫妖、木乃伊、骷髅、吸血鬼、尸鬼、僵尸 |
-| **20** | 异怪 | 凝胶怪、拟形怪、锈蚀怪、战士蜗牛 |
+| **1** | 禽鸟 | [不死鸟 Phoenix](#不死鸟-phoenix)、大鹏、[双足飞龙 Wyvern](#双足飞龙-wyvern) |
+| **2** | 野兽 | [血麋 Blood Elk](#血麋-blood-elk)、[灰熊 Grizzly Bear](#灰熊-grizzly-bear)、[杀人蜂 Killer Bees](#杀人蜂-killer-bees)、[夜猫 Night Cat](#夜猫-night-cat)、[毒蛇 Viper](#毒蛇-viper)、[狼 Wolf](#狼-wolf) |
+| **3** | 巨兽 | [绿龙 Green Dragon](#绿龙-green-dragon)、[紫虫 Purple Worm](#紫虫-purple-worm) |
+| **4** | 构装体 | [骸骨造物 Bone Construct](#骸骨造物-bone-construct)、[卵石猎犬 Cobblehounds](#卵石猎犬-cobblehounds)、[石像鬼 Gargoyle](#石像鬼-gargoyle) |
+| **5** | 恶魔 | [地狱犬 Hellhound](#地狱犬-hellhound)、[梦魇 Nightmare](#梦魇-nightmare) |
+| **6** | 异界生物 | [恐惧之眼 Eye of Terror](#恐惧之眼-eye-of-terror)、[夺心鞭 Mind Lasher](#夺心鞭-mind-lasher) |
+| **7** | 妖精 | [博格特 Boggart](#博格特-boggart)、[树精 Dryad](#树精-dryad)、[霜精灵 Frost Elf](#霜精灵-frost-elf)、[小妖精 Pixie](#小妖精-pixie)、[红帽妖 Red Cap](#红帽妖-red-cap)、[夜鬼婆 Night Hag](#夜鬼婆-night-hag)、[海鬼婆 Sea Hag](#海鬼婆-sea-hag)、[鬼火 Will-o-Wisp](#鬼火-will-o-wisp) |
+| **8** | 巨人 | [双头巨人 Ettin](#双头巨人-ettin)、[天穹巨人 Sky Giant](#天穹巨人-sky-giant)、[风暴巨人 Storm Giant](#风暴巨人-storm-giant)、[泰坦 Titan](#泰坦-titan) |
+| **9** | 类地精 | [熊地精 Bugbear](#熊地精-bugbear)、[哥布林 Goblin](#哥布林-goblin)、[大地精 Hobgoblin](#大地精-hobgoblin)、[食人魔 Ogre](#食人魔-ogre)、[根地精 Root Goblin](#根地精-root-goblin)、[巨魔 Troll](#巨魔-troll)、[木巨魔 Wood Troll](#木巨魔-wood-troll) |
+| **10** | 类人 | [侍僧 Acolyte](#侍僧-acolyte)、[强盗 Bandit](#强盗-bandit)、[豺狼人 Gnoll](#豺狼人-gnoll)、[兜帽人 Hooded Men](#兜帽人-hooded-men)、[海卫 Triton](#海卫-triton) |
+| **11** | 混种 | [半人马 Centaur](#半人马-centaur)、[蝎狮 Manticore](#蝎狮-manticore)、[牛头人 Minotaur](#牛头人-minotaur)、[枭熊 Owlbear](#枭熊-owlbear)、[斯芬克斯 Sphinx](#斯芬克斯-sphinx) |
+| **12** | 虚体 | [隐形潜猎者 Invisible Stalker](#隐形潜猎者-invisible-stalker)、[暗影 Shadow](#暗影-shadow) |
+| **13** | 类虫 | [蛛化人 Aranea](#蛛化人-aranea)、[掘地恐魔 Burrowing Horror](#掘地恐魔-burrowing-horror)、[洞穴蝗虫 Cave Locust](#洞穴蝗虫-cave-locust)、[巨蝎 Giant Scorpion](#巨蝎-giant-scorpion) |
+| **14** | 蜥蜴 | [石化蜥蜴 Basilisk](#石化蜥蜴-basilisk)、[九头蛇 Hydra](#九头蛇-hydra)、[狗头人 Kobold](#狗头人-kobold)、[娜迦 Naga](#娜迦-naga)、[蜥蜴人 Reptilian](#蜥蜴人-reptilian) |
+| **15** | 魔法生物 | [闪现犬 Blink Dog](#闪现犬-blink-dog)、[次元豹 Warp Panther](#次元豹-warp-panther)、[水元素 Water Elemental](#水元素-water-elemental) |
+| **16** | 神话生物 | [报丧女妖 Banshee](#报丧女妖-banshee)、[狮鹫 Griffon](#狮鹫-griffon)、[鹰身女妖 Harpy](#鹰身女妖-harpy)、[九头蛇 Hydra](#九头蛇-hydra)、[拉弥亚 Lamia](#拉弥亚-lamia)、[独角兽 Unicorn](#独角兽-unicorn) |
+| **17** | 植物 | [蔓生藤蔓 Creeping Vines](#蔓生藤蔓-creeping-vines)、[根须女巫 Root Witch](#根须女巫-root-witch)、[蹒跚蔓尸 Shambling Mound](#蹒跚蔓尸-shambling-mound)、[树人 Treant](#树人-treant) |
+| **18** | 变形者 | [猪形怪 Swine Thing](#猪形怪-swine-thing)、[狼人 Werewolf](#狼人-werewolf) |
+| **19** | 亡灵 | [墓穴守卫 Crypt Guardian](#墓穴守卫-crypt-guardian)、[幽灵 Ghost](#幽灵-ghost)、[食尸鬼 Ghoul](#食尸鬼-ghoul)、[巫妖 Lich](#巫妖-lich)、[木乃伊 Mummy](#木乃伊-mummy)、[骷髅 Skeleton](#骷髅-skeleton)、[吸血鬼 Vampire](#吸血鬼-vampire)、[尸妖 Wight](#尸妖-wight)、[僵尸 Zombie](#僵尸-zombie) |
+| **20** | 异怪 | [凝胶软泥怪 Gelatinous Ooze](#凝胶软泥怪-gelatinous-ooze)、[拟形怪 Mimic](#拟形怪-mimic)、[锈蚀怪 Rust Monster](#锈蚀怪-rust-monster)、[战士蜗牛 Warrior Snail](#战士蜗牛-warrior-snail) |
 
-## 侍僧
+<a id="侍僧" class="anchor-alias"></a>
+<a id="acolyte" class="anchor-alias"></a>
+## 侍僧 Acolyte
 
 4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式匕首（d6）
 
 - 侍奉特定神祇的神圣仆从。通常四人或以上结伴而行。
 - 随身携带一枚圣徽（每日一次 *防护*）。
 
-## 蛛化人
+<a id="蛛化人" class="anchor-alias"></a>
+<a id="aranea" class="anchor-alias"></a>
+## 蛛化人 Aranea
 
 耐久度 6，力量 13，敏捷 12，意志 15，啃咬（d8）
 
@@ -43,7 +49,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 在幽暗的蛛网洞穴中钻研魔法。随身携带 *魅惑* 与 *命令* 法术书。
 - 火焰伤害对蛛化人 *强化*。
 
-## 强盗
+<a id="强盗" class="anchor-alias"></a>
+<a id="bandit" class="anchor-alias"></a>
+## 强盗 Bandit
 
 4 耐久度，1 护甲，12 力量，12 敏捷，9 意志，短剑（d6）或短弓（d6）
 
@@ -51,7 +59,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 一个分队总是与一名首领同行，首领身穿链甲或类似护甲（2 护甲），手持长剑（d10）或弩（d8）。
 - **忠诚**：测试士气时，使用首领的意志（13）进行豁免。若首领死亡，其余人将逃散。
 
-## 报丧女妖
+<a id="报丧女妖" class="anchor-alias"></a>
+<a id="banshee" class="anchor-alias"></a>
+## 报丧女妖 Banshee
 
 8 耐久度，6 力量，12 敏捷，15 意志，幽灵之触（d8）
 
@@ -59,7 +69,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 不受寒冷、炎热或元素伤害。铁制武器伤害为*强化*。
 - **哀嚎**：任何能听到声音的人必须进行意志豁免，否则昏迷。
 
-## 石化蜥蜴
+<a id="石化蜥蜴" class="anchor-alias"></a>
+<a id="basilisk" class="anchor-alias"></a>
+## 石化蜥蜴 Basilisk
 
 耐久度 10，护甲 1，力量 12，敏捷 13，意志 13，啃咬（d10）
 
@@ -67,14 +79,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 不与**石化蜥蜴**对视而战十分困难。（面对它的攻击为*受损*。）
 - **凝视**：面对石化蜥蜴的目标会从下往上逐渐石化，三轮后完全僵化。可用石化蜥蜴的砂囊酿造解药。该生物的倒影无害。
 
-## 闪现犬
+<a id="闪现犬" class="anchor-alias"></a>
+<a id="blink-dog" class="anchor-alias"></a>
+## 闪现犬 Blink Dog
 
 耐久度 5，力量 11，敏捷 14，意志 5，啃咬（d6）
 
 - 效忠于强大主人的传送犬。
 - 能随意相位脱离现实。针对它们的近战攻击处于*受损*状态。
 
-## 血麋
+<a id="血麋" class="anchor-alias"></a>
+<a id="blood-elk" class="anchor-alias"></a>
+## 血麋 Blood Elk
 
 4 耐久度，12 力量，13 敏捷，5 意志，角抵（d8）
 
@@ -82,7 +98,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 为摄取养分而杀害受害者，但得不到慰藉。它们永远饥饿。
 - **致命伤害**：扯出受害者的内脏，将其刺穿。
 
-## 博格特
+<a id="博格特" class="anchor-alias"></a>
+<a id="boggart" class="anchor-alias"></a>
+## 博格特 Boggart
 
 3 耐久度，4 力量，17 敏捷，13 意志
 
@@ -90,14 +108,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 博格特拥有描述其真实本性的真名。知晓这些名字便能控制它们。
 - **魔法**：博格特能*赋予物体生命*、*散播混乱*、*制造魔法伪装*、使用*念力*以及*传送*。
 
-## 骸骨造物
+<a id="骸骨造物" class="anchor-alias"></a>
+<a id="bone-construct" class="anchor-alias"></a>
+## 骸骨造物 Bone Construct
 
 8 耐久度，3 护甲，15 力量，5 敏捷，3 意志，锐化臂膀（d8+d8），*超然*
 
 - 由骸骨与巫术铸成的四臂巨像。
 - 无心智的守卫，随时准备攻击除其创造者以外的任何生物。
 
-## 熊地精
+<a id="熊地精" class="anchor-alias"></a>
+<a id="bugbear" class="anchor-alias"></a>
+## 熊地精 Bugbear
 
 耐久度 8，护甲 1，力量 14，敏捷 12，意志 11，棍棒（d8）
 
@@ -105,7 +127,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 偏好以潜行与诡计占得先机。
 - 常统领同类生物组成的队伍（多为地精）。
 
-## 掘地恐魔
+<a id="掘地恐魔" class="anchor-alias"></a>
+<a id="burrowing-horror" class="anchor-alias"></a>
+## 掘地恐魔 Burrowing Horror
 
 耐久度 6，护甲 1，力量 16，敏捷 11，意志 4，啃咬（d10），喷酸（d8，*群攻*）
 
@@ -113,35 +137,45 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 潜伏于地表之下，伏击毫无防备的生物。
 - **致命伤害**：目标失去一个身体部位。投 1d6。1：头部，2-4：腿部，5-6：手臂。
 
-## 洞穴蝗虫
+<a id="洞穴蝗虫" class="anchor-alias"></a>
+<a id="cave-locust" class="anchor-alias"></a>
+## 洞穴蝗虫 Cave Locust
 
 耐久度 2，力量 6，敏捷 12，意志 3，啃咬（d6）
 
 - 栖居洞穴的巨型食草蟋蟀。免疫大多数毒素。
 - 天然的保护色使它们能与石头融为一体。受到威胁时，会发出刺耳的尖啸。
 
-## 半人马
+<a id="半人马" class="anchor-alias"></a>
+<a id="centaur" class="anchor-alias"></a>
+## 半人马 Centaur
 
 耐久度 6，护甲 1，力量 14，敏捷 12，意志 14，长矛（d8）或短弓（d6）
 
 - 上半身为人形，下半身与腿似马。
 - 很少单独出现，偏好与同类为伴。
 
-## 卵石猎犬
+<a id="卵石猎犬" class="anchor-alias"></a>
+<a id="cobblehounds" class="anchor-alias"></a>
+## 卵石猎犬 Cobblehounds
 
 耐久度 12，护甲 2，力量 14，敏捷 1，意志 8，啃咬（d10）
 
 - 无法移动的构装体，通常用作大型陵墓或奇物的守卫。
 - 不受寻常劝诱技巧影响，但钟爱一根好骨头。
 
-## 蔓生藤蔓
+<a id="蔓生藤蔓" class="anchor-alias"></a>
+<a id="creeping-vines" class="anchor-alias"></a>
+## 蔓生藤蔓 Creeping Vines
 
 耐久度 8，力量 10，敏捷 12，意志 2，藤蔓（d4，*群攻*）
 
 - 看似一株无生命的普通藤蔓。袭击路过的生物，以它们的尸体为肥料。
 - **致命伤害**：目标被拉至空中，几分钟内窒息而死。
 
-## 墓穴守卫
+<a id="墓穴守卫" class="anchor-alias"></a>
+<a id="crypt-guardian" class="anchor-alias"></a>
+## 墓穴守卫 Crypt Guardian
 
 耐久度 12，力量 12，敏捷 11，意志 14，虚体利爪（d8+d8）
 
@@ -149,7 +183,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 非魔法攻击对其*受减损*。
 - 可将视野内任意目标传送至附近随机房间。
 
-## 树精
+<a id="树精" class="anchor-alias"></a>
+<a id="dryad" class="anchor-alias"></a>
+## 树精 Dryad
 
 4 耐久度，8 力量，12 敏捷，14 意志，节瘤手臂（d6）
 
@@ -157,14 +193,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 无法远离其绑定的树木。若树木被毁，它们亦随之消亡。
 - **迷惑**：目标陷入混乱，逐渐远离宿主树木。每轮可进行一次意志豁免以挣脱。
 
-## 双头巨人
+<a id="双头巨人" class="anchor-alias"></a>
+<a id="ettin" class="anchor-alias"></a>
+## 双头巨人 Ettin
 
 10 耐久度，16 力量，8 敏捷，6 意志，巨棒（d10）
 
 - 巨人的双头亲族。偏好洞穴与地下陋居。
 - 无法被突袭。
 
-## 恐惧之眼
+<a id="恐惧之眼" class="anchor-alias"></a>
+<a id="eye-of-terror" class="anchor-alias"></a>
+## 恐惧之眼 Eye of Terror
 
 耐久度 15，力量 9，敏捷 8，意志 16，啃咬（d8）
 
@@ -172,7 +212,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 它们极为聪慧，贪得无厌，且彻底疯狂。
 - 可随意施放下列法术：*魅惑、恐惧植根、念动术、睡眠术、移形换位、幻视*。针对其施放的魔法须通过意志豁免，否则消散无效。
 
-## 霜精灵
+<a id="霜精灵" class="anchor-alias"></a>
+<a id="frost-elf" class="anchor-alias"></a>
+## 霜精灵 Frost Elf
 
 14 耐久度，1 护甲，8 力量，13 敏捷，14 意志，冰锥匕首（d6）
 
@@ -180,7 +222,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 对大多数魔法形式具有抗性。
 - 可随意施展以下法术：*睡眠*、*传送*、*侦测魔法*。
 
-## 石像鬼
+<a id="石像鬼" class="anchor-alias"></a>
+<a id="gargoyle" class="anchor-alias"></a>
+## 石像鬼 Gargoyle
 
 8 耐久度，3 护甲，14 力量，4 敏捷，12 意志，利爪（d8+d8）
 
@@ -188,42 +232,54 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 夜间潜行，但畏惧白昼，阳光会将其冻结在原地。
 - 免疫魅惑与魔法睡眠。
 
-## 凝胶软泥怪
+<a id="凝胶软泥怪" class="anchor-alias"></a>
+<a id="gelatinous-ooze" class="anchor-alias"></a>
+## 凝胶软泥怪 Gelatinous Ooze
 
 8 耐久度，1 护甲，15 力量，6 敏捷，3 意志，吞噬之触（d8）
 
 - 大团无定形的透明胶状物。在地牢与地下洞穴中无意识地搜寻食物。
 - **致命伤害**：目标被吞噬，每轮损失d6点力量，直至被彻底吞没。
 
-## 幽灵
+<a id="幽灵" class="anchor-alias"></a>
+<a id="ghost" class="anchor-alias"></a>
+## 幽灵 Ghost
 
 8 点耐久度，14 力量，12 敏捷，15 意志，生命汲取（d6）
 
 - 不安亡者的无形幽魂，仅受魔法与特定祝祷仪式所伤。
 - **致命伤害**：目标须以意志豁免，否则遭附身，只能听凭幽灵摆布。
 
-## 食尸鬼
+<a id="食尸鬼" class="anchor-alias"></a>
+<a id="ghoul" class="anchor-alias"></a>
+## 食尸鬼 Ghoul
 
 6 点耐久度，14 力量，8 敏捷，3 意志，长爪（d6+d6）
 
 - 灰肤人形之物，身披碎布，只渴求活人的血肉。
 - **致命伤害**：目标因坏死伤口陷入*匮乏*，若未经祭司或高明医者救治，将在d4日内死去。尸体若不焚毁，日后亦会化为食尸鬼。
 
-## 巨蝎
+<a id="巨蝎" class="anchor-alias"></a>
+<a id="giant-scorpion" class="anchor-alias"></a>
+## 巨蝎 Giant Scorpion
 
 8 点耐久度，1 护甲，11 力量，12 敏捷，4 意志，螯钳（d10+d10）
 
 - 马匹大小的蛛形生物，常见于干燥地带或洞穴之中。
 - **致命伤害**：尾刺之毒将目标内脏化为脓水，额外造成d8点力量伤害。此力量损失永久不可恢复。
 
-## 豺狼人
+<a id="豺狼人" class="anchor-alias"></a>
+<a id="gnoll" class="anchor-alias"></a>
+## 豺狼人 Gnoll
 
 6 点耐久度，1 护甲，12 力量，14 敏捷，8 意志，长矛（d8）
 
 - 凶暴的类人鬣狗，源自远古奥术实验的造物。
 - 它们是致命的战士，或成群结队（视为 *分遣队*）或独自出击。
 
-## 哥布林
+<a id="哥布林" class="anchor-alias"></a>
+<a id="goblin" class="anchor-alias"></a>
+## 哥布林 Goblin
 
 4 耐久度，8 力量，12 敏捷，8 意志，匕首（d6）或投石索（d6）
 
@@ -231,7 +287,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 避战，只在占优时出手，惯用打了就跑的战术。
 - 有时以凶狼为坐骑。
 
-## 绿龙
+<a id="绿龙" class="anchor-alias"></a>
+<a id="green-dragon" class="anchor-alias"></a>
+## 绿龙 Green Dragon
 
 耐久度 12，护甲 2，力量 14，敏捷 15，意志 18，啃咬（d12），*超然*
 
@@ -239,7 +297,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 以智谋与狡诈驱使弱者为其效命。
 - **氯气**：附近者须通过敏捷豁免以逃离其范围，否则失去 1d4 力量并陷入 *匮乏*。
 
-## 狮鹫
+<a id="狮鹫" class="anchor-alias"></a>
+<a id="griffon" class="anchor-alias"></a>
+## 狮鹫 Griffon
 
 7 耐久度，14 力量，15 敏捷，12 意志，利爪（d6+d6），*分遣队*
 
@@ -248,7 +308,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 飞行与攻击速度惊人，俯冲而下攫取猎物。
 - **致命伤害**：以锋利如刃的喙撕下受害者的血肉与骨骼。
 
-## 灰熊
+<a id="灰熊" class="anchor-alias"></a>
+<a id="grizzly-bear" class="anchor-alias"></a>
+## 灰熊 Grizzly Bear
 
 6 耐久度，15 力量，13 敏捷，5 意志，利爪（d8+d8）
 
@@ -256,7 +318,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 偏好食鱼与肉，偶有不幸者闯入其领地，必遭攻击。
 - **致命伤害**：撕咬受害者，额外造成 d6 点力量伤害。伤口流血极快。
 
-## 鹰身女妖
+<a id="鹰身女妖" class="anchor-alias"></a>
+<a id="harpy" class="anchor-alias"></a>
+## 鹰身女妖 Harpy
 
 8 耐久度，7 力量，12 敏捷，14 意志，利爪（d6+d6）
 
@@ -264,14 +328,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 因身形比例失调，行动与飞行皆笨拙。凡事皆依赖被魅惑的受害者代劳。
 - **歌声**：附近者须以意志豁免，否则被其歌声魅惑，跟随鹰身女妖并为其抵御一切威胁。
 
-## 地狱犬
+<a id="地狱犬" class="anchor-alias"></a>
+<a id="hellhound" class="anchor-alias"></a>
+## 地狱犬 Hellhound
 
 耐久度 8，力量 12，敏捷 15，意志 9，啃咬（d8），火焰吐息（d6，*群攻*）
 
 - 栖居火山附近的巨犬，凶残而通人性。
 - 免疫火焰与高温伤害。体温之高，仅凭啃咬便能熔化铁器。
 
-## 大地精
+<a id="大地精" class="anchor-alias"></a>
+<a id="hobgoblin" class="anchor-alias"></a>
+## 大地精 Hobgoblin
 
 6 耐久度，2 护甲，14 力量，8 敏捷，11 意志，钉头锤（d8）
 
@@ -279,7 +347,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 若指挥官在场，士气豁免自动成功。
 - 受过协同作战训练。若盟友正与同一敌人交战，造成的伤害*强化*。
 
-## 兜帽人
+<a id="兜帽人" class="anchor-alias"></a>
+<a id="hooded-men" class="anchor-alias"></a>
+## 兜帽人 Hooded Men
 
 12 耐久度，9 力量，12 敏捷，14 意志，法杖（d8）
 
@@ -287,21 +357,27 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - **致命伤害**：汲取受害者部分灵魂（1d4 意志伤害）。
 - 携带以下法术书中的两本：*魅惑、催眠、推/拉、护盾*。
 
-## 九头蛇
+<a id="九头蛇" class="anchor-alias"></a>
+<a id="hydra" class="anchor-alias"></a>
+## 九头蛇 Hydra
 
 耐久度 12，护甲 2，力量 13，敏捷 7，意志 12，啃咬（d12，*群攻*），*分遣队*
 
 - 生有九颗蛇首的大型爬行动物。一旦锁定猎物，极难摆脱。
 - 受到**致命伤害**时，九头蛇失去一个头。随后继续战斗，直至所有头都消失。
 
-## 隐形潜猎者
+<a id="隐形潜猎者" class="anchor-alias"></a>
+<a id="invisible-stalker" class="anchor-alias"></a>
+## 隐形潜猎者 Invisible Stalker
 
 8 耐久度，12 力量，12 敏捷，15 意志，拳头（d4+d4）
 
 - 由强大法师塑造为现实的智能生物。完全隐形且无声。
 - 攻击直接造成力量伤害（需减去护甲）。
 
-## 杀人蜂
+<a id="杀人蜂" class="anchor-alias"></a>
+<a id="killer-bees" class="anchor-alias"></a>
+## 杀人蜂 Killer Bees
 
 6 耐久度，6 力量，14 敏捷，8 意志，蜇刺（d6），*独立*
 
@@ -309,14 +385,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 产出能治疗 1d6 点力量的特殊蜂蜜。可用 3 次。
 - 当蜜蜂造成力量伤害时，毒刺会留在目标体内，每轮造成 d4 点伤害，直至被移除。
 
-## 狗头人
+<a id="狗头人" class="anchor-alias"></a>
+<a id="kobold" class="anchor-alias"></a>
+## 狗头人 Kobold
 
 耐久度 3，力量 8，敏捷 13，意志 4，啃咬（d6），长矛（d8）
 
 - 无毛的人形生物，具有犬类特征和鳞状皮肤。在黑暗中能完美视物，但会被直射阳光伤害。
 - 使用陷阱和伏击击败对手。常为更强大的生物效力。
 
-## 拉弥亚
+<a id="拉弥亚" class="anchor-alias"></a>
+<a id="lamia" class="anchor-alias"></a>
+## 拉弥亚 Lamia
 
 耐久度 6，力量 11，敏捷 12，意志 16，利齿啃咬（d8）
 
@@ -324,7 +404,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 天生具有魔法能力。可随意制造幻象、魅惑生物并伪装自己。
 - **致命伤害**：目标承受d6点意志伤害，灵魂逐渐被抽离。随后被拉米亚奴役，在其面前必须服从每一个命令。
 
-## 巫妖
+<a id="巫妖" class="anchor-alias"></a>
+<a id="lich" class="anchor-alias"></a>
+## 巫妖 Lich
 
 耐久度 14，护甲 1，力量 8，敏捷 8，意志 18，灵魂匕首（d8）
 
@@ -332,7 +414,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 通过将自身绑定于一件尘世神器来维持不死之身，该神器通常由至少d6个其他亡灵仆从守护。
 - 最多可携带以下六本法术书：*操控物体*、*秘法眼*、*致聋术*、*解离术*、*元素墙*、*狂乱*、*传送门*、*悬浮*、*憎恨*、*辨识主人*、*敲击术*、*安抚*、*复活死者*、*唤起灵魂*、*护盾*、*睡眠*、*烟化形体*、*念力*、*心灵感应*、*传送*、*视觉*、*巫师印记*。
 
-## 蝎狮
+<a id="蝎狮" class="anchor-alias"></a>
+<a id="manticore" class="anchor-alias"></a>
+## 蝎狮 Manticore
 
 耐久度 6，力量 15，敏捷 14，意志 12，爪击（d6+d6），尾刺（d8）
 
@@ -340,7 +424,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 尾刺如飞镖般射出，几天后重新长出。单根尾刺对收藏家价值 150 金币。
 - **致命伤害**：目标陷入*匮乏*，直至安睡一夜。在此之前，其言行粗鄙、自私而残忍（若本性如此，则更甚）。
 
-## 拟形怪
+<a id="拟形怪" class="anchor-alias"></a>
+<a id="mimic" class="anchor-alias"></a>
+## 拟形怪 Mimic
 
 耐久度 9，护甲 2，力量 13，敏捷 6，意志 12，啃咬（d8）
 
@@ -348,7 +434,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 伪装时保持静止，突袭靠近者。
 - 拟形怪的唾液极其粘稠，难以清除。哪怕是最小的药瓶，炼金术士也愿出价高达 150 金币。
 
-## 夺心鞭
+<a id="夺心鞭" class="anchor-alias"></a>
+<a id="mind-lasher" class="anchor-alias"></a>
+## 夺心鞭 Mind Lasher
 
 12 耐久度，8 力量，12 敏捷，18 意志，触须（d6，群攻）
 
@@ -356,21 +444,27 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - **心灵冲击**：附近目标须豁免意志，否则失去1d4点意志并陷入麻痹。
 - **致命伤害**：触须将受害者的脑髓从头骨中扯出。
 
-## 牛头人
+<a id="牛头人" class="anchor-alias"></a>
+<a id="minotaur" class="anchor-alias"></a>
+## 牛头人 Minotaur
 
 12 耐久度，1 护甲，16 力量，12 敏捷，8 意志，双手斧（d10），冲锋（d12）
 
 - 牛首大型类人生物（通常为男性），栖居于迷宫或地牢。
 - 非凡的追踪者，嗅觉与方向感极佳。
 
-## 木乃伊
+<a id="木乃伊" class="anchor-alias"></a>
+<a id="mummy" class="anchor-alias"></a>
+## 木乃伊 Mummy
 
 6 耐久度，12 力量，8 敏捷，6 意志，死灵之触（d10）
 
 - 裹着葬布的亡灵人形。出没于金字塔、废墟、神庙与陵墓之中。
 - **致命伤害**：目标感染木乃伊腐病，在得到专业治疗师治愈前无法恢复力量。目标同时陷入*匮乏*。
 
-## 娜迦
+<a id="娜迦" class="anchor-alias"></a>
+<a id="naga" class="anchor-alias"></a>
+## 娜迦 Naga
 
 耐久度 6，护甲 1，力量 14，敏捷 12，意志 14，剑（d6），啃咬（d10）
 
@@ -378,7 +472,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 以狡诈与催眠俘获其他生物，将其奴役。
 - **凝视**：面向娜迦的目标被催眠，沦为其意志的傀儡。其受害者无法被驱使施暴。
 
-## 夜猫
+<a id="夜猫" class="anchor-alias"></a>
+<a id="night-cat" class="anchor-alias"></a>
+## 夜猫 Night Cat
 
 耐久度 6，力量 9，敏捷 14，意志 5，利爪（d6+d6）
 
@@ -387,35 +483,45 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 致命伤害：夜猫开始啃食目标（d4点力量伤害），此时目标
 还活着。
 
-## 夜鬼婆
+<a id="夜鬼婆" class="anchor-alias"></a>
+<a id="night-hag" class="anchor-alias"></a>
+## 夜鬼婆 Night Hag
 
 耐久度 8，力量 9，敏捷 11，意志 16，利爪（d8+d8）
 
 - 丑陋的老妪，栖身于枯林、沼泽与泥潭之中。
 - 携带以下法术书中的三本：《秘法之眼》、《易容术》、《云雾术》、《辨识主人》、《烟形体》。
 
-## 梦魇
+<a id="梦魇" class="anchor-alias"></a>
+<a id="nightmare" class="anchor-alias"></a>
+## 梦魇 Nightmare
 
 8 耐久度，15 力量，12 敏捷，8 意志，燃烧的铁蹄（d8+d8）
 
 - 狡黠的恶魔战马，双目如燃炭，鼻孔冒烟，铁蹄生焰。
 - 由于梦魇周身浓烟弥漫，针对它的近战攻击处于*受损*状态。
 
-## 食人魔
+<a id="食人魔" class="anchor-alias"></a>
+<a id="ogre" class="anchor-alias"></a>
+## 食人魔 Ogre
 
 6 耐久度，1 护甲，16 力量，8 敏捷，6 意志，巨棒（d10）
 
 - 庞大、贪食的蛮物，心性邪恶，智力低下。
 - 极易被闪亮之物打动，在巢穴中囤积成袋的黄金与财宝。
 
-## 枭熊
+<a id="枭熊" class="anchor-alias"></a>
+<a id="owlbear" class="anchor-alias"></a>
+## 枭熊 Owlbear
 
 9 耐久度，16 力量，12 敏捷，5 意志，喙啄（d10），利爪（d8+d8）
 
 - 熊形食肉兽，长着猫头鹰的面孔。出没于密林深处。传闻是魔法事故的产物。
 - **致命伤害**：一件护甲被撕裂并损毁。
 
-## 不死鸟
+<a id="不死鸟" class="anchor-alias"></a>
+<a id="phoenix" class="anchor-alias"></a>
+## 不死鸟 Phoenix
 
 4 耐久度，15 力量，13 敏捷，12 意志，利爪（d10+d10）
 
@@ -423,21 +529,27 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 若被杀死，它们会爆燃成一团烈焰。1d3 天后自灰烬中重生。
 - 其羽毛因具有疗愈之效而备受追捧。
 
-## 小妖精
+<a id="小妖精" class="anchor-alias"></a>
+<a id="pixie" class="anchor-alias"></a>
+## 小妖精 Pixie
 
 3 耐久度，3 力量，15 敏捷，13 意志
 
 - 长着昆虫翅膀的微小类人生物。天生隐形。
 - 可随意施放 *睡眠* 与 *伪装*。
 
-## 紫虫
+<a id="紫虫" class="anchor-alias"></a>
+<a id="purple-worm" class="anchor-alias"></a>
+## 紫虫 Purple Worm
 
 耐久度 18，护甲 1，力量 18，敏捷 8，意志 6，啃咬（d12），_detachment_
 
 - 庞大的蠕虫，蛰伏于地底深处的巨大洞穴中，只在进食时才会来到地面。出没于高海拔沙漠与炎热的苔原。
 - **致命伤害**：目标被吞噬，因蠕虫胃中的酸液而受到 d8 点力量伤害。
 
-## 红帽妖
+<a id="红帽妖" class="anchor-alias"></a>
+<a id="red-cap" class="anchor-alias"></a>
+## 红帽妖 Red Cap
 
 6 耐久度，6 力量，12 敏捷，8 意志，双镰（d6+d6）
 
@@ -445,14 +557,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 莫要理会那些生无可恋之辈，杀之无趣。
 - **致命伤害**：目标被开膛破肚，喷溅的鲜血可恢复红帽怪损失的力量。
 
-## 蜥蜴人
+<a id="蜥蜴人" class="anchor-alias"></a>
+<a id="reptilian" class="anchor-alias"></a>
+## 蜥蜴人 Reptilian
 
 耐久度 5，护甲 1，力量 14，敏捷 12，意志 5，骨矛（d8）
 
 - 两栖类人生物，在沼泽与丛林附近结成大部落聚居。
 - 以猎物骨骼打造护甲与武器。来者不拒，连类人生物也照吃不误。
 
-## 根地精
+<a id="根地精" class="anchor-alias"></a>
+<a id="root-goblin" class="anchor-alias"></a>
+## 根地精 Root Goblin
 
 耐久度 4，力量 8，敏捷 14，意志 8，长矛（d6）
 
@@ -460,7 +576,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 至死守护偷来的财物。
 - 根地精珍视法术书，向来乐于交易。
 
-## 根须女巫
+<a id="根须女巫" class="anchor-alias"></a>
+<a id="root-witch" class="anchor-alias"></a>
+## 根须女巫 Root Witch
 
 耐久度 8，力量 9，敏捷 16，意志 14，块茎指（d6）
 
@@ -468,7 +586,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 在地面上，隐约呈类人形，面孔如腐朽的树桩。
 - 愿以稀有矿物交换任意种类的“新鲜尸体”。
 
-## 锈蚀怪
+<a id="锈蚀怪" class="anchor-alias"></a>
+<a id="rust-monster" class="anchor-alias"></a>
+## 锈蚀怪 Rust Monster
 
 耐久度 5，力量 16，敏捷 13，意志 5，啃咬（d6）
 
@@ -476,7 +596,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 其触角触及的任何普通金属都会瞬间生锈。能嗅到远距离外的金属气味。
 - **致命伤害**：金属护甲锈蚀成无用的重物。
 
-## 海鬼婆
+<a id="海鬼婆" class="anchor-alias"></a>
+<a id="sea-hag" class="anchor-alias"></a>
+## 海鬼婆 Sea Hag
 
 耐久度 6，力量 11，敏捷 15，意志 14，长爪（d6+d6）
 
@@ -484,21 +606,27 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 免疫法术书中的魔法。
 - **骇人凝视**：目标被恐惧吞噬（耐久度降至 0）。每轮进行一次意志豁免以解除法术。
 
-## 暗影
+<a id="暗影" class="anchor-alias"></a>
+<a id="shadow" class="anchor-alias"></a>
+## 暗影 Shadow
 
 耐久度 14，力量 1，敏捷 18，意志 14，汲取之触（d6，无视护甲）
 
 - 无形怪物，形似活影。寻常攻击、睡眠术与精神控制皆不能伤其分毫。
 - **致命伤害**：目标失去 d4 点力量。若力量降至 0，目标也会变成暗影。
 
-## 蹒跚蔓尸
+<a id="蹒跚蔓尸" class="anchor-alias"></a>
+<a id="shambling-mound" class="anchor-alias"></a>
+## 蹒跚蔓尸 Shambling Mound
 
 9 耐久度，15 力量，6 敏捷，8 意志，卷须（d8+d8），*分遣*
 
 - 由黏滑植被构成的高大人形生物。栖居于幽暗沼泽与潮湿地下。
 - **致命伤害**：目标被整个吞下并拖走。
 
-## 骷髅
+<a id="骷髅" class="anchor-alias"></a>
+<a id="skeleton" class="anchor-alias"></a>
+## 骷髅 Skeleton
 
 5 耐久度，1 护甲，8 力量，13 敏捷，0 意志，锈剑（d6）或弓（d6）
 
@@ -506,14 +634,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 被发现时穿着死亡之时的衣物。
 - 若骷髅被杀死而骨骸未被散落，它会重新成形。
 
-## 天穹巨人
+<a id="天穹巨人" class="anchor-alias"></a>
+<a id="sky-giant" class="anchor-alias"></a>
+## 天穹巨人 Sky Giant
 
 12 耐久度，1 护甲，16 力量，12 敏捷，14 意志，钉头锤（d10），*分遣*
 
 - 高耸的白肤巨人，居于高山城堡之中。
 - 因周身环绕的强风，对其的远程攻击*受损*。
 
-## 斯芬克斯
+<a id="斯芬克斯" class="anchor-alias"></a>
+<a id="sphinx" class="anchor-alias"></a>
+## 斯芬克斯 Sphinx
 
 18 耐久度，12 力量，13 敏捷，18 意志，爪（d8+d8，*群攻*），喙（d10）
 
@@ -521,7 +653,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 逢人便出谜题。答错者通常难逃一死。它们几乎无所不知。
 - **咆哮**：闻声者须以意志豁免，否则恐惧逃窜。
 
-## 风暴巨人
+<a id="风暴巨人" class="anchor-alias"></a>
+<a id="storm-giant" class="anchor-alias"></a>
+## 风暴巨人 Storm Giant
 
 18 耐久度，2 护甲，18 力量，16 敏捷，18 意志，巨剑（d12），*超然*
 
@@ -529,7 +663,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 不受闪电伤害，可随心召唤雷云。能乘风为战车飞行。
 - **雷霆一击**：对单一目标造成 4 点力量伤害。身着金属护甲的目标受到双倍伤害。
 
-## 猪形怪
+<a id="猪形怪" class="anchor-alias"></a>
+<a id="swine-thing" class="anchor-alias"></a>
+## 猪形怪 Swine Thing
 
 9 耐久度，16 力量，8 敏捷，13 意志，獠牙冲撞（d6+d6）
 
@@ -537,7 +673,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 偏好猎食靠近森林与湿地的偏僻聚落。只能在夜间变形。
 - **魅惑**：目标服从猪形怪的每一道命令，直至其被杀。每轮以意志豁免挣脱。
 
-## 泰坦
+<a id="泰坦" class="anchor-alias"></a>
+<a id="titan" class="anchor-alias"></a>
+## 泰坦 Titan
 
 18 耐久度，3 护甲，16 力量，15 敏捷，18 意志，闪电剑（d12），*超然*
 
@@ -545,35 +683,45 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 原生于其他存在位面，但有时会在凡间建立据点。
 - 能随意浮空、变形，并塑形元素。
 
-## 树人
+<a id="树人" class="anchor-alias"></a>
+<a id="treant" class="anchor-alias"></a>
+## 树人 Treant
 
 10 耐久度，3 护甲，15 力量，3 敏捷，12 意志，根须（d8+d8，*群攻*）
 
 - 有知觉的双足树木，树干上生有隐约似人的面孔。栖于森林最深处。
 - 言语缓慢而深沉，声音低沉。超脱时间，寿命长达数千年。
 
-## 海卫
+<a id="海卫" class="anchor-alias"></a>
+<a id="triton" class="anchor-alias"></a>
+## 海卫 Triton
 
 6 耐久度，12 力量，15 敏捷，12 意志，三叉戟（d8）
 
 - 水生人形生物，皮肤银白，发色蓝绿，双腿覆鳞，末端生鳍。居于靠近陆地的温暖水域。
 - 巢穴筑于海岩与珊瑚雕成的华美城堡中。能驱使庞大的鱼群，既作护卫，亦为食粮。
 
-## 巨魔
+<a id="巨魔" class="anchor-alias"></a>
+<a id="troll" class="anchor-alias"></a>
+## 巨魔 Troll
 
 14 耐久度，1 护甲，14 力量，12 敏捷，4 意志，啃咬（d10），爪击（d8+d8）
 
 - 巨硕的人形生物，皮肤生疣，血肉与树皮交织。栖于地下或幽深森林，亦占据昔日受害者的废墟家园。食肉。
 - 遭受**致命伤害**时，巨魔即便血肉剥离、肢体残缺，仍会继续战斗。唯有力量归零，方算真正死亡。除非头颅浸于酸液、火焰或强大魔法之中，否则1d4日内便会完全再生。
 
-## 独角兽
+<a id="独角兽" class="anchor-alias"></a>
+<a id="unicorn" class="anchor-alias"></a>
+## 独角兽 Unicorn
 
 耐久度 6，力量 14，敏捷 12，意志 14，角（d10，无视护甲）
 
 - 额生独角的魔法马匹。性情胆怯，却骄傲任性，被视为神圣生灵。
 - 其鬃毛因具有强大的治疗功效而价值连城。
 
-## 吸血鬼
+<a id="吸血鬼" class="anchor-alias"></a>
+<a id="vampire" class="anchor-alias"></a>
+## 吸血鬼 Vampire
 
 12 耐久度，1 护甲，14 力量，12 敏捷，16 意志，啃咬（d10）
 
@@ -581,7 +729,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - **再生**：受伤的吸血鬼撕咬带血目标时恢复 6 点耐久度。若被杀死，会化作毒气退回棺材，在下一个夜幕降临时重塑身形。只有暴露在阳光下或摧毁棺材才能将其彻底消灭。
 - **致命伤害**：吸血鬼吸取目标精髓，对意志造成d12点伤害。若目标因此意志降至 0，则死亡并成为吸血鬼的奴仆。
 
-## 毒蛇
+<a id="毒蛇" class="anchor-alias"></a>
+<a id="viper" class="anchor-alias"></a>
+## 毒蛇 Viper
 
 3 耐久度，5 力量，12 敏捷，3 意志，啃咬（d6）
 
@@ -589,7 +739,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 利用热量和气味追踪猎物。
 - **致命伤害**：目标中毒，若无解药将在1d12小时内死亡。
 
-## 次元豹
+<a id="次元豹" class="anchor-alias"></a>
+<a id="warp-panther" class="anchor-alias"></a>
+## 次元豹 Warp Panther
 
 8 耐久度，13 力量，16 敏捷，12 意志，触手（d8+d8，群攻），啃咬（d10）
 
@@ -597,14 +749,18 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 对魔法攻击具有抗性。施法者须通过意志豁免，法术方能生效。
 - 可随意短距离传送。憎恨闪现犬。
 
-## 战士蜗牛
+<a id="战士蜗牛" class="anchor-alias"></a>
+<a id="warrior-snail" class="anchor-alias"></a>
+## 战士蜗牛 Warrior Snail
 
 耐久度 4，护甲 2，力量 14，敏捷 6，意志 3，触手（d8+d8）
 
 - 身披重甲的巨型蜗牛，触手沉重如棍棒。
 - 某些种类的彩色甲壳能反射魔法攻击。
 
-## 水元素
+<a id="水元素" class="anchor-alias"></a>
+<a id="water-elemental" class="anchor-alias"></a>
+## 水元素 Water Elemental
 
 耐久度 14，力量 15，敏捷 16，意志 4，喷涌（d8）
 
@@ -612,7 +768,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 对水元素的寻常攻击视为*受损*。
 - **致命伤害**：目标被水流裹住，三轮内溺毙。
 
-## 狼人
+<a id="狼人" class="anchor-alias"></a>
+<a id="werewolf" class="anchor-alias"></a>
+## 狼人 Werewolf
 
 耐久度 8，力量 15，敏捷 14，意志 6，爪（d6+d6），啃咬（d8）
 
@@ -620,28 +778,36 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 寻常攻击对狼人而言*受损*，但银制武器的攻击则*强化*。
 - **致命伤害**：目标感染狼化症，在下个满月前变为狼人。
 
-## 尸妖
+<a id="尸妖" class="anchor-alias"></a>
+<a id="wight" class="anchor-alias"></a>
+## 尸妖 Wight
 
 12 耐久度，3 护甲，16 力量，8 敏捷，12 意志，长剑（d10）
 
 - 扭曲堕落的战士，为邪恶目的自死亡中复生。常骑着同样梦魇般的坐骑，率领低级亡灵生物投入战斗。
 - **致命伤害**：豁免失败时，任何力量损失皆为永久。
 
-## 鬼火
+<a id="鬼火" class="anchor-alias"></a>
+<a id="will-o-wisp" class="anchor-alias"></a>
+## 鬼火 Will-o-Wisp
 
 3 耐久度，6 力量，17 敏捷，12 意志
 
 - 冷焰般的夜灵，常出没于密林、沼泽与湿地。
 - 以引人迷途闻名，或引向尸骸，或引回家园。
 
-## 狼
+<a id="狼" class="anchor-alias"></a>
+<a id="wolf" class="anchor-alias"></a>
+## 狼 Wolf
 
 耐久度 6，力量 12，敏捷 14，意志 8，啃咬（d8）
 
 - 大型犬科动物，主要栖息于森林或苔原。
 - 若自幼捕获，经训练可驯服。
 
-## 木巨魔
+<a id="木巨魔" class="anchor-alias"></a>
+<a id="wood-troll" class="anchor-alias"></a>
+## 木巨魔 Wood Troll
 
 耐久度 10，力量 15，敏捷 12，意志 7，啃咬（d8），棍棒（d10）
 
@@ -649,7 +815,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 若被杀死，除非将尸体带离森林或以火焰焚毁，否则它们会缓慢再生。
 - **致命伤害**：苔藓与细枝从目标的伤口中萌生。
 
-## 双足飞龙
+<a id="双足飞龙" class="anchor-alias"></a>
+<a id="wyvern" class="anchor-alias"></a>
+## 双足飞龙 Wyvern
 
 耐久度 11，力量 15，敏捷 14，意志 13，尾刺（d10）
 
@@ -657,7 +825,9 @@ description: "4 耐久度，1 护甲，8 力量，11 敏捷，14 意志，仪式
 - 它们避让他类生物，惯于从远处悄然潜近猎物。
 - **致命伤害**：受害者被刺穿并钉在原地，双足飞龙随即咬下其头颅。
 
-## 僵尸
+<a id="僵尸" class="anchor-alias"></a>
+<a id="zombie" class="anchor-alias"></a>
+## 僵尸 Zombie
 
 耐久度 2，力量 12，敏捷 6，意志 3，锯齿般的指甲（d6）
 
