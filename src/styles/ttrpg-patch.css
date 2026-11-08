@@ -1,34 +1,5 @@
 /* ==========================================================================
-   1. Flexoki 纸墨色盘内联 (覆盖 Starlight & Obsidian 默认色阶)
-   ========================================================================== */
-:root, ::backdrop {
-  --sl-color-bg: #100F0F;
-  --sl-color-bg-nav: #100F0F;
-  --sl-color-bg-sidebar: #161515;
-  --sl-color-text: #CECDC3;
-  --sl-color-text-accent: #D0A215;
-  --sl-color-gray-1: #ECEB80;
-  --sl-color-gray-2: #B7B5AC;
-  --sl-color-gray-3: #878580;
-  --sl-color-gray-4: #575653;
-  --sl-color-gray-5: #343331;
-  --sl-color-gray-6: #1C1B1A;
-  --sl-color-hairline: #282726;
-}
-
-:root[data-theme='light'], [data-theme='light'] ::backdrop {
-  --sl-color-bg: #FFFCF0;
-  --sl-color-bg-nav: #F2F0E5;
-  --sl-color-bg-sidebar: #F2F0E5;
-  --sl-color-text: #100F0F;
-  --sl-color-text-accent: #AD8301;
-  --sl-color-gray-5: #DAD8CE;
-  --sl-color-gray-6: #F2F0E5;
-  --sl-color-hairline: #E6E4D9;
-}
-
-/* ==========================================================================
-   2. 零侵入 Booktabs 表格 (防移动端撑裂 + 防桌面端短表坍缩)
+   1. 零侵入 Booktabs 表格 (防移动端撑裂 + 防桌面端短表坍缩)
    ========================================================================== */
 .sl-markdown-content table {
   display: block;
